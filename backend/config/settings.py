@@ -31,7 +31,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    '.elasticbeanstalk.com',
+    'logistics.eba-dmrpqnj3.ap-northeast-2.elasticbeanstalk.com',
+
 ]
 
 
@@ -168,7 +169,18 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+            "HOST": "db-instance-shipping.cktkrw7upmhb.ap-northeast-2.rds.amazonaws.com",
+            "NAME": 'db-instance-shipping',
+            "USER": "admin",
+            "Password": "Dkxltmxm22!",
+            "PORT": "5432"
+
+            # "HOST": os.environ.get("RDS_HOST"),
+            # "NAME": os.environ.get("RDS_NAME"),
+            # "USER": os.environ.get("RDS_USER"),
+            # "PASSWORD": os.environ.get("RDS_PASSWORD"),
+            # "PORT": "5432",
+
         }
     }
 
