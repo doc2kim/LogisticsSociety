@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: null
+    environment: logistics5
     group_suffix: null
 environment-defaults:
   shipping:

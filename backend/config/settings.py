@@ -12,18 +12,34 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from datetime import timedelta
 from pathlib import Path
-import os
+import os, json
+from django.core.exceptions import ImproperlyConfigured
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#8%14j8e*5=sfoj**qfo18cso1yb#&ehjhr12jlhzowo)1$o=)'
+secret_file = os.path.join(BASE_DIR, 'secrets.json')
+
+with open(secret_file) as f:
+    secrets = json.loads(f.read())
+
+# secrets.json 파일에서 SECRET_KEY 가져오기    
+def get_secret(setting, secrets=secrets):
+    try:
+        return secrets[setting]
+    except KeyError:
+        error_msg = "Set the {} environment variable".format(setting)
+        raise ImproperlyConfigured(error_msg)
+
+SECRET_KEY = get_secret("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,12 +47,12 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'logistics.eba-dmrpqnj3.ap-northeast-2.elasticbeanstalk.com',
+    '.elasticbeanstalk.com',
 
 ]
 
-
 AUTH_USER_MODEL = 'users.User'
+
 # Application definition
 
 DJANGO_APPS = [
@@ -154,7 +170,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DEBUG = bool(os.environ.get("DEBUG"))
+
+# DEBUG = bool(os.environ.get("DEBUG"))
+
+DEBUG = True
 
 
 if DEBUG:
@@ -169,17 +188,11 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "HOST": "db-instance-shipping.cktkrw7upmhb.ap-northeast-2.rds.amazonaws.com",
-            "NAME": 'db-instance-shipping',
-            "USER": "shipping",
-            "Password": "Dkxltmxm22!",
-            "PORT": "5432"
-
-            # "HOST": os.environ.get("RDS_HOST"),
-            # "NAME": os.environ.get("RDS_NAME"),
-            # "USER": os.environ.get("RDS_USER"),
-            # "PASSWORD": os.environ.get("RDS_PASSWORD"),
-            # "PORT": "5432",
+            "HOST": os.environ.get("RDS_HOST"),
+            "NAME": os.environ.get("RDS_NAME"),
+            "USER": os.environ.get("RDS_USER"),
+            "PASSWORD": os.environ.get("RDS_PASSWORD"),
+            "PORT": "5432",
 
         }
     }
