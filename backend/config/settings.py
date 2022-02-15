@@ -171,7 +171,7 @@ else:
             "ENGINE": "django.db.backends.postgresql",
             "HOST": "db-instance-shipping.cktkrw7upmhb.ap-northeast-2.rds.amazonaws.com",
             "NAME": 'db-instance-shipping',
-            "USER": "admin",
+            "USER": "shipping",
             "Password": "Dkxltmxm22!",
             "PORT": "5432"
 
