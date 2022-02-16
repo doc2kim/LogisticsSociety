@@ -9,6 +9,7 @@ django-cors-headers = "*"
 djangorestframework-simplejwt = "*"
 pillow = "*"
 psycopg2-binary = "*"
+django-dotenv = "*"
 
 [dev-packages]
 
