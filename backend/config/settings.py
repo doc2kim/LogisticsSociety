@@ -45,10 +45,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '.elasticbeanstalk.com',
-
+    'http://logistics5.ap-northeast-2.elasticbeanstalk.com/',
 ]
 
 AUTH_USER_MODEL = 'users.User'
