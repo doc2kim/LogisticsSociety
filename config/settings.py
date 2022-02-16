@@ -16,7 +16,7 @@ import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 
@@ -192,8 +192,7 @@ else:
             "NAME": os.environ.get("RDS_NAME"),
             "USER": os.environ.get("RDS_USER"),
             "PASSWORD": os.environ.get("RDS_PASSWORD"),
-            "PORT": "5432",
-
+            "PORT": os.environ.get("RDS_PORT"),
         }
     }
 
