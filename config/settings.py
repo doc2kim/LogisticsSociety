@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from datetime import timedelta
-from pathlib import Path
 import os
 
 
@@ -46,7 +45,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET","fqf_xga@^2fz-@@$x^pq#p_seo0u0^06$vm
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '.elasticbeanstalk.com/'
+    '.elasticbeanstalk.com'
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -171,8 +170,6 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 DEBUG = bool(os.environ.get("DEBUG"))
-
-
 # DEBUG = True
 
 
@@ -180,7 +177,7 @@ if DEBUG:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+             "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
     }
 
