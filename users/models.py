@@ -10,7 +10,7 @@ class UserManager(BaseUserManager):
 
     use_in_migrations = True
 
-    def create_user(self, email, organization, password):
+    def create_user(self, email, affiliated, password):
 
         if not email:
             raise ValueError('must have user email')
@@ -20,18 +20,17 @@ class UserManager(BaseUserManager):
         user = self.model(
             email=self.normalize_email(email),
             password=password,
-
-            organization=organization,
+            affiliated=affiliated,
         )
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, organization, password):
+    def create_superuser(self, email, affiliated, password):
 
         user = self.create_user(
             email=self.normalize_email(email),
-            organization=organization,
+            affiliated=affiliated,
             password=password,
 
         )
