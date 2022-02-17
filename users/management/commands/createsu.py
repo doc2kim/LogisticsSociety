@@ -9,7 +9,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         admin = User.objects.filter(email="master@shipping.or.kr")
         if not admin:
-            User.objects.create_superuser("master@shipping.or.kr", "shipping9153!")
+            User.objects.create_superuser("master@shipping.or.kr","master","shipping9153!")
             self.stdout.write(self.style.SUCCESS("Superuser Created"))
         else:
             self.stdout.write(self.style.SUCCESS("Superuser Exists"))
