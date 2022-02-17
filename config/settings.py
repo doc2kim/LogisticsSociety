@@ -152,13 +152,14 @@ TEMPLATES = [
     },
 ]
 #
-# STATICFILES_DIRS = [
-#    os.path.join((BASE_DIR, "frontend"),"build", "static"),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "frontend","build", "static"),
+]
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
-STATIC_URL =  os.path.join((BASE_DIR, "frontend"),"build", "static"),
+STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
