@@ -152,16 +152,18 @@ TEMPLATES = [
         },
     },
 ]
+
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend') 
 #
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "frontend","build","static"),
+    os.path.join(REACT_APP_DIR,"build","static"),
 ]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-
+STATIC_ROOT = "staticfiles"
 STATIC_URL ="/staticfiles/"
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
