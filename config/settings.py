@@ -16,7 +16,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend') 
+REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend',) 
 
 
 # Quick-start development settings - unsuitable for production
@@ -127,7 +127,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(REACT_APP_DIR, 'build')],
+        'DIRS': [os.path.join(REACT_APP_DIR, 'build',)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -143,7 +143,7 @@ TEMPLATES = [
 
 #
 STATICFILES_DIRS = (
-    os.path.join(REACT_APP_DIR,"build","static"),
+    os.path.join(REACT_APP_DIR,"build","static",),
 )
 
 # 
