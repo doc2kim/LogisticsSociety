@@ -150,7 +150,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # 
 
-STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR,"..","www","static")
 STATIC_URL ="/static/"
 
 MEDIA_URL = '/media/'
