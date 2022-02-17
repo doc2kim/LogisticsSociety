@@ -153,8 +153,8 @@ TEMPLATES = [
 ]
 #
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"..", "static"),
-    os.path.join(BASE_DIR,"..", "frontend","build", "static"),
+    os.path.join("static"),
+    os.path.join("frontend","build", "static"),
 ]
 
 
