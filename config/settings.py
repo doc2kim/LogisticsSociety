@@ -146,6 +146,7 @@ STATICFILES_DIRS = [
     os.path.join(REACT_APP_DIR,"build"),
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # 
 
