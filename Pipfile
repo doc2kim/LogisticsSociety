@@ -10,6 +10,7 @@ djangorestframework-simplejwt = "*"
 pillow = "*"
 psycopg2-binary = "*"
 django-dotenv = "*"
+whitenoise = "*"
 
 [dev-packages]
 
