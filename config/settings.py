@@ -143,7 +143,7 @@ TEMPLATES = [
 
 #
 STATICFILES_DIRS = (
-    os.path.join(REACT_APP_DIR,"build","static"),
+    os.path.join(REACT_APP_DIR,"build","static",),
 )
 
 # 
