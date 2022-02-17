@@ -16,6 +16,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT_DIR = os.path.dirname(BASE_DIR)
 REACT_APP_DIR = os.path.join(BASE_DIR, 'frontend',) 
 
 
@@ -153,7 +154,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # 
 
-STATIC_ROOT = os.path.join(BASE_DIR,"staticfile")
+STATIC_ROOT = os.path.join(ROOT_DIR,"staticfile")
 STATIC_URL ="/static/"
 
 MEDIA_URL = '/media/'
