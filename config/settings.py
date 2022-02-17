@@ -143,14 +143,14 @@ TEMPLATES = [
 
 #
 STATICFILES_DIRS = [
-    os.path.join(REACT_APP_DIR,"build/static/"),
+    os.path.join(REACT_APP_DIR,"build"),
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # 
 
-STATIC_ROOT = os.path.join(BASE_DIR,"..","www","static")
+STATIC_ROOT = os.path.join(BASE_DIR,"staticfile")
 STATIC_URL ="/static/"
 
 MEDIA_URL = '/media/'
