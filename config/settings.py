@@ -173,9 +173,8 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 
-# DEBUG = bool(os.environ.get("DEBUG"))
+DEBUG = bool(os.environ.get("DEBUG"))
 # DEBUG = True
-DEBUG = False
 
 
 if DEBUG:
