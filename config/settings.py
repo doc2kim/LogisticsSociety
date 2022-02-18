@@ -155,7 +155,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # 
 
 
-STATIC_ROOT = "static"
+STATIC_ROOT = "/var/app/current/static/"
 STATIC_URL ="/static/"
 
 MEDIA_URL = '/media/'
