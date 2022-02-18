@@ -148,9 +148,7 @@ TEMPLATES = [
 DEBUG = bool(os.environ.get("DEBUG"))
 
 #
-STATICFILES_DIRS = [
-    os.path.join(REACT_APP_DIR,"build","static"),
-]
+
 # BASE_DIR = Path(__file__).ancestor(2)
 
 # 
@@ -180,7 +178,7 @@ if not DEBUG:
 if DEBUG:
     
     STATICFILES_DIRS = [
-    os.path.join(REACT_APP_DIR,"build","static"),
+        os.path.join(REACT_APP_DIR,"build","static"),
     ]
     STATIC_URL = "/static"
 
