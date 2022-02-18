@@ -154,7 +154,7 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # 
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfile")
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 WSGI_APPLICATION = 'config.wsgi.application'
