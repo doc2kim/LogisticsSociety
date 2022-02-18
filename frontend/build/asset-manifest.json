@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.51c9a89b.css",
-    "main.js": "/static/js/main.4626ea16.js",
+    "main.js": "/static/js/main.58dd5bc7.js",
     "static/media/home_img.png": "/static/media/home_img.e20bd3a9142a316c9f72.png",
     "static/media/slide.png": "/static/media/slide.2cbc690c31eb3a1d7693.png",
     "static/media/최용석.png": "/static/media/최용석.02d73938a14ff8bc5b02.png",
@@ -21,10 +21,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.51c9a89b.css.map": "/static/css/main.51c9a89b.css.map",
-    "main.4626ea16.js.map": "/static/js/main.4626ea16.js.map"
+    "main.58dd5bc7.js.map": "/static/js/main.58dd5bc7.js.map"
   },
   "entrypoints": [
     "static/css/main.51c9a89b.css",
-    "static/js/main.4626ea16.js"
+    "static/js/main.58dd5bc7.js"
   ]
 }

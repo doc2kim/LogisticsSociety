@@ -294,7 +294,7 @@ const NewsDetail = function () {
         </Table>
         <ContentBox>
             <ImgBox>
-                {detailData.image && <Img src={`http://127.0.0.1:8000/media/${detailData.image}`} />}
+                {detailData.image && <Img src={`http://logistics5.ap-northeast-2.elasticbeanstalk.com/media/${detailData.image}`} />}
             </ImgBox>
             {detailData.content.split('\n').map((i, index) => {
                 return (

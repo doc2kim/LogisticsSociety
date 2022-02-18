@@ -355,7 +355,7 @@ const NoticeDetail = function () {
                                     return <div><FileBox key={`file${index}`}
                                         download
                                         target="_blank"
-                                        href={`http://127.0.0.1:8000${i.file}`} >
+                                        href={`http://logistics5.ap-northeast-2.elasticbeanstalk.com${i.file}`} >
                                         <FileIcon >💾</FileIcon>
                                         <FileName >{file_name}</FileName>
                                     </FileBox>
@@ -369,7 +369,7 @@ const NoticeDetail = function () {
             </Table>
             <ContentBox>
                 <ImgBox>
-                    {detailData.image && <Img src={`http://127.0.0.1:8000/media/${detailData.image}`} />}
+                    {detailData.image && <Img src={`http://logistics5.ap-northeast-2.elasticbeanstalk.com/media/${detailData.image}`} />}
                 </ImgBox>
                 {detailData.content.split('\n').map((i, index) => {
                     return (
