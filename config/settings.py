@@ -148,7 +148,7 @@ DEBUG = bool(os.environ.get("DEBUG"))
 
 #
 STATICFILES_DIRS = [
-    os.path.join(REACT_APP_DIR,"build"),
+    os.path.join(REACT_APP_DIR,"build","static"),
 ]
 # BASE_DIR = Path(__file__).ancestor(2)
 
