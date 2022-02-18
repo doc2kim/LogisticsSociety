@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET","fqf_xga@^2fz-@@$x^pq#p_seo0u0^06$vm
 ALLOWED_HOSTS = [
     # '127.0.0.1',
     # 'localhost',
-    '.elasticbeanstalk.com'
+    'logistics5.ap-northeast-2.elasticbeanstalk.com'
 ]
 
 AUTH_USER_MODEL = 'users.User'
@@ -149,12 +149,12 @@ TEMPLATES = [
 STATICFILES_DIRS = [
     os.path.join(REACT_APP_DIR,"build"),
 ]
-
+# BASE_DIR = Path(__file__).ancestor(2)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # 
 
-STATIC_ROOT = os.path.join(ROOT_DIR,"staticfile")
+# STATIC_ROOT = os.path.join(ROOT_DIR,"static")
 STATIC_URL ="/static/"
 
 MEDIA_URL = '/media/'
