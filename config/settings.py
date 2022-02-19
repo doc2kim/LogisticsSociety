@@ -146,8 +146,8 @@ TEMPLATES = [
 
 
 
-DEBUG = True
-# DEBUG = bool(os.environ.get("DEBUG"))
+# DEBUG = True
+DEBUG = bool(os.environ.get("DEBUG"))
 
 #
 STATICFILES_DIRS = [
