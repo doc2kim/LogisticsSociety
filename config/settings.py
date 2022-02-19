@@ -149,9 +149,10 @@ TEMPLATES = [
 # DEBUG = True
 DEBUG = bool(os.environ.get("DEBUG"))
 
-#
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 STATICFILES_DIRS = [
-        os.path.join(REACT_APP_DIR,"build","static"),
+        os.path.join(REACT_APP_DIR,"build"),
         ]
 
 MEDIA_URL = '/media/'
@@ -160,7 +161,29 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_URL = "/static/"
 WSGI_APPLICATION = 'config.wsgi.application'
 # 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+             "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        }
+    }
+
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "HOST": os.environ.get("RDS_HOST"),
+            "NAME": os.environ.get("RDS_NAME"),
+            "USER": os.environ.get("RDS_USER"),
+            "PASSWORD": os.environ.get("RDS_PASSWORD"),
+            "PORT": os.environ.get("RDS_PORT"),
+        }
+    
+    }
+
+
 # if not DEBUG:
 #     # DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
 #     # 
@@ -194,26 +217,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
 
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-             "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        }
-    }
-
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "HOST": os.environ.get("RDS_HOST"),
-            "NAME": os.environ.get("RDS_NAME"),
-            "USER": os.environ.get("RDS_USER"),
-            "PASSWORD": os.environ.get("RDS_PASSWORD"),
-            "PORT": os.environ.get("RDS_PORT"),
-        }
-    
-    }
 
 
 # Password validation
