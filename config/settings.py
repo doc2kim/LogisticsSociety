@@ -146,8 +146,8 @@ TEMPLATES = [
 
 
 
-DEBUG = True
-# DEBUG = bool(os.environ.get("DEBUG"))
+# DEBUG = True
+DEBUG = bool(os.environ.get("DEBUG"))
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfile")
 
