@@ -185,8 +185,6 @@ else:
 
 
 if not DEBUG:
-    # DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
-    # 
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
     AWS_STORAGE_BUCKET_NAME = "shipping-s3"
@@ -199,6 +197,8 @@ if not DEBUG:
     AWS_S_FILE_OVERWRITE = False
     #안되면 https -> http
     STATIC_URL = 'http://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+    
+    DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     
 if DEBUG:
