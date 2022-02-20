@@ -47,6 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "./static/",
-  "start": "webpack-dev-server --inline --content-base . --history-api-fallback"
+  "homepage": "."
 }
