@@ -12,6 +12,7 @@
     "axios": "^0.24.0",
     "dayjs": "^1.10.7",
     "jwt-decode": "^3.1.2",
+    "npm": "^8.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
@@ -46,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "./staticfile/"
+  "homepage": "./static/"
 }

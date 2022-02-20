@@ -149,7 +149,7 @@ TEMPLATES = [
 # DEBUG = True
 DEBUG = bool(os.environ.get("DEBUG"))
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfile")
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = [
         os.path.join(REACT_APP_DIR,"build"),
@@ -185,6 +185,8 @@ else:
 
 
 # if not DEBUG:
+#     # DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
+#     # 
 #     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
 #     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 #     AWS_STORAGE_BUCKET_NAME = "shipping-s3"
@@ -197,13 +199,12 @@ else:
 #     AWS_S_FILE_OVERWRITE = False
 #     #안되면 https -> http
 #     STATIC_URL = 'http://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-    
-#     DEFAULT_FILE_STORAGE = "config.custom_storages.UploadStorage"
 #     STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
     
 # if DEBUG:
 #     MEDIA_URL = '/media/'
 #     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    
 #     STATIC_URL = "/static/"
 
 

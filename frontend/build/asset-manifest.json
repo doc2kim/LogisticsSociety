@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "./staticfile/static/css/main.4e2dc416.css",
-    "main.js": "./staticfile/static/js/main.a74d04bb.js",
-    "static/media/home_img.png": "./staticfile/static/media/home_img.e20bd3a9142a316c9f72.png",
-    "static/media/slide.png": "./staticfile/static/media/slide.2cbc690c31eb3a1d7693.png",
-    "static/media/최용석.png": "./staticfile/static/media/최용석.02d73938a14ff8bc5b02.png",
-    "static/media/subTitleImg.png": "./staticfile/static/media/subTitleImg.96597915f88e0465a61d.png",
-    "static/media/한국국제상학회.png": "./staticfile/static/media/한국국제상학회.d5b378e0d36f918b29fc.png",
-    "static/media/한국해운조합.png": "./staticfile/static/media/한국해운조합.aaa549f8ba62938fdb6e.png",
-    "static/media/한국해양항만학회.png": "./staticfile/static/media/한국해양항만학회.504691f19a7cc2b7d550.png",
-    "static/media/일본해운경제학회.jpg": "./staticfile/static/media/일본해운경제학회.7e698658d43c7919bc94.jpg",
-    "static/media/IMOkorea.png": "./staticfile/static/media/IMOkorea.f8fb31f38cb98f7e0e33.png",
-    "static/media/일본해사신문2.png": "./staticfile/static/media/일본해사신문2.b3b3bff66fc85a56372a.png",
-    "static/media/partner3.png": "./staticfile/static/media/partner3.f5ebfeb5a0dba46a0f2a.png",
-    "static/media/partner4.png": "./staticfile/static/media/partner4.07f7cc503f7935035390.png",
-    "static/media/partner.png": "./staticfile/static/media/partner.bf7ae1e8efb730a3b3c9.png",
-    "static/media/slick.svg": "./staticfile/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "./staticfile/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "./staticfile/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "./staticfile/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "./staticfile/index.html",
-    "main.4e2dc416.css.map": "./staticfile/static/css/main.4e2dc416.css.map",
-    "main.a74d04bb.js.map": "./staticfile/static/js/main.a74d04bb.js.map"
+    "main.css": "./static/static/css/main.4e2dc416.css",
+    "main.js": "./static/static/js/main.6c02110c.js",
+    "static/media/home_img.png": "./static/static/media/home_img.e20bd3a9142a316c9f72.png",
+    "static/media/slide.png": "./static/static/media/slide.2cbc690c31eb3a1d7693.png",
+    "static/media/최용석.png": "./static/static/media/최용석.02d73938a14ff8bc5b02.png",
+    "static/media/subTitleImg.png": "./static/static/media/subTitleImg.96597915f88e0465a61d.png",
+    "static/media/한국국제상학회.png": "./static/static/media/한국국제상학회.d5b378e0d36f918b29fc.png",
+    "static/media/한국해운조합.png": "./static/static/media/한국해운조합.aaa549f8ba62938fdb6e.png",
+    "static/media/한국해양항만학회.png": "./static/static/media/한국해양항만학회.504691f19a7cc2b7d550.png",
+    "static/media/일본해운경제학회.jpg": "./static/static/media/일본해운경제학회.7e698658d43c7919bc94.jpg",
+    "static/media/IMOkorea.png": "./static/static/media/IMOkorea.f8fb31f38cb98f7e0e33.png",
+    "static/media/일본해사신문2.png": "./static/static/media/일본해사신문2.b3b3bff66fc85a56372a.png",
+    "static/media/partner3.png": "./static/static/media/partner3.f5ebfeb5a0dba46a0f2a.png",
+    "static/media/partner4.png": "./static/static/media/partner4.07f7cc503f7935035390.png",
+    "static/media/partner.png": "./static/static/media/partner.bf7ae1e8efb730a3b3c9.png",
+    "static/media/slick.svg": "./static/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "./static/index.html",
+    "main.4e2dc416.css.map": "./static/static/css/main.4e2dc416.css.map",
+    "main.6c02110c.js.map": "./static/static/js/main.6c02110c.js.map"
   },
   "entrypoints": [
     "static/css/main.4e2dc416.css",
-    "static/js/main.a74d04bb.js"
+    "static/js/main.6c02110c.js"
   ]
 }
