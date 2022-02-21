@@ -148,7 +148,7 @@ TEMPLATES = [
 # DEBUG = True
 DEBUG = bool(os.environ.get("DEBUG"))
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfile")
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = [
         os.path.join(REACT_APP_DIR,"build"),
@@ -157,7 +157,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
     
-STATIC_URL = "/staticfile/"
+STATIC_URL = "/static/"
 WSGI_APPLICATION = 'config.wsgi.application'
 # 
 
