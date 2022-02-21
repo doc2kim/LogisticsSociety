@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET","fqf_xga@^2fz-@@$x^pq#p_seo0u0^06$vm
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'logistics5.ap-northeast-2.elasticbeanstalk.com'
+    '.elasticbeanstalk.com'
 ]
 
 AUTH_USER_MODEL = 'users.User'
