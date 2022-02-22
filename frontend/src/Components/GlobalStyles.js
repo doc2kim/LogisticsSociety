@@ -15,6 +15,10 @@ const globalStyle = createGlobalStyle`
         font-family:--apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1em;
         width:100%;
+        @media only screen and (max-width:768px) {
+            over-flow-x :  hidden;
+            overflow-x: hidden;
+        }
     }
 `;
 
