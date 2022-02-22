@@ -103,7 +103,7 @@ const News = function () {
                                     <Date>{i.created_date.substr(0, 10)}</Date>
                                 </SubInfo>
                                 <Link to={`${i.id}`} state={{ data: i.id, allData: newsData, index: index }}>
-                                    <ImgBox style={{ background: `url(http://logistics5.ap-northeast-2.elasticbeanstalk.com/media/${i.cover_image})`, backgroundSize: "cover" }}></ImgBox>
+                                    <ImgBox style={{ background: `url(http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/media/${i.cover_image})`, backgroundSize: "cover" }}></ImgBox>
                                     <TitleBox>
                                         <Title>{i.title}</Title>
                                     </TitleBox>

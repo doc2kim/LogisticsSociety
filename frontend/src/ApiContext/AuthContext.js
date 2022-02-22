@@ -20,7 +20,7 @@ export const AuthProvider = function ({ children }) {
 
     const loginUser = async function (e) {
         e.preventDefault();
-        const response = await axios.post('http://logistics4.ap-northeast-2.elasticbeanstalk.com/api/token/', {
+        const response = await axios.post('http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/api/token/', {
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -69,7 +69,7 @@ export const AuthProvider = function ({ children }) {
             alert('이메일 형식이 잘못 되었습니다')
 
         async function signUp() {
-            const response = await axios.post('http://logistics4.ap-northeast-2.elasticbeanstalk.com/api/signup/', {
+            const response = await axios.post('http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/api/signup/', {
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -100,7 +100,7 @@ export const AuthProvider = function ({ children }) {
         updateToken()
         if (e.target.change_password.value === e.target.change_password2.value) {
             console.log(authToken.access)
-            const response = await axios.put("http://logistics4.ap-northeast-2.elasticbeanstalk.com/api/change_password/", {
+            const response = await axios.put("http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/api/change_password/", {
                 new_password: e.target.change_password.value,
                 old_password: e.target.password.value,
             },
@@ -129,7 +129,7 @@ export const AuthProvider = function ({ children }) {
     const changeProfile = async function (e) {
         e.preventDefault();
         updateToken()
-        const response = await axios.put("http://logistics4.ap-northeast-2.elasticbeanstalk.com/api/change_profile/", {
+        const response = await axios.put("http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/api/change_profile/", {
             name: e.target.name.value,
             organization: e.target.organization.value,
             member_method: e.target.member_method.value
@@ -159,7 +159,7 @@ export const AuthProvider = function ({ children }) {
     const updateToken = async function () {
         if (authToken !== null) {
             console.log('토큰을 갱신중임 ㅎㅎ')
-            const response = await axios.post('http://logistics4.ap-northeast-2.elasticbeanstalk.com/api/token/refresh/', {
+            const response = await axios.post('http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/api/token/refresh/', {
                 headers: {
                     'Content-Type': 'application/json'
                 },
