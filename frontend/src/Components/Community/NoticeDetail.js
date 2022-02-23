@@ -172,7 +172,6 @@ const AttachTitle = styled.div`
     text-align: center;
     color: rgba(0, 0, 0,0.7);
     @media only screen and (max-width: 768px) {
-        font-size: 0.8em;
         padding: 4em;
         width: 30%;
     }
@@ -280,11 +279,9 @@ const FileBox = styled.a`
 
 const FileIcon = styled.span`
     padding-right: 1%;
-    font-size:0.8em;
 `;
 
 const FileName = styled.span`
-    font-size:0.8em;
     color: blue;
     opacity: 0.7;
     @media only screen and (max-width: 280px) {
