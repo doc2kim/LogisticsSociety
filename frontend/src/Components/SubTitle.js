@@ -29,7 +29,7 @@ const Icon = styled(Link)`
 const PathRoute = styled.div`
     font-size: 0.7vw;
     @media only screen and (max-width: 768px) {
-        font-size: 0.7em;
+        font-size: 1em;
         padding-bottom: 0.5em;
     }
 `;

@@ -340,8 +340,9 @@ const PlusButton = styled.div`
         line-height:5vw;
         opacity: 0.8;
         &:before {
-        content: "더보기 +";
-    }
+            font-size: 0.7em;
+            content: "더보기 +";
+        }
         
     }
 `;
@@ -428,9 +429,7 @@ const SearchIcon = styled.span`
     top: 1.9vw; 
     left: 8.7vw;
     @media only screen and (max-width: 768px) {
-        top: 30%;
-        left: 80%;
-        font-size:5vw;
+        display:none;
     }
 `;
 
