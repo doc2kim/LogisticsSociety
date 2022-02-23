@@ -10,7 +10,7 @@ import { throttle } from 'lodash';
 
 
 const Container = styled.div`
-    padding-top:6vw;
+    padding-top:5vw;
     height:39.5vw;
     @media only screen and (max-width: 768px) {
         height:225vw;

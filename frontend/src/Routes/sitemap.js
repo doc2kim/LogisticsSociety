@@ -3,7 +3,12 @@ import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 
 const Container = styled.div`
-    padding:7.5vw 15% 0 15%;
+    margin: 0 20%;
+    padding-top:10em;
+    @media only screen and (max-width: 768px) {
+        margin: 0 3%;
+        padding-top:3.5em;
+    }
 `;
 
 const TitleBox = styled.div`
