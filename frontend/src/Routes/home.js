@@ -144,7 +144,7 @@ const SlideTitle = styled.h3`
     color: white;
     padding-bottom:2%;
     @media only screen and (max-width: 768px) {
-        font-size: 4vw;
+        font-size: 5vw;
         padding-bottom: 5%;
     }
 `;
@@ -292,7 +292,10 @@ const PaperSubmission = styled.a`
     color: rgba(255,255,255,0.8);
     text-align: center;
     font-size: 0.6vw;
-`;
+    @media only screen and (max-width: 768px) {
+        font-size:2vw;
+    }
+    `;
 
 const NoticeSections = styled.div`
     width: 48%;
@@ -339,8 +342,8 @@ const PlusButton = styled.div`
         height:5vw;
         line-height:5vw;
         opacity: 0.8;
+        font-size: 3vw;
         &:before {
-            font-size: 0.7em;
             content: "더보기 +";
         }
         
@@ -454,7 +457,7 @@ const TitleSet = styled.div`
 const EventText = styled.span`
     font-size:1vw;
     @media only screen and (max-width: 768px) {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 `;
 
