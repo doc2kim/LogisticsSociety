@@ -164,15 +164,23 @@ const SearchForm = styled.form`
 
 const SearchInput = styled.input`
     padding:1%;
+    @media only screen and (max-width: 768px) {
+        font-size: 0.7em;
+        height: 1vh;
+    }
 `;
 
 const SearchCategory = styled.select`
     padding: 1%;
+    @media only screen and (max-width: 768px) {
+        font-size:0.7em;
+        height: 1vh;
+    }
 `;
 
 
 const CountInfo = styled.span`
-    font-size:0.7vw;
+    font-size:small;
     @media only screen and (max-width: 280px) {
         display: none;
     }
