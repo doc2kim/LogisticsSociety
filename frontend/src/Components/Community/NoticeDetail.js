@@ -164,7 +164,7 @@ const Tuple = styled.div`
 const Attachments = styled.div`
     display: flex;
     border-bottom: 1px solid rgba(0, 0, 0,0.2);
-    font-size:0.8vw;
+    font-size:0.7em;
 `;
 
 const AttachTitle = styled.div`
@@ -279,13 +279,11 @@ padding:0.5em;
 
 const FileIcon = styled.span`
     padding-right: 1%;
-    font-size: 0.7em;
 `;
 
 const FileName = styled.span`
     color: blue;
     opacity: 0.7;
-    font-size: 0.7em;
     @media only screen and (max-width: 280px) {
         display:none;
     }

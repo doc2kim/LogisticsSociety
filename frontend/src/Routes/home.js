@@ -112,7 +112,7 @@ const SlideButton = styled.div`
     width:1.3vw;
     height:1.3vw;
     line-height:1.3vw;
-    font-size:1vw;
+    font-size:0.7em;
     text-align: center;
     border:1px solid rgba(0, 0, 0, .4);
     border-radius: 2px;
