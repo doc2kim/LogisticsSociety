@@ -173,6 +173,7 @@ const AttachTitle = styled.div`
     color: rgba(0, 0, 0,0.7);
     @media only screen and (max-width: 768px) {
         width: 30%;
+        padding:0.5em;
     }
 `;
 
@@ -273,7 +274,7 @@ const File = styled.div`
 `;
 
 const FileBox = styled.a`
-
+padding:0.5em;
 `;
 
 const FileIcon = styled.span`
