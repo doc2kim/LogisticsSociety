@@ -287,7 +287,7 @@ const PaperSearch = styled.input`
 `;
 
 const PaperSubmission = styled.a`
-    padding-top: 1vw;
+    padding-top: 4em;
     display: block;
     color: rgba(255,255,255,0.8);
     text-align: center;
@@ -550,7 +550,7 @@ const Home = function () {
                                     return index <= 2 && index === currentSlide &&
                                         <NoticeSlide key={index} style={{ background: `url(${slide_img})`, backgroundSize: 'cover' }}>
                                             <SlideButtonBox>
-                                                <SlideButton style={{ fontSize: "0.7vw", cursor: "default" }}>{index + 1}/3</SlideButton>
+                                                <SlideButton style={{ cursor: "default" }}>{index + 1}/3</SlideButton>
                                                 <SlideButton onClick={PrevSlide}>&lt;</SlideButton>
                                                 <SlideButton onClick={NextSlide}>&gt;</SlideButton>
                                             </SlideButtonBox>
