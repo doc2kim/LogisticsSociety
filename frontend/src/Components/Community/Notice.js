@@ -166,6 +166,7 @@ const SearchInput = styled.input`
     padding:1%;
     @media only screen and (max-width: 768px) {
         font-size: 0.7em;
+        width: 3vw;
         height: 1vh;
     }
 `;
@@ -174,6 +175,7 @@ const SearchCategory = styled.select`
     padding: 1%;
     @media only screen and (max-width: 768px) {
         font-size:0.7em;
+        width: 2vw;
         height: 1vh;
     }
 `;
