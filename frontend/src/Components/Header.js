@@ -217,7 +217,7 @@ const NavTitle = styled.div`
     display: flex;
     flex-direction: column;
     opacity:0.8;
-    font-size:0.7em;
+    font-size:1em;
     line-height: 1.5vw;
     border-bottom:1px solid rgba(0, 0, 0, .1);
     cursor:pointer;
