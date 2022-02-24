@@ -114,7 +114,7 @@ const Text = styled.span`
     opacity: 0.5;
     font-size:0.6vw;
     @media only screen and (max-width: 768px) {
-        font-size:2.5vw;
+        font-size:3vw;
     }
 `;
 
