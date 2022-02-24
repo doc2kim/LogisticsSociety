@@ -147,6 +147,7 @@ const SearchBox = styled.div`
     display:flex;
     justify-content:space-between;
     margin: 0.5% 0;
+    width: 100%;
     @media only screen and (max-width: 280px) {
         justify-content:center;
     }
@@ -174,7 +175,7 @@ const SearchCategory = styled.select`
     padding: 1%;
     @media only screen and (max-width: 768px) {
         font-size:0.7em;
-        width: 10vw;
+        width: 15vw;
         
     }
 `;
