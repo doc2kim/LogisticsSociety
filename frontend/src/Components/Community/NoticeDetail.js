@@ -349,7 +349,7 @@ const NoticeDetail = function () {
                                     return <div><FileBox key={`file${index}`}
                                         download
                                         target="_blank"
-                                        href={`http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com${i.file}`} >
+                                        href={`/media/${i.file}`} >
                                         <FileIcon >💾</FileIcon>
                                         <FileName >{file_name}</FileName>
                                     </FileBox>

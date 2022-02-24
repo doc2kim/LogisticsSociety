@@ -641,7 +641,7 @@ const Home = function () {
                                             return index <= 2 &&
                                                 <News key={index}>
                                                     <Link to={`community/news/${i.id} `} state={{ data: i.id, allData: newsData, index: index }}>
-                                                        <NewsImg style={{ background: `url(http://logistics5.ap-northeast-2.elasticbeanstalk.com/media/${i.cover_image})`, backgroundSize: 'cover' }} />
+                                                        <NewsImg style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover' }} />
                                                         <NewsContent>{i.title}</NewsContent>
                                                     </Link >
                                                     <NewsInfo>{i.created_date.substr(0, 10)}</NewsInfo>
