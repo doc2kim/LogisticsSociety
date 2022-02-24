@@ -11,7 +11,7 @@ import hamburger from "../assets/hamburger.png"
 const Container = styled.div`
     width: 100%;
     position: fixed;
-    z-index:2;
+    z-index:9999;
 `;
 
 const Bar = styled.span`

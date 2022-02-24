@@ -150,6 +150,7 @@ const SearchBox = styled.div`
     width: 100%;
     @media only screen and (max-width: 280px) {
         justify-content:center;
+        line-height: 1em;
     }
 `;
 
