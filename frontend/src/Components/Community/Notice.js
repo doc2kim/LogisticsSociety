@@ -160,6 +160,7 @@ const SearchForm = styled.form`
     @media only screen and (max-width: 280px) {
         width:10%;
         justify-content:center;
+        display: block;
     }
 `;
 
@@ -167,7 +168,7 @@ const SearchInput = styled.input`
     padding:1%;
     @media only screen and (max-width: 768px) {
         font-size: 0.7em;
-        width: 25vw;
+        width: 20vw;
     }
 `;
 
