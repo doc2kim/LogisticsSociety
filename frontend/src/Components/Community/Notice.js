@@ -148,7 +148,7 @@ const SearchBox = styled.div`
     justify-content:space-between;
     margin: 0.5% 0;
     width: 100%;
-    line-height: 1em;
+    
     @media only screen and (max-width: 280px) {
         justify-content:center;
     }
@@ -185,6 +185,7 @@ const SearchCategory = styled.select`
 
 const CountInfo = styled.span`
     font-size:small;
+    line-height: 2em;
     @media only screen and (max-width: 280px) {
         display: none;
     }
