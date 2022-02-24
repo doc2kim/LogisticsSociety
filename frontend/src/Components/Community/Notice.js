@@ -156,11 +156,10 @@ const SearchBox = styled.div`
 const SearchForm = styled.form`
     width:25%;
     display:flex;
-    justify-content:end;
+    justify-content:flex-end;
     @media only screen and (max-width: 280px) {
         width:10%;
         justify-content:center;
-        display: block;
     }
 `;
 
@@ -169,15 +168,16 @@ const SearchInput = styled.input`
     @media only screen and (max-width: 768px) {
         font-size: 0.7em;
         width: 20vw;
+        display:block;
     }
 `;
 
 const SearchCategory = styled.select`
     padding: 1%;
+    display: block;
     @media only screen and (max-width: 768px) {
         font-size:0.7em;
         width: 15vw;
-        
     }
 `;
 
