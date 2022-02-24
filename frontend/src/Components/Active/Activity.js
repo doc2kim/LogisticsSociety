@@ -73,7 +73,7 @@ const Title = styled.h1`
 const TitleCircleBox = styled.div`
     position: absolute;
     width:10%;
-    left:27vw;
+    left:26.75vw;
     top:12vw;
     background-color: white;
     z-index:1;
@@ -113,7 +113,9 @@ const Text = styled.span`
     color: black;
     opacity: 0.5;
     font-size:0.6vw;
-    
+    @media only screen and (max-width: 768px) {
+        font-size:2.5vw;
+    }
 `;
 
 const Activity = function () {

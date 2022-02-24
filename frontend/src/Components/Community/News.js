@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { newsAxios } from "../../ApiContext/RestApi"
 import Pagination from "../Pagination"
 
@@ -70,7 +70,7 @@ const Number = styled.span`
 `;
 
 const CountInfo = styled.span`
-font-size:0.7vw;
+font-size:small;
 `;
 
 const News = function () {

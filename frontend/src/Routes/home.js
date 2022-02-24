@@ -126,6 +126,13 @@ const SlideButton = styled.div`
     }
 `;
 
+const SlideNumberButton = styled(SlideButton)`
+    cursor: default;
+    @media only screen and (max-width: 768px) {
+        font-size: 3vw;
+    }
+`;
+
 const SlideButtonBox = styled.div`
     display: flex;
     justify-content:flex-end;
@@ -259,7 +266,7 @@ const PaperText = styled.span`
     text-align: center;
     font-size: 0.5vw;
     @media only screen and (max-width: 768px) {
-        font-size: 2vw;
+        font-size: 2.5vw;
         padding-bottom:2vw;
     }
 `;
@@ -287,13 +294,13 @@ const PaperSearch = styled.input`
 `;
 
 const PaperSubmission = styled.a`
-    padding-top: 4em;
+    padding: 2em;
     display: block;
     color: rgba(255,255,255,0.8);
     text-align: center;
     font-size: 0.6vw;
     @media only screen and (max-width: 768px) {
-        font-size:2vw;
+        font-size:2.5vw;
     }
     `;
 
@@ -353,7 +360,7 @@ const PlusButton = styled.div`
 const NoticeList = styled.li`
     width: 66%;
     list-style: inside;
-    padding-top: 1vw;
+    
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
@@ -370,6 +377,7 @@ const ListBox = styled.div`
     justify-content:space-between;
     align-items: end;
     height:1.5vw;
+    align-items: center;
     @media only screen and (max-width: 768px) {
         height: auto;   
     }
@@ -411,8 +419,12 @@ const NewsContent = styled.span`
 `;
 
 const TimeStamp = styled.div`
-    font-size:0.7vw;
     opacity:0.2;
+    font-size:0.7vw;
+    
+    @media only screen and (max-width: 768px) {
+        font-size:3vw;
+    }
 `;
 
 const NewsInfo = styled.span`
@@ -550,7 +562,7 @@ const Home = function () {
                                     return index <= 2 && index === currentSlide &&
                                         <NoticeSlide key={index} style={{ background: `url(${slide_img})`, backgroundSize: 'cover' }}>
                                             <SlideButtonBox>
-                                                <SlideButton style={{ cursor: "default" }}>{index + 1}/3</SlideButton>
+                                                <SlideNumberButton>{index + 1}/3</SlideNumberButton>
                                                 <SlideButton onClick={PrevSlide}>&lt;</SlideButton>
                                                 <SlideButton onClick={NextSlide}>&gt;</SlideButton>
                                             </SlideButtonBox>
