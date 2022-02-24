@@ -148,9 +148,9 @@ const SearchBox = styled.div`
     justify-content:space-between;
     margin: 0.5% 0;
     width: 100%;
+    line-height: 1em;
     @media only screen and (max-width: 280px) {
         justify-content:center;
-        line-height: 1em;
     }
 `;
 
