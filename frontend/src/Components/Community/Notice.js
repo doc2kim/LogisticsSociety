@@ -219,7 +219,7 @@ const Notice = function () {
     return noticeData && <Container>
         <NoticeBox>
             <SearchBox>
-                <CountInfo style={{ paddingTop: "0.5vw" }}>총 <Number>{noticeData && noticeData.length}</Number>개의 게시물이 있습니다.</CountInfo>
+                <CountInfo>총 <Number>{noticeData && noticeData.length}</Number>개의 게시물이 있습니다.</CountInfo>
                 <SearchForm onSubmit={searchNotice}>
                     <SearchCategory>
                         <option>제목</option>
