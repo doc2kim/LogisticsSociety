@@ -285,7 +285,7 @@ const FileName = styled.span`
     color: blue;
     opacity: 0.7;
     @media only screen and (max-width: 280px) {
-        display:none;
+        font-size: 0.7em;
     }
 `;
 

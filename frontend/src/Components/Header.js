@@ -223,6 +223,7 @@ const NavTitle = styled.div`
     cursor:pointer;
     @media only screen and (max-width: 768px) {
         justify-content:space-between;
+        font-size:0.7em;
         line-height:7vw;
     }
     @media only screen and (max-width: 280px) {
