@@ -42,6 +42,7 @@ const Texts = styled.div`
     flex-direction: column;
     text-align: center; 
     position: relative;
+    padding-bottom: 5px;
     @media only screen and (max-width: 768px) {
         color: #bbbbbb;
     }
@@ -62,8 +63,8 @@ const Content = styled.span`
     font-size:0.6em;
     width:355px;
     position: absolute;
-    top: 12px;
-    left: -81px;
+    top: 13px;
+    left: -77px;
     -webkit-transform:scale(0.51);
     text-align:start;
 `;

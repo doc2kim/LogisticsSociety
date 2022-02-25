@@ -102,6 +102,7 @@ const Texts = styled.div`
     text-align: center; 
     position: relative;
     height: 30px;
+    padding-bottom:8px;
 `;
 
 const Title = styled.span`
@@ -143,7 +144,7 @@ const OverLogoBox = styled.a`
 
 const OverLogo = styled.img`
 
-    @media only screen and (max-width: 1050px) {
+    @media only screen and (max-width: 1070px) {
             height: 0.7em;
     }
     @media only screen and (max-width: 768px) {
