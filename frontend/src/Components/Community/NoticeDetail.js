@@ -115,7 +115,7 @@ const Attributes = styled.div`
     @media only screen and (max-width: 768px) {
         width:46%;
         font-size: 0.5em;
-}
+    }
 `;
 
 
@@ -271,6 +271,9 @@ const File = styled.div`
     padding-left: 3%;
     border-left: 1px solid rgba(0, 0, 0,0.2);
     line-height:1.5vw;
+    @media only screen and (max-width: 768px) {
+        font-size: 1em;
+    }
 `;
 
 const FileBox = styled.a`
