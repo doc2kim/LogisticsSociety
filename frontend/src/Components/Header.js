@@ -122,6 +122,7 @@ const Content = styled.span`
     top: 20px;
     left: -32px;
     -webkit-transform:scale(0.67);
+    -ms-transform:scale(0.67);
     text-align:start;
     @media only screen and (max-width: 768px) {
         text-align:center;
