@@ -90,7 +90,7 @@ const LogoBox = styled(Link)`
 
 const Logo = styled.img`
     filter: invert(25%) sepia(90%) saturate(8000%) hue-rotate(190deg) brightness(80%) contrast(100%);
-    width:40px;
+    width:45px;
     @media only screen and (max-width: 768px) {
         filter: none;
     }
@@ -119,14 +119,14 @@ const Content = styled.span`
     font-size:0.8em;
     width:300px;
     position: absolute;
-    top: 24px;
+    top: 27px;
     left: -20%;
     -webkit-transform:scale(0.67);
     -ms-transform:scale(0.67);
     text-align:start;
     @media only screen and (max-width: 768px) {
         text-align:center;
-        left: -27%;
+        left: -22%;
         color: white;
     }
 `;
