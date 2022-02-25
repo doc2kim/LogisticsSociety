@@ -106,7 +106,7 @@ const Texts = styled.div`
 
 const Title = styled.span`
     color: #165fa3;
-    font-size: 1.4em;
+    font-size: 1.7em;
     font-weight: bold;
     margin-left:5px;
     text-align: start;
@@ -116,16 +116,17 @@ const Title = styled.span`
 `;
 const Content = styled.span`
     color: #165fa3;
-    font-size:0.6em;
-    width:230px;
+    font-size:0.8em;
+    width:300px;
     position: absolute;
-    top: 20px;
-    left: -32px;
+    top: 24px;
+    left: -20%;
     -webkit-transform:scale(0.67);
     -ms-transform:scale(0.67);
     text-align:start;
     @media only screen and (max-width: 768px) {
         text-align:center;
+        left: -27%;
         color: white;
     }
 `;
@@ -141,7 +142,10 @@ const OverLogoBox = styled.a`
 `;
 
 const OverLogo = styled.img`
-    height:1.2vw;
+
+    @media only screen and (max-width: 1050px) {
+            height: 0.7em;
+    }
     @media only screen and (max-width: 768px) {
             display: none;
     }
@@ -222,6 +226,9 @@ const NavTitle = styled.div`
     line-height: 1.5vw;
     border-bottom:1px solid rgba(0, 0, 0, .1);
     cursor:pointer;
+    @media only screen and (max-width: 1050px) {
+            font-size:0.7em;
+    }
     @media only screen and (max-width: 768px) {
         justify-content:space-between;
         font-size:0.7em;
