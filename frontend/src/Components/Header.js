@@ -93,6 +93,7 @@ const Logo = styled.img`
     width:42px;
     @media only screen and (max-width: 768px) {
         filter: none;
+        width: 35px;
     }
 `;
 
@@ -102,7 +103,11 @@ const Texts = styled.div`
     text-align: center; 
     position: relative;
     height: 30px;
+    align-items: center;
     padding-bottom:8px;
+    @media only screen and (max-width: 768px) {
+        padding-bottom:0;
+    }
 `;
 
 const Title = styled.span`
@@ -113,6 +118,7 @@ const Title = styled.span`
     text-align: start;
     @media only screen and (max-width: 768px) {
         color: white;
+        font-size: 1.3em;
     }
 `;
 const Content = styled.span`
@@ -126,8 +132,10 @@ const Content = styled.span`
     -ms-transform:scale(0.67);
     text-align:start;
     @media only screen and (max-width: 768px) {
-        
-        
+        -webkit-transform:scale(0.55);
+        -ms-transform:scale(0.55);
+        top: 20px;
+        left: -40%;
         color: white;
     }
 `;
