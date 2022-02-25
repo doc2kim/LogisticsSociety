@@ -90,7 +90,7 @@ const LogoBox = styled(Link)`
 
 const Logo = styled.img`
     filter: invert(25%) sepia(90%) saturate(8000%) hue-rotate(190deg) brightness(80%) contrast(100%);
-    width:45px;
+    width:42px;
     @media only screen and (max-width: 768px) {
         filter: none;
     }
@@ -107,7 +107,7 @@ const Texts = styled.div`
 
 const Title = styled.span`
     color: #165fa3;
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: bold;
     margin-left:5px;
     text-align: start;
@@ -121,13 +121,13 @@ const Content = styled.span`
     width:300px;
     position: absolute;
     top: 27px;
-    left: -20%;
+    left: -23.5%;
     -webkit-transform:scale(0.67);
     -ms-transform:scale(0.67);
     text-align:start;
     @media only screen and (max-width: 768px) {
-        text-align:center;
-        left: -22%;
+        
+        
         color: white;
     }
 `;

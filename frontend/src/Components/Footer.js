@@ -26,6 +26,7 @@ const LogoBox = styled.div`
     @media only screen and (max-width: 768px) {
         width:auto;
         justify-content:center;
+        padding-top:10px;
     }
 `;
 
@@ -63,8 +64,8 @@ const Content = styled.span`
     font-size:0.6em;
     width:355px;
     position: absolute;
-    top: 13px;
-    left: -77px;
+    top: 15px;
+    left: -76px;
     -webkit-transform:scale(0.51);
     text-align:start;
 `;

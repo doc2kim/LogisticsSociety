@@ -298,7 +298,7 @@ const PaperSubmission = styled.a`
     display: block;
     color: rgba(255,255,255,0.8);
     text-align: center;
-    font-size: 0.6vw;
+    font-size: 0.5vw;
     @media only screen and (max-width: 768px) {
         font-size:2.5vw;
     }
