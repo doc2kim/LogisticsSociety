@@ -54,7 +54,7 @@ const Logo = styled.img`
     position:absolute;
     @media only screen and (max-width: 768px) {
         filter: none;
-        left:0;
+        left:10%;
     }
 `;
 
@@ -65,6 +65,7 @@ const Texts = styled.div`
     align-items: center;
     padding-top:1.5%;
     @media only screen and (max-width: 768px) {
+        margin-left: 35px;
         color: #bbbbbb;
     }
 `;
