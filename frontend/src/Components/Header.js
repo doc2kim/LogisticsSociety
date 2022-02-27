@@ -60,7 +60,6 @@ const LogoContainer = styled.div`
 const MenuButton = styled.div`
     display: none;
     @media only screen and (max-width: 768px) {
-        width:10%;
         display:block;
     }
 `;
@@ -86,6 +85,7 @@ const LogoBox = styled(Link)`
     text-align:start;
     position: relative;
     @media only screen and (max-width: 768px) {
+        justify-content:center;
     }
 `;
 
@@ -96,7 +96,7 @@ const Logo = styled.img`
     @media only screen and (max-width: 768px) {
         filter: none;
         width: 35px;
-        left:12%;
+        left:7%;
     }
 `;
 
@@ -107,7 +107,7 @@ const Texts = styled.div`
     align-items: center;
     padding-top:1.5%;
     @media only screen and (max-width: 768px) {
-     margin-left:50px;
+        margin-left:35px;
     }
 `;
 
