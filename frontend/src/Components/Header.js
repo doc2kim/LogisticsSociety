@@ -83,6 +83,8 @@ const IntroBox = styled.div`
 const LogoBox = styled(Link)`
     display:flex;
     align-items:center;
+    width: 100%;
+    position: relative;
     @media only screen and (max-width: 768px) {
         justify-content:center;
     }
@@ -101,12 +103,10 @@ const Texts = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center; 
-    position: relative;
-    height: 30px;
     align-items: center;
-    padding-bottom:8px;
+    padding-bottom:12px;
     @media only screen and (max-width: 768px) {
-        padding-bottom:0;
+        padding-bottom:12px;
     }
 `;
 
@@ -123,19 +123,18 @@ const Title = styled.span`
 `;
 const Content = styled.span`
     color: #165fa3;
-    font-size:0.8em;
-    width:300px;
     position: absolute;
-    top: 27px;
-    left: -23.5%;
-    -webkit-transform:scale(0.67);
-    -ms-transform:scale(0.67);
+    width: 356px;
+    top: 26px;
+    margin-left:5px;
+    -webkit-transform:scale(0.52);
+    -ms-transform:scale(0.52);
     text-align:start;
     @media only screen and (max-width: 768px) {
-        -webkit-transform:scale(0.55);
-        -ms-transform:scale(0.55);
+        -webkit-transform:scale(0.42);
+        -ms-transform:scale(0.42);
+        margin-left:6px;
         top: 20px;
-        left: -40%;
         color: white;
     }
 `;
