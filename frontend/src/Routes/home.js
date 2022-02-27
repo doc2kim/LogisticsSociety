@@ -322,7 +322,7 @@ const Notice = styled.div`
     }
 `;
 
-const NoticeTitle = styled.div`
+const NoticeTitle = styled.h3`
     font-size:1vw;
     font-weight:bold;
     padding: 0.5vw 0;

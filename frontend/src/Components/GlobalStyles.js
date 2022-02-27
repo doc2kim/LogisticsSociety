@@ -8,15 +8,15 @@ const globalStyle = createGlobalStyle`
         color:inherit;
     }
     *{
-        box-sizing:content-box;
-    }
-    html,
-    body{
         @font-face{
             font-family: 'Noto Sans KR', sans-serif;
             font-weight: 100 ~ 900;
         }
+        box-sizing:content-box;
         font-size: 1em;
+    }
+    html,
+    body{
         width:100%;
         @media only screen and (max-width:768px) {
             overflow-x: hidden;
