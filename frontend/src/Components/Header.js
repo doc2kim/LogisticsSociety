@@ -61,6 +61,7 @@ const MenuButton = styled.div`
     display: none;
     @media only screen and (max-width: 768px) {
         display:block;
+        width:25px;
     }
 `;
 
