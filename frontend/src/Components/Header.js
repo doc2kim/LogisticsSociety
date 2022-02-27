@@ -127,7 +127,7 @@ const Content = styled.span`
     font-weight: 700;
     -webkit-transform:scale(0.82);
     @media only screen and (max-width: 768px) {
-        -webkit-transform:scale(0.75);
+        -webkit-transform:scale(0.8);
         color: white;
     }
 `;
