@@ -82,39 +82,39 @@ const IntroBox = styled.div`
 
 const LogoBox = styled(Link)`
     display:flex;
-    align-items:center;
-    width: 100%;
+    align-items: center;
+    text-align:start;
     position: relative;
     @media only screen and (max-width: 768px) {
-        justify-content:center;
     }
 `;
 
 const Logo = styled.img`
     filter: invert(25%) sepia(90%) saturate(8000%) hue-rotate(190deg) brightness(80%) contrast(100%);
-    width:42px;
+    width:50px;
+    position:absolute;
     @media only screen and (max-width: 768px) {
         filter: none;
         width: 35px;
+        left:12%;
     }
 `;
 
 const Texts = styled.div`
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    margin-left:42px;
     align-items: center;
-    padding-bottom:12px;
+    padding-top:1.5%;
     @media only screen and (max-width: 768px) {
-        padding-bottom:12px;
+     margin-left:35px;
     }
 `;
 
 const Title = styled.span`
     color: #165fa3;
     font-size: 1.6em;
-    font-weight: bold;
-    margin-left:5px;
+    font-weight: 700;
     text-align: start;
     @media only screen and (max-width: 768px) {
         color: white;
@@ -123,18 +123,12 @@ const Title = styled.span`
 `;
 const Content = styled.span`
     color: #165fa3;
-    position: absolute;
-    width: 356px;
-    top: 26px;
-    margin-left:5px;
-    -webkit-transform:scale(0.52);
-    -ms-transform:scale(0.52);
-    text-align:start;
+    font-size: 0.1em;
+    font-weight: 700;
+    width: 209px;
+    -webkit-transform:scale(0.82);
     @media only screen and (max-width: 768px) {
-        -webkit-transform:scale(0.42);
-        -ms-transform:scale(0.42);
-        margin-left:6px;
-        top: 20px;
+        -webkit-transform:scale(0.67);
         color: white;
     }
 `;

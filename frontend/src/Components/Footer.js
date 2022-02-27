@@ -51,27 +51,27 @@ const LogoBox = styled.div`
 const Logo = styled.img`
     filter: invert(77%) sepia(66%) saturate(2%) hue-rotate(332deg) brightness(86%) contrast(89%);
     width:35px;
+    position:absolute;
     @media only screen and (max-width: 768px) {
         filter: none;
+        left:0;
     }
 `;
 
 const Texts = styled.div`
     display: flex;
     flex-direction: column;
-    text-align: center;
+    margin-left:7px;
     align-items: center;
-    padding-bottom: 7px;
+    padding-top:1.5%;
     @media only screen and (max-width: 768px) {
         color: #bbbbbb;
     }
 `;
 
 const Title = styled.span`
-    font-weight: bold;
     font-size:20px;
-    margin-left:5px;
-    padding-bottom: 3px;
+    font-weight: 700;
     text-align: start;
     @media only screen and (max-width: 768px) {
         color: white;
@@ -79,14 +79,11 @@ const Title = styled.span`
 `;
 
 const Content = styled.span`
-    width: 356px;
-    position: absolute;
-    top:20px;
-    margin-left:5px;
-    -webkit-transform:scale(0.4);
-    @media only screen and (max-width: 768px) {
-        top:30px;
-    }
+    font-size: 0.1em;
+    font-weight: 700;
+    width: 209px;
+    text-align: center;
+    -webkit-transform:scale(0.65);
 `;
 
 const ContentInfo = styled.div`
