@@ -107,7 +107,7 @@ const Texts = styled.div`
     align-items: center;
     padding-top:1.5%;
     @media only screen and (max-width: 768px) {
-     margin-left:45px;
+     margin-left:50px;
     }
 `;
 
@@ -127,7 +127,7 @@ const Content = styled.span`
     font-weight: 700;
     -webkit-transform:scale(0.82);
     @media only screen and (max-width: 768px) {
-        -webkit-transform:scale(0.67);
+        -webkit-transform:scale(0.75);
         color: white;
     }
 `;
