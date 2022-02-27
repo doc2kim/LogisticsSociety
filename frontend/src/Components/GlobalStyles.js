@@ -10,6 +10,11 @@ const globalStyle = createGlobalStyle`
     *{
         box-sizing:content-box;
         font-size: 1em;
+        @font-face{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 100 ~ 900;
+        }
+        
     }
     h1,h2,h3,h4,span,a,div,ul,li,input,form{
         @font-face{
@@ -21,6 +26,12 @@ const globalStyle = createGlobalStyle`
     html,
     body{
         width:100%;
+        
+        @font-face{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 100 ~ 900;
+        }
+
         @media only screen and (max-width:768px) {
             overflow-x: hidden;
         }
