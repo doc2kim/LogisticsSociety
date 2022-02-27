@@ -97,7 +97,7 @@ const Logo = styled.img`
     @media only screen and (max-width: 768px) {
         filter: none;
         width: 35px;
-        left:10%;
+        left:8%;
     }
 `;
 
@@ -128,7 +128,7 @@ const Content = styled.span`
     font-weight: 700;
     -webkit-transform:scale(0.82);
     @media only screen and (max-width: 768px) {
-        -webkit-transform:scale(0.68);
+        -webkit-transform:scale(0.7);
         color: white;
     }
 `;

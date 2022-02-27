@@ -83,7 +83,7 @@ const Content = styled.span`
     font-size: 0.5em;
     font-weight: 700;
     text-align: center;
-    -webkit-transform:scale(0.6);
+    -webkit-transform:scale(0.65);
 `;
 
 const ContentInfo = styled.div`

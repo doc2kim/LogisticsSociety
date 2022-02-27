@@ -8,10 +8,6 @@ const globalStyle = createGlobalStyle`
         color:inherit;
     }
     *{
-        @font-face{
-            font-family: 'Noto Sans KR', sans-serif;
-            font-weight: 100 ~ 900;
-        }
         box-sizing:content-box;
         font-size: 1em;
     }
