@@ -108,7 +108,7 @@ const Texts = styled.div`
     padding-top:1.5%;
     margin-left:27px;
     @media only screen and (max-width: 768px) {
-     margin-left:35px;
+     margin-left:40px;
     }
 `;
 
