@@ -79,9 +79,8 @@ const Title = styled.span`
 `;
 
 const Content = styled.span`
-    font-size: 0.1em;
+    font-size: 0.6em;
     font-weight: 700;
-    width: 209px;
     text-align: center;
     -webkit-transform:scale(0.65);
 `;
