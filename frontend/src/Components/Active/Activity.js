@@ -28,6 +28,7 @@ const ContentBox = styled.div`
     align-items:center;
     border: 1px solid rgba(0, 0, 0, .3);
     text-align: center;
+    height:14vw;
     @media only screen and (max-width: 768px) {
         height:48vw;
     }
@@ -58,7 +59,7 @@ const TitleCircle = styled(Circle)`
 const Title = styled.h1`
     position: absolute;
     width: 100%;
-    top:1.8vw;
+    top:1.9vw;
     left: 0.8vw;
     font-size:1.2vw;
     font-weight:bold;
@@ -73,8 +74,8 @@ const Title = styled.h1`
 const TitleCircleBox = styled.div`
     position: absolute;
     width:10%;
-    left:26.75vw;
-    top:12vw;
+    left:26.8vw;
+    top:11.8vw;
     background-color: white;
     z-index:1;
     @media only screen and (max-width: 768px) {
