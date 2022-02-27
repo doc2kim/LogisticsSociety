@@ -97,7 +97,7 @@ const Logo = styled.img`
     @media only screen and (max-width: 768px) {
         filter: none;
         width: 35px;
-        left:15%;
+        left:18%;
     }
 `;
 
@@ -105,10 +105,10 @@ const Texts = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top:1.5%;
+    padding-top:3%;
     margin-left:27px;
     @media only screen and (max-width: 768px) {
-     margin-left:40px;
+        line-height:0.9em;
     }
 `;
 
@@ -128,7 +128,8 @@ const Content = styled.span`
     font-weight: 700;
     -webkit-transform:scale(0.75);
     @media only screen and (max-width: 768px) {
-        -webkit-transform:scale(0.6);
+        font-size: 0.9em;
+        -webkit-transform:scale(0.48);
         color: white;
     }
 `;
