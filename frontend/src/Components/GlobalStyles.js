@@ -15,6 +15,14 @@ const globalStyle = createGlobalStyle`
         box-sizing:content-box;
         font-size: 1em;
     }
+    h1,h2,h3,h4,span,a,div,ul,li,input,form{
+        font-family: 'Noto Sans KR', sans-serif;
+        @font-face{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 100 ~ 900;
+        }
+    }
+    
     html,
     body{
         width:100%;
