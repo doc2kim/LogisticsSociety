@@ -86,7 +86,6 @@ const LogoBox = styled(Link)`
     text-align:start;
     position: relative;
     @media only screen and (max-width: 768px) {
-        justify-content:center;
     }
 `;
 
@@ -97,18 +96,18 @@ const Logo = styled.img`
     @media only screen and (max-width: 768px) {
         filter: none;
         width: 35px;
-        left:18%;
+        left:12%;
     }
 `;
 
 const Texts = styled.div`
     display: flex;
     flex-direction: column;
+    margin-left:42px;
     align-items: center;
-    padding-top:3%;
-    margin-left:27px;
+    padding-top:1.5%;
     @media only screen and (max-width: 768px) {
-        line-height:0.9em;
+     margin-left:45px;
     }
 `;
 
@@ -124,12 +123,11 @@ const Title = styled.span`
 `;
 const Content = styled.span`
     color: #165fa3;
-    font-size: 0.7em;
+    font-size: 0.5em;
     font-weight: 700;
-    -webkit-transform:scale(0.75);
+    -webkit-transform:scale(0.82);
     @media only screen and (max-width: 768px) {
-        font-size: 0.9em;
-        -webkit-transform:scale(0.48);
+        -webkit-transform:scale(0.67);
         color: white;
     }
 `;
