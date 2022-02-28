@@ -14,7 +14,7 @@ const LogoBox = styled.div`
 `;
 
 const LogoImg = styled.img`
-    width: 45px;
+    width: 40px;
 `;
 
 const LogoContentImg = styled.img`
@@ -23,6 +23,9 @@ const LogoContentImg = styled.img`
 
 const LogoText = styled(LogoContentImg)`
     padding-left: 3px;
+    @media only screen and (max-width: 768px) {
+        padding-left:1px;
+    }
 `;
 
 const LogoTitle = styled(LogoContentImg)`
