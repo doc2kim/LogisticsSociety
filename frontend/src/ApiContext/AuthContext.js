@@ -77,7 +77,7 @@ export const AuthProvider = function ({ children }) {
                 email: e.target.email.value,
                 password: e.target.password.value,
                 name: e.target.name.value,
-                organization: e.target.organization.value,
+                affiliated: e.target.affiliated.value,
                 member_method: e.target.member_method.value,
 
             }).catch(function (error) {
@@ -131,7 +131,7 @@ export const AuthProvider = function ({ children }) {
         updateToken()
         const response = await axios.put("http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/api/change_profile/", {
             name: e.target.name.value,
-            organization: e.target.organization.value,
+            affiliated: e.target.affiliated.value,
             member_method: e.target.member_method.value
         },
             {
