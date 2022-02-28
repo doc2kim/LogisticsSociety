@@ -3,10 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import navigate from "./Navigate";
 import AuthContext from "../ApiContext/AuthContext"
-// import logo from "../assets/학회_logo.png"
 import over_logo from "../assets/해외학회_logo.png"
 import hamburger from "../assets/hamburger.png"
-import MainLogo from "./HeaderLogo.js"
+import { HeaderLogo } from "./Logo.js"
 
 
 const Container = styled.div`
@@ -91,48 +90,7 @@ const LogoBox = styled(Link)`
     }
 `;
 
-// const Logo = styled.img`
-//     filter: invert(25%) sepia(90%) saturate(8000%) hue-rotate(190deg) brightness(80%) contrast(100%);
-//     width:50px;
-//     position:absolute;
-//     @media only screen and (max-width: 768px) {
-//         filter: none;
-//         width: 35px;
-//         left:8%;
-//     }
-// `;
 
-// const Texts = styled.div`
-//     display: flex;
-//     flex-direction: column;
-//     margin-left:42px;
-//     align-items: center;
-//     padding-top:1.5%;
-//     @media only screen and (max-width: 768px) {
-//         margin-left:35px;
-//     }
-// `;
-
-// const Title = styled.span`
-//     color: #165fa3;
-//     font-size: 1.6em;
-//     font-weight: 700;
-//     text-align: start;
-//     @media only screen and (max-width: 768px) {
-//         color: white;
-//         font-size: 1.3em;
-//     }
-// `;
-// const Content = styled.span`
-//     color: #165fa3;
-//     font-size: 0.5em;
-//     font-weight: 700;
-//     -webkit-transform:scale(0.82);
-//     @media only screen and (max-width: 768px) {
-//         -webkit-transform:scale(0.8);
-//         color: white;
-//     }
-// `;
 
 const OverLogoBox = styled.a`
     display: flex;
@@ -343,12 +301,7 @@ const Header = function () {
                         <Hamburger src={hamburger}></Hamburger>
                     </MenuButton>
                     <LogoBox to='/'>
-                        <MainLogo />
-                        {/* <Logo src={logo} />
-                        <Texts>
-                            <Title>한국해운물류학회</Title>
-                            <Content>The Korea association of shipping and logistics</Content>
-                        </Texts> */}
+                        <HeaderLogo />
                     </LogoBox>
                     <MenuButton></MenuButton>
                 </IntroBox>

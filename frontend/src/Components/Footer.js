@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import copyright_logo from "../assets/학회_logo.png";
+import { FooterLogo } from "./Logo.js"
 import Slider from "./Slider";
 
 
@@ -48,45 +48,10 @@ const LogoBox = styled.div`
     }
 `;
 
-const Logo = styled.img`
-    filter: invert(77%) sepia(66%) saturate(2%) hue-rotate(332deg) brightness(86%) contrast(89%);
-    width:35px;
-    position:absolute;
-    @media only screen and (max-width: 768px) {
-        filter: none;
-        left:10%;
-    }
-`;
-
-const Texts = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-left:7px;
-    align-items: center;
-    padding-top:1.5%;
-    @media only screen and (max-width: 768px) {
-        margin-left: 35px;
-        color: #bbbbbb;
-    }
-`;
-
-const Title = styled.span`
-    font-size:20px;
-    font-weight: 700;
-    text-align: start;
-    @media only screen and (max-width: 768px) {
-        color: white;
-    }
-`;
-
-const Content = styled.span`
-    font-size: 0.5em;
-    font-weight: 700;
-    text-align: center;
-    -webkit-transform:scale(0.7);
-`;
+// 
 
 const ContentInfo = styled.div`
+width: 100%;
     @media only screen and (max-width: 768px) {
         display: flex;
         padding: 0;
@@ -133,11 +98,7 @@ const Footer = () => {
             <Slider />
             <ContentBox>
                 <LogoBox>
-                    <Logo src={copyright_logo} />
-                    <Texts>
-                        <Title>한국해운물류학회</Title>
-                        <Content>The Korea association of shipping and logistics</Content>
-                    </Texts>
+                    <FooterLogo />
                 </LogoBox>
                 <ContentInfo>
                     <TextBox>
