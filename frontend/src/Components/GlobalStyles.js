@@ -16,17 +16,18 @@ const globalStyle = createGlobalStyle`
         } */
         
     }
-    /* h1,h2,h3,h4,span,a,div,ul,li,input,form{
-        @font-face{
+    h1,h2,h3,h4,span,a,div,ul,li,input,form{
+        /* @font-face{
             font-family: 'Noto Sans KR', sans-serif;
             font-weight: 100 ~ 900;
-        }
+        } */
     }
-     */
+    
     html,
     body{
         width:100%;
-        font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif;
+        font-family: 'Nanum Pen Script', cursive;
+        /* font-family: 'Apple SD Gothic Neo','Malgun Gothic',arial,sans-serif; */
         /* @font-face{
             font-family: 'Noto Sans KR', sans-serif;
             font-weight: 100 ~ 900;
