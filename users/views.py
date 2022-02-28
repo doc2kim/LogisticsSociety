@@ -70,7 +70,7 @@ class ChangeProfileView(generics.UpdateAPIView):
 
         if serializer.is_valid():
             self.object.name = serializer.data.get("name")
-            self.object.organization = serializer.data.get("affiliated")
+            self.object.affiliated = serializer.data.get("affiliated")
             self.object.member_method = serializer.data.get("member_method")
             self.object.save()
             response = {

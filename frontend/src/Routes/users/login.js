@@ -20,7 +20,6 @@ const LoginBox = styled.div`
 `;
 
 const LoginTitle = styled.h3`
-    color: white;
     font-size: 1.5vw;
     text-align: center; 
     @media only screen and (max-width: 768px) {
@@ -34,9 +33,8 @@ const LoginTitle = styled.h3`
 const LoginForm = styled.form`
     display: flex;
     flex-direction: column;
-    width:25%;
+    width:40%;
     padding: 3%;
-    background-color:#16498b;
     @media only screen and (max-width: 768px) {
        width: 100%;
     }
@@ -45,7 +43,7 @@ const LoginForm = styled.form`
 const LoginInput = styled.input`
     padding:3%;
     margin: 2% 0;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid;
     border-radius:3px;
 `;
 
@@ -56,7 +54,7 @@ const LoginButton = styled.input`
 `;
 
 const SignUpFindID = styled.div`
-    color: white;
+    
     display: flex;
     padding: 6% 5% 0 5%;
     font-size: small;
@@ -70,12 +68,8 @@ const FindId = styled.span`
 `;
 
 const InputName = styled.span`
-    color: white;
-    font-size: 1vw;
+    font-size: 1em;
     margin-top:4%;
-    @media only screen and (max-width: 768px) {
-        font-size:1em;
-    }
 `;
 
 

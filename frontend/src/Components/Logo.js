@@ -43,16 +43,16 @@ export const HeaderLogo = function () {
     return (
         <HeaderLogoBox>
             <picture>
-                <source srcset={`${mobile_logo}`} media="(max-width: 768px)" />
+                <source srcSet={`${mobile_logo}`} media="(max-width: 768px)" />
                 <HeaderLogoImg src={logo} />
             </picture>
             <HeaderLogoContentBox>
                 <picture>
-                    <source srcset={`${mobile_title}`} media="(max-width: 768px)" />
+                    <source srcSet={`${mobile_title}`} media="(max-width: 768px)" />
                     <HeaderLogoTitle src={logo_title} />
                 </picture>
                 <picture>
-                    <source srcset={`${mobile_eng_title}`} media="(max-width: 768px)" />
+                    <source srcSet={`${mobile_eng_title}`} media="(max-width: 768px)" />
                     <HeaderLogoText src={logo_text} />
                 </picture>
             </HeaderLogoContentBox>

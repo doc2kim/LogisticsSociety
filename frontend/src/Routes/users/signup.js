@@ -19,7 +19,7 @@ const SignUpBox = styled.div`
 `;
 
 const SignUpTitle = styled.h3`
-    color: white;
+    
     font-size: x-large;
     text-align: center;
     @media only screen and (max-width: 768px) {
@@ -34,9 +34,9 @@ const SignUpTitle = styled.h3`
 const SignUpForm = styled.form`
     display: flex;
     flex-direction: column;
-    width:25%;
+    width:40%;
     padding: 3%;
-    background-color:#16498b;
+    
     @media only screen and (max-width: 768px) {
        width: 100%;
     }
@@ -45,7 +45,7 @@ const SignUpForm = styled.form`
 const SignUpInput = styled.input`
     padding:3%;
     margin: 2% 0;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid ;
     border-radius: 3px;
 `;
 
@@ -56,7 +56,7 @@ const SignUpButton = styled.input`
 `;
 
 const InputName = styled.span`
-    color: white;
+    
     font-size: small;
     margin-top: 4%;
     @media only screen and (max-width: 768px) {

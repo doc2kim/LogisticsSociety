@@ -360,12 +360,12 @@ const PlusButton = styled.div`
 const NoticeList = styled.li`
     width: 66%;
     list-style: inside;
-    
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
     opacity:0.7;
     font-size: 0.7vw;
+    line-height:2vw;
     @media only screen and (max-width: 768px) {
         font-size: 3vw;
         line-height:5vw;

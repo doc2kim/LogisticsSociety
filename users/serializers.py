@@ -20,7 +20,7 @@ class UserSerializer(serializers.ModelSerializer):
         user = User.objects.create_user(
             email=validated_data['email'],
             name=validated_data['name'],
-            organization=validated_data['organization'],
+            affiliated=validated_data['affiliated'],
             member_method=validated_data['member_method'],
             password=validated_data['password']
         )
@@ -29,7 +29,7 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'name', 'email', 'password',
-                  'member_method', 'organization', 'tokens']
+                  'member_method', 'affiliated', 'tokens']
 
 
 class ChangePasswordSerializer(serializers.Serializer):
