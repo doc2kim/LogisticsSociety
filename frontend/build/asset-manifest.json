@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.4e2dc416.css",
-    "main.js": "./static/js/main.0f5cfdda.js",
+    "main.js": "./static/js/main.d5e22abf.js",
     "static/media/home_img.png": "./static/media/home_img.e20bd3a9142a316c9f72.png",
     "static/media/slide.png": "./static/media/slide.2cbc690c31eb3a1d7693.png",
     "static/media/최용석.png": "./static/media/최용석.02d73938a14ff8bc5b02.png",
@@ -13,6 +13,7 @@
     "static/media/IMOkorea.png": "./static/media/IMOkorea.f8fb31f38cb98f7e0e33.png",
     "static/media/일본해사신문2.png": "./static/media/일본해사신문2.b3b3bff66fc85a56372a.png",
     "static/media/partner3.png": "./static/media/partner3.f5ebfeb5a0dba46a0f2a.png",
+    "static/media/logo.png": "./static/media/logo.c1a1c3ebdd78f41dca2f.png",
     "static/media/partner4.png": "./static/media/partner4.07f7cc503f7935035390.png",
     "static/media/partner.png": "./static/media/partner.bf7ae1e8efb730a3b3c9.png",
     "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
@@ -21,10 +22,10 @@
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
     "main.4e2dc416.css.map": "./static/css/main.4e2dc416.css.map",
-    "main.0f5cfdda.js.map": "./static/js/main.0f5cfdda.js.map"
+    "main.d5e22abf.js.map": "./static/js/main.d5e22abf.js.map"
   },
   "entrypoints": [
     "static/css/main.4e2dc416.css",
-    "static/js/main.0f5cfdda.js"
+    "static/js/main.d5e22abf.js"
   ]
 }
