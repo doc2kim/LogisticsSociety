@@ -15,6 +15,9 @@ const LogoBox = styled.div`
 
 const LogoImg = styled.img`
     width: 40px;
+    @media only screen and (max-width: 768px) {
+        width: 30px;
+    }
 `;
 
 const LogoContentImg = styled.img`
