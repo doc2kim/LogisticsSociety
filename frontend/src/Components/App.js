@@ -6,8 +6,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <GlobalStyles />
         <Router />
+        <GlobalStyles />
       </>
     );
   }
