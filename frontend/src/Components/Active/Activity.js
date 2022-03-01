@@ -4,6 +4,7 @@ import paper from "../../assets/paper.png"
 import presentation from "../../assets/presentation.png"
 import research from "../../assets/research.png"
 import award from "../../assets/award.png"
+import activity_title from "../../assets/activity_title.png"
 
 const Container = styled.div`
     margin: 2vw 0;
@@ -28,7 +29,9 @@ const ContentBox = styled.div`
     align-items:center;
     border: 1px solid rgba(0, 0, 0, .3);
     text-align: center;
-    height:14vw;
+    height:15vw;
+    overflow:hidden;
+    text-overflow:ellipsis;
     @media only screen and (max-width: 768px) {
         height:48vw;
     }
@@ -56,18 +59,15 @@ const TitleCircle = styled(Circle)`
     position: relative;
 `;
 
-const Title = styled.h1`
+const ActivityTitle = styled.img`
+    width:4.9vw;
     position: absolute;
-    width: 100%;
-    top:1.9vw;
-    left: 0.8vw;
-    font-size:1.2vw;
-    font-weight:bold;
-    color:#16498b;
-    @media only screen and (max-width: 768px) {
-        font-size:3.5vw;
-        top: 33%;
-        left: 18%;
+    top:1.5vw;
+    left:0.45vw;
+    @media only screen and (max-width:768px){
+        width:15vw;
+        top:5.5vw;
+        left:2.2vw;
     }
 `;
 
@@ -75,7 +75,7 @@ const TitleCircleBox = styled.div`
     position: absolute;
     width:10%;
     left:26.8vw;
-    top:11.8vw;
+    top:13vw;
     background-color: white;
     z-index:1;
     @media only screen and (max-width: 768px) {
@@ -99,7 +99,7 @@ const ContentImg = styled.img`
 
 const ContentText = styled.span`
     padding:1vw;
-    width: 13vw;
+    width: 11vw;
     font-size:1vw;
     color: #165fa3;
     @media only screen and (max-width: 768px) {
@@ -124,8 +124,7 @@ const Activity = function () {
         <GridBox>
             <TitleCircleBox>
                 <TitleCircle>
-                    <Title>한국해운<br />
-                        물류학회</Title>
+                    <ActivityTitle src={activity_title} />
                 </TitleCircle>
             </TitleCircleBox>
             <ContentBox>

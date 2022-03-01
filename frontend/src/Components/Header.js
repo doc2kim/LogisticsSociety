@@ -214,7 +214,9 @@ const NavTitleContent = styled.ul`
 const SubNavTitleContent = styled.li`
     opacity: 0.7;
     list-style: inside;
-    padding-left:1.5em;
+    @media only screen and (max-width: 768px) {
+        padding-left:1.5em;   
+    }
 `;
 
 const SubNavLink = styled(Link)`

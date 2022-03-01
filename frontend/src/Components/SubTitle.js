@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 import navigate from "./Navigate";
+import home_icon from "../assets/home_icon.png"
 
 
 const TitleBox = styled.div`
@@ -35,6 +36,9 @@ const PathRoute = styled.div`
     }
 `;
 
+const HomeIcon = styled.img`
+`;
+
 const SubTitle = function ({ title }) {
     const { pathname } = useLocation();
     return (
@@ -44,7 +48,7 @@ const SubTitle = function ({ title }) {
                     return pathname.includes(i.path + j.subPath) && (
                         <TitleBox key={j.id}>
                             <Title>{j.subTitle}</Title>
-                            <PathRoute><Icon to="/">🏠</Icon> &gt; {i.title} &gt;
+                            <PathRoute><Icon to="/"><HomeIcon src={home_icon} /></Icon> &gt; {i.title} &gt;
                                 {title ? <>
                                     <Link to={i.path + j.subPath}>{j.subTitle}</Link> &gt; <span style={{ color: 'rgb(18, 95, 163)' }}>{title}</span></> :
                                     <span style={{ color: 'rgb(18, 95, 163)' }}>{j.subTitle}</span>}</PathRoute>
