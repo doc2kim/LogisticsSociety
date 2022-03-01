@@ -10,9 +10,7 @@ const globalStyle = createGlobalStyle`
     *{
         box-sizing:content-box;
         font-size: 1em;
-    }
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-    
+    }    
     html,
     body{
         width:100%;
