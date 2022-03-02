@@ -4,7 +4,7 @@ import axios from "axios";
 
 // console.log(process.env.HOME_URL)
 const api = axios.create({
-    baseURL: 'http://logistics7-dev.ap-northeast-2.elasticbeanstalk.com/api/',
+    baseURL: './api/',
     headers: {
         'Content-Type': 'application/json'
     }
