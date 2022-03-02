@@ -34,7 +34,8 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
     '.elasticbeanstalk.com',
-    'shipping.or.kr'
+    'shipping.or.kr',
+    'www.shipping.or.kr'
 ]
 
 AUTH_USER_MODEL = 'users.User'
