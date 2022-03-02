@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '.elasticbeanstalk.com',
     '.shipping.or.kr',
+    'shipping.or.kr'
 ]
 
 AUTH_USER_MODEL = 'users.User'
