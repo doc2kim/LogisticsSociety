@@ -205,6 +205,7 @@ const NavTitleContent = styled.ul`
     display: flex;
     padding: 0;
     justify-content: center;
+    font-weight: bold;
     @media only screen and (max-width: 768px) {
         justify-content: space-between;    
         padding:0.7em 0 0.7em 1.5em;
