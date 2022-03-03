@@ -1,8 +1,16 @@
 import { createGlobalStyle } from "styled-components"
-import NotoSansKrLight from "./NotoSansKR-Light.otf";
-import NotoSansKrRegular from "./NotoSansKR-Regular.otf";
-import NotoSansKrMedium from "./NotoSansKR-Medium.otf";
-import NotoSansKrBold from "./NotoSansKR-Bold.otf";
+import NotoSansKrLightOTF from "./NotoSansKR-Light.otf";
+import NotoSansKrLightWOFF from "./NotoSansKR-Light.woff";
+import NotoSansKrLightWOFF2 from "./NotoSansKR-Light.woff2";
+import NotoSansKrRegularOTF from "./NotoSansKR-Regular.otf";
+import NotoSansKrRegularWOFF from "./NotoSansKR-Regular.woff";
+import NotoSansKrRegularWOFF2 from "./NotoSansKR-Regular.woff2";
+import NotoSansKrMediumOTF from "./NotoSansKR-Medium.otf";
+import NotoSansKrMediumWOFF from "./NotoSansKR-Medium.woff";
+import NotoSansKrMediumWOFF2 from "./NotoSansKR-Medium.woff2";
+import NotoSansKrBoldOTF from "./NotoSansKR-Bold.otf";
+import NotoSansKrBoldWOFF from "./NotoSansKR-Bold.woff";
+import NotoSansKrBoldWOFF2 from "./NotoSansKR-Bold.woff2";
 
 
 
@@ -11,33 +19,33 @@ export default createGlobalStyle`
     @font-face {
         font-family: 'Noto Sans KR';
         font-weight: 300;
-        src: url(${NotoSansKrLight}) format('woff2'),
-            url(${NotoSansKrLight}) format('woff'),
-            url(${NotoSansKrLight}) format('truetype');
+        src: url(${NotoSansKrLightWOFF2}) format('woff2'),
+            url(${NotoSansKrLightWOFF}) format('woff'),
+            url(${NotoSansKrLightOTF}) format('truetype');
     }
 
     @font-face {
         font-family: 'Noto Sans KR';
         font-weight: 400;
-        src: url(${NotoSansKrRegular}) format('woff2'),
-            url(${NotoSansKrRegular}) format('woff'),
-            url(${NotoSansKrRegular}) format('truetype');
+        src: url(${NotoSansKrRegularWOFF2}) format('woff2'),
+            url(${NotoSansKrRegularWOFF}) format('woff'),
+            url(${NotoSansKrRegularOTF}) format('truetype');
     }
     @font-face {
         font-family: 'Noto Sans KR';
         font-weight: 500;
-        src: url(${NotoSansKrMedium}) format('woff2'),
-            url(${NotoSansKrMedium}) format('woff'),
-            url(${NotoSansKrMedium}) format('truetype'),
+        src: url(${NotoSansKrMediumWOFF2}) format('woff2'),
+            url(${NotoSansKrMediumWOFF}) format('woff'),
+            url(${NotoSansKrMediumOTF}) format('truetype'),
         
     }
 
     @font-face {
         font-family: 'Noto Sans KR';
         font-weight: 700;
-        src: url(${NotoSansKrBold}) format('woff2'),
-            url(${NotoSansKrBold}) format('woff'),
-            url(${NotoSansKrBold}) format('truetype');
+        src: url(${NotoSansKrBoldWOFF2}) format('woff2'),
+            url(${NotoSansKrBoldWOFF}) format('woff'),
+            url(${NotoSansKrBoldOTF}) format('truetype');
     }
     * {
         font-family: 'Noto Sans KR';
