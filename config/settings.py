@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     # '127.0.0.1',
     # 'localhost',
     # '.elasticbeanstalk.com',
-    '.shipping.or.kr',
+    'shipping.or.kr',
     # 'shipping.or.kr'
 ]
 
