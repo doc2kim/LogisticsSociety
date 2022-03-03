@@ -14,7 +14,6 @@ const globalStyle = createGlobalStyle`
     html,
     body{
         width:100%;
-        font-family: 'Noto Sans KR', sans-serif;
         @media only screen and (max-width:768px) {
             overflow-x: hidden;
         }

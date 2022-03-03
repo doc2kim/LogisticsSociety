@@ -1,8 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.4e2dc416.css",
-    "main.js": "./static/js/main.13020fad.js",
+    "main.js": "./static/js/main.22a2f8c0.js",
     "static/media/home_img.png": "./static/media/home_img.e20bd3a9142a316c9f72.png",
+    "static/media/NotoSansKR-Light.otf": "./static/media/NotoSansKR-Light.7d4ce2f6f92cffc70600.otf",
+    "static/media/NotoSansKR-Bold.otf": "./static/media/NotoSansKR-Bold.bbb4ca5df6c6540f4af8.otf",
+    "static/media/NotoSansKR-Regular.otf": "./static/media/NotoSansKR-Regular.bf54b090356010039bab.otf",
+    "static/media/NotoSansKR-Medium.otf": "./static/media/NotoSansKR-Medium.7def03a7e5e60c5e0704.otf",
     "static/media/slide.png": "./static/media/slide.2cbc690c31eb3a1d7693.png",
     "static/media/최용석.png": "./static/media/최용석.02d73938a14ff8bc5b02.png",
     "static/media/subTitleImg.png": "./static/media/subTitleImg.96597915f88e0465a61d.png",
@@ -22,10 +26,10 @@
     "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
     "index.html": "./index.html",
     "main.4e2dc416.css.map": "./static/css/main.4e2dc416.css.map",
-    "main.13020fad.js.map": "./static/js/main.13020fad.js.map"
+    "main.22a2f8c0.js.map": "./static/js/main.22a2f8c0.js.map"
   },
   "entrypoints": [
     "static/css/main.4e2dc416.css",
-    "static/js/main.13020fad.js"
+    "static/js/main.22a2f8c0.js"
   ]
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Router from "./Router.js";
 import GlobalStyles from "./GlobalStyles";
+import GlobalFonts from "./Fonts/fonts";
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <>
         <Router />
         <GlobalStyles />
+        <GlobalFonts />
       </>
     );
   }
