@@ -5,6 +5,7 @@ import SubTitle from "../Components/SubTitle";
 import Committee from "../Components/Academic/Committee"
 import SubCommittee from "../Components/Academic/SubCommittee"
 import Rule from "../Components/Academic/Rule"
+import ThesisSearch from "../Components/Academic/Thesis/ThesisSearch"
 
 
 const Container = styled.div`
@@ -22,7 +23,9 @@ const Academic = function () {
         <SubTitle />
         {pathname.includes('/committee') ? <Committee /> :
             pathname.includes('subcommittee') ? <SubCommittee /> :
-                pathname.includes('rule') && <Rule />}
+                pathname.includes('rule') ? <Rule /> :
+                    pathname.includes('thesis-search') && <ThesisSearch />
+        }
     </Container>
 }
 

@@ -196,7 +196,6 @@ const NavTitle = styled.div`
         line-height:7vw;
     }
     @media only screen and (max-width: 280px) {
-        
         line-height:2.5em;
     }
 `;
@@ -206,6 +205,7 @@ const NavTitleContent = styled.ul`
     padding: 0;
     justify-content: center;
     font-weight: bold;
+    opacity: 0.8;
     @media only screen and (max-width: 768px) {
         justify-content: space-between;    
         padding:0.7em 0 0.7em 1.5em;

@@ -20,6 +20,7 @@ import Header from "./Header";
 import { AuthProvider } from "../ApiContext/AuthContext"
 import NoticeDetail from "../Components/Community/NoticeDetail"
 import NewsDetail from "../Components/Community/NewsDetail"
+import ThesisDetail from "../Components/Academic/Thesis/ThesisDetail"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -52,6 +53,7 @@ export default () => {
                     })}
                     <Route path="/community/notice/:id" element={<NoticeDetail />}></Route>
                     <Route path="/community/news/:id" element={<NewsDetail />}></Route>
+                    <Route path="/academic/thesis-search/:id" element={<ThesisDetail />}></Route>
                 </Routes>
                 <Footer />
             </AuthProvider>

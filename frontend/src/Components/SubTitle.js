@@ -48,9 +48,9 @@ const SubTitle = function ({ title }) {
                     return pathname.includes(i.path + j.subPath) && (
                         <TitleBox key={j.id}>
                             <Title>{j.subTitle}</Title>
-                            <PathRoute><Icon to="/"><HomeIcon src={home_icon} /></Icon> &gt; {i.title} &gt;
+                            <PathRoute><Icon to="/"><HomeIcon src={home_icon} /></Icon> &ensp;&gt;&ensp; {i.title} &ensp;&gt;&ensp;
                                 {title ? <>
-                                    <Link to={i.path + j.subPath}>{j.subTitle}</Link> &gt; <span style={{ color: 'rgb(18, 95, 163)' }}>{title}</span></> :
+                                    <Link to={i.path + j.subPath}>{j.subTitle}</Link> &ensp;&gt;&ensp; <span style={{ color: 'rgb(18, 95, 163)' }}>{title}</span></> :
                                     <span style={{ color: 'rgb(18, 95, 163)' }}>{j.subTitle}</span>}</PathRoute>
                         </TitleBox>
                     )
