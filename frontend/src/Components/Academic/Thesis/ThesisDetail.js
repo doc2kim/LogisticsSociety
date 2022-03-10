@@ -102,6 +102,8 @@ const ShortCut = styled.div`
 
 const UrlButton = styled.a`
     border: 1px solid;
+    background-color: #244476;
+    color: white;
     width: 3em; ;
     border-radius:0.5em;
     text-align: center;

@@ -1,25 +1,61 @@
 import styled from "styled-components";
+import React, { useState, useEffect } from "react";
 
 function Pagination({ total, limit, page, setPage }) {
+  const [currentPages, setCurrentPages] = useState(null)
+
+  const pageDivide = [];
   const numPages = Math.ceil(total / limit);
 
-  return (
+  const numArray = Array(numPages).fill().map(function (_, i) {
+    return i + 1
+  })
+
+  for (let i = 0; i < numArray.length; i += 10) {
+    pageDivide.push(numArray.slice(i, i + 10));
+  }
+
+  const pagesHandler = function (e) {
+    e.preventDefault();
+    if (e.target.id === "prev") {
+      let prev = currentPages[0] - 10
+      let value = String(prev)[0]
+      setCurrentPages(pageDivide[Number(value)])
+      if (value === "1") {
+        setCurrentPages(pageDivide[0])
+      }
+    } else {
+      let next = currentPages[0] + 10
+      let value = String(next)[0]
+      setCurrentPages(pageDivide[Number(value)])
+    }
+  }
+
+
+  useEffect(function () {
+    setCurrentPages(pageDivide[0])
+  }, [])
+
+  return currentPages && (
     <>
       <Nav>
-        <Button onClick={() => setPage(page - 1)} disabled={page === 1}>
+        <Button onClick={pagesHandler} disabled={currentPages[0] === 1} id="prev">
           &lt;
         </Button>
-        {Array(numPages)
-          .fill()
-          .map((_, i) => (
-            <Button
-              key={i + 1}
-              onClick={() => setPage(i + 1)}
-              aria-current={page === i + 1 ? "page" : null}>
-              {i + 1}
-            </Button>
-          ))}
-        <Button onClick={() => setPage(page + 1)} disabled={page === numPages}>
+        {currentPages && currentPages.map((i) => {
+          return <Button
+            key={i + 1}
+            onClick={() => {
+              window.scrollTo(0, 0)
+              setPage(i)
+            }}
+            aria-current={page === i ? "page" : null}>
+            {i}
+          </Button>
+        }
+
+        )}
+        <Button onClick={pagesHandler} disabled={currentPages[currentPages.length - 1] === numPages} id="next">
           &gt;
         </Button>
       </Nav>
@@ -55,7 +91,6 @@ const Button = styled.button`
     color: tomato;
     cursor: revert;
     transform: revert;
-  }
-`;
+  }`;
 
 export default Pagination;
