@@ -246,7 +246,8 @@ const UpDownIcon = styled.span`
 `;
 
 const Img = styled.img`
-    width: 40%;
+    width: 50%;
+
     @media only screen and (max-width: 768px) {
         width:100%;
     }
@@ -255,7 +256,7 @@ const Img = styled.img`
 const ImgBox = styled.div`
     display: flex;
     justify-content:center;
-    padding-bottom: 1vw;
+    padding: 3% 0;
 `;
 
 const Back = styled.div`
@@ -352,7 +353,7 @@ const NoticeDetail = function () {
                                     return <div><FileBox key={`file${index}`}
                                         download
                                         target="_blank"
-                                        href={`/media/${i.file}`} >
+                                        href={`${i.file}`} >
                                         <FileIcon >💾</FileIcon>
                                         <FileName >{file_name}</FileName>
                                     </FileBox>

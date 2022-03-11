@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import navigate from "./Navigate";
-import AuthContext from "../ApiContext/AuthContext"
+// import AuthContext from "../ApiContext/AuthContext"
 import over_logo from "../assets/해외학회_logo.png"
 import hamburger from "../assets/hamburger.png"
 import { HeaderLogo } from "./Logo.js"
@@ -41,6 +41,7 @@ const TopItem = styled.li`
     list-style-type : none;
     @media only screen and (max-width: 768px) {
         color: white;
+        text-align: center;
     }
 `;
 
@@ -147,7 +148,7 @@ const Login = styled.div`
     display: none;
     @media only screen and (max-width: 768px) {
         display: flex;
-        justify-content:space-between;
+        justify-content:center;
         align-items: center;
         padding: 0 10%;
         background-color: #165fa3;
@@ -276,7 +277,7 @@ function CategoryHandler(e) {
 
 const Header = function () {
     const path = useLocation();
-    const { user, logoutUser } = useContext(AuthContext)
+    // const { user, logoutUser } = useContext(AuthContext)
     window.onresize = function () {
         const innerWidth = window.innerWidth;
         let nav = document.querySelector('.nav');
@@ -285,7 +286,7 @@ const Header = function () {
     return (
         <Container>
             <TopList>
-                {user ?
+                {/* {user ?
                     <>
                         <TopItem><Link to="/profile">회원정보관리</Link></TopItem>
                         <Bar>|</Bar>
@@ -295,6 +296,8 @@ const Header = function () {
                         <Bar>|</Bar>
                         <TopItem><Link to="/signup">회원가입</Link></TopItem>
                     </>}
+                <Bar>|</Bar> */}
+                <TopItem><Link to="/">홈</Link></TopItem>
                 <Bar>|</Bar>
                 <TopItem><Link to={'/sitemap'} state={{ navigate }}>사이트맵</Link></TopItem>
             </TopList>
@@ -317,9 +320,10 @@ const Header = function () {
                 <Nav>
                     <div style={{ width: '100%' }}>
                         <Login>
-                            <TopItem><Link to="/">홈</Link></TopItem>
+                            <TopItem style={{ width: "50%" }} ><Link to="/">홈</Link></TopItem>
                             <Bar>|</Bar>
-                            {user ?
+                            <TopItem style={{ width: "50%" }}><Link to={'/sitemap'} state={{ navigate }}>사이트맵</Link></TopItem>
+                            {/* {user ?
                                 <>
                                     <TopItem><Link to="/profile">회원정보</Link></TopItem>
                                     <Bar>|</Bar>
@@ -328,7 +332,7 @@ const Header = function () {
                                     <TopItem><Link to="/login">로그인</Link></TopItem>
                                     <Bar>|</Bar>
                                     <TopItem><Link to="/signup">회원가입</Link></TopItem>
-                                </>}
+                                </>} */}
                         </Login>
                         <NavLists onMouseLeave={CategoryHandler}>
                             {navigate.map(function (i) {

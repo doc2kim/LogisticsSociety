@@ -77,9 +77,7 @@ const Author = styled.span`
 const AbstractBox = styled.div`
     padding: 1em 0;
     font-size: 0.8em;
-    line-height: 1.7em;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    
+    line-height: 1.7em;    
 `;
 
 const AbstractTitle = styled.h1`
@@ -112,6 +110,68 @@ const UrlButton = styled.a`
 `;
 
 
+const NoticeNav = styled.div`
+    display: flex;
+    border-top: 1px solid rgba(0, 0, 0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0,0.2);
+    margin-top:1vw;
+    line-height:1vw;
+    @media only screen and (max-width: 768px) {
+        margin-top: 2em;
+        padding: 1em 0;
+        line-height: 2em;
+    }
+`;
+
+const BackToNotice = styled.div`
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 20%;
+    font-size: 0.8vw;
+    @media only screen and (max-width: 768px) {
+        font-size: 1em;
+    }
+    @media only screen and (max-width: 280px) {
+        font-size: 0.8em;
+    }
+`;
+
+const Posts = styled.div`
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8vw;
+    @media only screen and (max-width: 768px) {
+        font-size: 1em;
+    }
+    @media only screen and (max-width: 280px) {
+        font-size: 0.8em;
+    }
+`;
+
+const Post = styled.div`
+    cursor: pointer;
+    padding: 0.5%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+`;
+
+const PostTitle = styled.span`
+    padding: 0 1%;
+`;
+
+const UpDownIcon = styled.span`
+    padding: 0 0.5%;
+`;
+
+const Back = styled.div`
+    cursor: pointer;
+    font-size: 0.9em;
+`;
+
+
+
 const ThesisDetail = function () {
     const [resultsData, setResultsData] = useState(null)
     const property = useLocation();
@@ -120,13 +180,21 @@ const ThesisDetail = function () {
     const data = property.state.data;
     const id = property.state.id;
     const dataIndex = property.state.index;
-
     const title = data.articleInfo["title-group"]["article-title"];
     const author = data.articleInfo["author-group"]["author"];
     const abstract = data.articleInfo["abstract-group"]["abstract"];
-    console.log(data)
 
-    return <Container>
+    const pageControl = function (prop, id, detailIndex) {
+        navigate(`/academic/thesis-search/${id}`, { state: { data: prop, id: id, results: results, index: detailIndex }, replace: true })
+        window.scrollTo(0, 0);
+    }
+
+
+    useEffect(function () {
+        setResultsData(results)
+    }, [])
+    console.log(id)
+    return resultsData && <Container>
         <SubTitle title={title[0] && title[0]["#text"] ? title[0]["#text"] : title && title["#text"]} />
         <Table>
             <TitleBox>
@@ -173,6 +241,54 @@ const ThesisDetail = function () {
                     : <Abstract>{abstract["#text"]}</Abstract>}
             </AbstractBox>
         </Table>
+        <NoticeNav>
+            <BackToNotice>
+                <Back onClick={() => navigate("/academic/thesis-search/")}>목록으로</Back>
+            </BackToNotice>
+            <div style={{ width: '80%' }}>
+                {dataIndex > 0 && dataIndex < resultsData.length - 1 ?
+                    <Posts>
+                        {resultsData.map(function (i, index) {
+                            return dataIndex - 1 === index && <Post key={index}
+                                onClick={() => pageControl(i, i.articleInfo["@article-id"], index)}
+                                style={{ borderBottom: '1px solid rgba(0, 0, 0,0.2)' }}>이전글<UpDownIcon>▲</UpDownIcon>
+                                <PostTitle>{i.articleInfo["title-group"]["article-title"][0] && i.articleInfo["title-group"]["article-title"][0]["#text"] ? i.articleInfo["title-group"]["article-title"][0]["#text"] : i.articleInfo["title-group"]["article-title"] && i.articleInfo["title-group"]["article-title"]["#text"]}</PostTitle>
+                            </Post>
+                        })}
+                        {resultsData.map(function (i, index) {
+                            return dataIndex + 1 === index && <Post key={index}
+                                onClick={() => pageControl(i, i.articleInfo["@article-id"], index)}>다음글<UpDownIcon>▼</UpDownIcon>
+                                <PostTitle>{i.articleInfo["title-group"]["article-title"][0] && i.articleInfo["title-group"]["article-title"][0]["#text"] ? i.articleInfo["title-group"]["article-title"][0]["#text"] : i.articleInfo["title-group"]["article-title"] && i.articleInfo["title-group"]["article-title"]["#text"]}</PostTitle>
+                            </Post>
+                        })}
+                    </Posts>
+                    : dataIndex === resultsData.length - 1 ?
+                        <Posts>
+                            {resultsData.map(function (i, index) {
+                                return dataIndex - 1 === index && <Post key={index}
+                                    style={{ borderBottom: '1px solid rgba(0, 0, 0,0.2)' }}
+                                    onClick={() => pageControl(i, i.articleInfo["@article-id"], index)}>이전글<UpDownIcon>▲</UpDownIcon>
+                                    <PostTitle>{i.articleInfo["title-group"]["article-title"][0] && i.articleInfo["title-group"]["article-title"][0]["#text"] ? i.articleInfo["title-group"]["article-title"][0]["#text"] : i.articleInfo["title-group"]["article-title"] && i.articleInfo["title-group"]["article-title"]["#text"]}</PostTitle>
+                                </Post>
+                            })}
+                            <Post style={{ cursor: 'default' }}>다음글<UpDownIcon>▼</UpDownIcon>
+                                <PostTitle>없음</PostTitle>
+                            </Post>
+                        </Posts>
+                        : dataIndex === 0 &&
+                        <Posts>
+                            <Post style={{ borderBottom: '1px solid rgba(0, 0, 0,0.2)', cursor: 'default' }}>이전글<UpDownIcon>▲</UpDownIcon>
+                                <PostTitle>없음</PostTitle>
+                            </Post>
+                            {resultsData.map(function (i, index) {
+                                return dataIndex + 1 === index && <Post key={index}
+                                    onClick={() => pageControl(i, i.articleInfo["@article-id"], index)} >다음글<UpDownIcon>▼</UpDownIcon>
+                                    <PostTitle>{i.articleInfo["title-group"]["article-title"][0] && i.articleInfo["title-group"]["article-title"][0]["#text"] ? i.articleInfo["title-group"]["article-title"][0]["#text"] : i.articleInfo["title-group"]["article-title"] && i.articleInfo["title-group"]["article-title"]["#text"]}</PostTitle>
+                                </Post>
+                            })}
+                        </Posts>}
+            </div>
+        </NoticeNav>
     </Container>
 }
 

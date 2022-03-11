@@ -166,7 +166,7 @@ const ContentBox = styled.div`
 `;
 
 const Img = styled.img`
-    width: 40%;
+    width: 50%;
     @media only screen and (max-width: 768px) {
         width:100%;
     }
@@ -175,7 +175,7 @@ const Img = styled.img`
 const ImgBox = styled.div`
     display: flex;
     justify-content:center;
-    padding-bottom: 3%;
+    padding: 3% 0;
 `;
 
 const NewsNav = styled.div`

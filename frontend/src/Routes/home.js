@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import home_img from "../assets/home_img.png";
 import slide_img from "../assets/slide.png";
-import AuthContext from "../ApiContext/AuthContext"
+// import AuthContext from "../ApiContext/AuthContext"
 import { noticeAxios } from "../ApiContext/RestApi"
 import { newsAxios } from "../ApiContext/RestApi"
 import { throttle } from 'lodash';
@@ -13,7 +13,7 @@ const Container = styled.div`
     padding-top:5vw;
     height:43vw;
     @media only screen and (max-width: 768px) {
-        height:225vw;
+        height:240vw;
     }
 `;
 
@@ -156,76 +156,76 @@ const SlideTitle = styled.h3`
     }
 `;
 
-const Login = styled.div`
-    width: 24.5%;
-    margin-right: 0.5%;
-    background-color:#16498b;
-    display: flex;
-    align-items: center;
-    @media only screen and (max-width: 768px) {
-        display: none;
-    }
-`;
+// const Login = styled.div`
+//     width: 24.5%;
+//     margin-right: 0.5%;
+//     background-color:#16498b;
+//     display: flex;
+//     align-items: center;
+//     @media only screen and (max-width: 768px) {
+//         display: none;
+//     }
+// `;
 
-const LoginBox = styled.div`
-    padding: 10% 15%;
-`;
+// const LoginBox = styled.div`
+//     padding: 10% 15%;
+// `;
 
-const LoginForm = styled.form`
-    display: flex;
-    align-items: center;
-    padding-top:3%;
-    &:div{ 
-        width:66.666%;
-        display: flex;
-        flex-direction: column;
-    }
-`;
+// const LoginForm = styled.form`
+//     display: flex;
+//     align-items: center;
+//     padding-top:3%;
+//     &:div{ 
+//         width:66.666%;
+//         display: flex;
+//         flex-direction: column;
+//     }
+// `;
 
-const SignUpFindID = styled.span`
-    color: white;
-    display: flex;
-    padding: 6% 5% 0 5%;
-    justify-content: space-around;
-    line-height:1vw;
-`;
+// const SignUpFindID = styled.span`
+//     color: white;
+//     display: flex;
+//     padding: 6% 5% 0 5%;
+//     justify-content: space-around;
+//     line-height:1vw;
+// `;
 
-const SignUp = styled.span`
-    font-size: 0.5vw;
-`;
+// const SignUp = styled.span`
+//     font-size: 0.5vw;
+// `;
 
-const FindId = styled.span`
-    font-size: 0.5vw;
-`;
+// const FindId = styled.span`
+//     font-size: 0.5vw;
+// `;
 
-const LoginTitle = styled.h3`
-    color: white;
-    font-size: 1.3vw;
-    text-align: center;
-    padding-top: 2vw;
-`;
+// const LoginTitle = styled.h3`
+//     color: white;
+//     font-size: 1.3vw;
+//     text-align: center;
+//     padding-top: 2vw;
+// `;
 
-const LoginInput = styled.input`
-    padding:0;
-    width: 100%;
-    height:2vw;
-    background-color:#16498b;
-    border: 1px solid rgba(255,255,255,0.5);
-    color: white;
-    padding-left: 0.5vw;
-    &::placeholder{
-        font-size: 0.6vw;
-        color: rgba(255,255,255,0.5);
-    }
-`;
+// const LoginInput = styled.input`
+//     padding:0;
+//     width: 100%;
+//     height:2vw;
+//     background-color:#16498b;
+//     border: 1px solid rgba(255,255,255,0.5);
+//     color: white;
+//     padding-left: 0.5vw;
+//     &::placeholder{
+//         font-size: 0.6vw;
+//         color: rgba(255,255,255,0.5);
+//     }
+// `;
 
-const LoginButton = styled.button`
-    width: 33.3333%;
-    height: 4vw;
-    background-color: white;
-    margin-left:0.6vw;
-    font-size: 0.7vw;
-`;
+// const LoginButton = styled.button`
+//     width: 33.3333%;
+//     height: 4vw;
+//     background-color: white;
+//     margin-left:0.6vw;
+//     font-size: 0.7vw;
+// `;
 
 const Paper = styled.div`
     width: 24.5%;
@@ -237,7 +237,6 @@ const Paper = styled.div`
         align-items: center;
         width: 100%;
         margin: 0;
-        height: 35vw;
     }
 `;
 const PaperBox = styled.div`
@@ -248,7 +247,7 @@ const PaperTitle = styled.h3`
     color: white;
     font-size: 1.3vw;
     text-align: center;
-    padding-top: 2vw;
+    padding: 4vw 0 2vw 0;
     @media only screen and (max-width: 768px) {
         font-size: 4vw;        
     }
@@ -266,8 +265,8 @@ const PaperText = styled.span`
     text-align: center;
     font-size: 0.5vw;
     @media only screen and (max-width: 768px) {
-        font-size: 2.5vw;
-        padding-bottom:2vw;
+        font-size: 3vw;
+        padding-bottom:3vw;
     }
 `;
 
@@ -327,7 +326,7 @@ const NoticeTitle = styled.h3`
     font-weight:bold;
     padding: 0.5vw 0;
     @media only screen and (max-width: 768px) {
-        font-size: 3vw;
+        font-size: 1.5em;
     }
 `;
 
@@ -367,8 +366,8 @@ const NoticeList = styled.li`
     font-size: 0.7vw;
     line-height:2vw;
     @media only screen and (max-width: 768px) {
-        font-size: 3vw;
-        line-height:5vw;
+        font-size: 1.2em;
+        line-height:7vw;
     }
 `;
 
@@ -387,11 +386,13 @@ const ListBox = styled.div`
 const NewsBox = styled.div`
     display: flex;
     justify-content:space-between;
+   
 `;
 
 const News = styled.div`
     width: 32.333333%;
     line-height:1vw;
+ 
 `;
 
 const NewsImg = styled.img`
@@ -498,7 +499,7 @@ function useScroll() {
 const Home = function () {
     const slideData = []
     const { scrollY } = useScroll()
-    const { user, loginUser } = useContext(AuthContext)
+    // const { user, loginUser } = useContext(AuthContext)
     const [noticeData, setNoticeData] = useState(null)
     const [newsData, setNewsData] = useState(null)
     const [slide, setSlide] = useState(null)
@@ -574,7 +575,7 @@ const Home = function () {
                                         </NoticeSlide>
                                 })}
                             </SlideBox>
-                            <Login>{
+                            {/* <Login>{
                                 user ?
                                     <LoginContent>
                                         <Content>
@@ -599,7 +600,7 @@ const Home = function () {
                                             </SignUpFindID>
                                         </LoginBox>
                                     </div>}
-                            </Login>
+                            </Login> */}
                             <Paper>
                                 <PaperBox>
                                     <PaperTitle>논문검색</PaperTitle>
@@ -641,7 +642,7 @@ const Home = function () {
                                             return index <= 2 &&
                                                 <News key={index}>
                                                     <Link to={`community/news/${i.id} `} state={{ data: i.id, allData: newsData, index: index }}>
-                                                        <NewsImg style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover' }} />
+                                                        <NewsImg style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }} />
                                                         <NewsContent>{i.title}</NewsContent>
                                                     </Link >
                                                     <NewsInfo>{i.created_date.substr(0, 10)}</NewsInfo>

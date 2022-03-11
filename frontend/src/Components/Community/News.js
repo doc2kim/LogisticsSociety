@@ -8,14 +8,14 @@ const Container = styled.div`
 `;
 
 const NewsBox = styled.div`
-    padding:1%;
+    padding: 1%;
 `;
 
 const NewsGridBox = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 13vw);
     grid-template-rows: repeat(3, 1fr);
-    gap: 4% 5%;
+    gap: 2vw 2vw;
     justify-content:center;
     align-items: center;
     @media only screen and (max-width: 768px) {
@@ -25,8 +25,8 @@ const NewsGridBox = styled.div`
 `;
 
 const ImgBox = styled.div`
-    height:7vw;
-    background-position: center;
+    width:100%;
+    height: 8vw;
     @media only screen and (max-width: 768px) {
         height: 55vw;
     }
@@ -70,7 +70,7 @@ const Number = styled.span`
 `;
 
 const CountInfo = styled.span`
-font-size:small;
+    font-size:small;
 `;
 
 const News = function () {
@@ -103,7 +103,7 @@ const News = function () {
                                     <Date>{i.created_date.substr(0, 10)}</Date>
                                 </SubInfo>
                                 <Link to={`${i.id}`} state={{ data: i.id, allData: newsData, index: index }}>
-                                    <ImgBox style={{ background: `url(/media/${i.cover_image})`, backgroundSize: "cover" }}></ImgBox>
+                                    <ImgBox style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></ImgBox>
                                     <TitleBox>
                                         <Title>{i.title}</Title>
                                     </TitleBox>
