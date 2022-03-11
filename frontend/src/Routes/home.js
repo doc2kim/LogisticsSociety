@@ -247,8 +247,8 @@ const PaperTitle = styled.h3`
     color: white;
     font-size: 1.3vw;
     text-align: center;
-    padding: 4vw 0 2vw 0;
     @media only screen and (max-width: 768px) {
+        padding: 4vw 0 2vw 0;
         font-size: 4vw;        
     }
     
