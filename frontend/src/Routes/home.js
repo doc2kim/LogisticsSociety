@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import home_img from "../assets/home_img.png";
 import slide_img from "../assets/slide.png";
-// import AuthContext from "../ApiContext/AuthContext"
+import AuthContext from "../ApiContext/AuthContext"
 import { noticeAxios } from "../ApiContext/RestApi"
 import { newsAxios } from "../ApiContext/RestApi"
 import { throttle } from 'lodash';
@@ -156,76 +156,76 @@ const SlideTitle = styled.h3`
     }
 `;
 
-// const Login = styled.div`
-//     width: 24.5%;
-//     margin-right: 0.5%;
-//     background-color:#16498b;
-//     display: flex;
-//     align-items: center;
-//     @media only screen and (max-width: 768px) {
-//         display: none;
-//     }
-// `;
+const Login = styled.div`
+    width: 24.5%;
+    margin-right: 0.5%;
+    background-color:#16498b;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+`;
 
-// const LoginBox = styled.div`
-//     padding: 10% 15%;
-// `;
+const LoginBox = styled.div`
+    padding: 10% 15%;
+`;
 
-// const LoginForm = styled.form`
-//     display: flex;
-//     align-items: center;
-//     padding-top:3%;
-//     &:div{ 
-//         width:66.666%;
-//         display: flex;
-//         flex-direction: column;
-//     }
-// `;
+const LoginForm = styled.form`
+    display: flex;
+    align-items: center;
+    padding-top:3%;
+    &:div{ 
+        width:66.666%;
+        display: flex;
+        flex-direction: column;
+    }
+`;
 
-// const SignUpFindID = styled.span`
-//     color: white;
-//     display: flex;
-//     padding: 6% 5% 0 5%;
-//     justify-content: space-around;
-//     line-height:1vw;
-// `;
+const SignUpFindID = styled.span`
+    color: white;
+    display: flex;
+    padding: 6% 5% 0 5%;
+    justify-content: space-around;
+    line-height:1vw;
+`;
 
-// const SignUp = styled.span`
-//     font-size: 0.5vw;
-// `;
+const SignUp = styled.span`
+    font-size: 0.5vw;
+`;
 
-// const FindId = styled.span`
-//     font-size: 0.5vw;
-// `;
+const FindId = styled.span`
+    font-size: 0.5vw;
+`;
 
-// const LoginTitle = styled.h3`
-//     color: white;
-//     font-size: 1.3vw;
-//     text-align: center;
-//     padding-top: 2vw;
-// `;
+const LoginTitle = styled.h3`
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+    padding-top: 2vw;
+`;
 
-// const LoginInput = styled.input`
-//     padding:0;
-//     width: 100%;
-//     height:2vw;
-//     background-color:#16498b;
-//     border: 1px solid rgba(255,255,255,0.5);
-//     color: white;
-//     padding-left: 0.5vw;
-//     &::placeholder{
-//         font-size: 0.6vw;
-//         color: rgba(255,255,255,0.5);
-//     }
-// `;
+const LoginInput = styled.input`
+    padding:0;
+    width: 100%;
+    height:2vw;
+    background-color:#16498b;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: white;
+    padding-left: 0.5vw;
+    &::placeholder{
+        font-size: 0.6vw;
+        color: rgba(255,255,255,0.5);
+    }
+`;
 
-// const LoginButton = styled.button`
-//     width: 33.3333%;
-//     height: 4vw;
-//     background-color: white;
-//     margin-left:0.6vw;
-//     font-size: 0.7vw;
-// `;
+const LoginButton = styled.button`
+    width: 33.3333%;
+    height: 4vw;
+    background-color: white;
+    margin-left:0.6vw;
+    font-size: 0.7vw;
+`;
 
 const Paper = styled.div`
     width: 24.5%;
@@ -450,19 +450,19 @@ const SearchIcon = styled.span`
     }
 `;
 
-// const LoginContent = styled.div`
-//     color: white;
-//     font-size:1vw;
-//     display: flex;
-//     align-items: center;
-// `;
+const LoginContent = styled.div`
+    color: white;
+    font-size:1vw;
+    display: flex;
+    align-items: center;
+`;
 
-// const Content = styled.div`
-//     width: 100%;
-//     padding: 2vw;
-//     line-height: 2vw;
-//     font-size: 1vw;
-// `;
+const Content = styled.div`
+    width: 100%;
+    padding: 2vw;
+    line-height: 2vw;
+    font-size: 1vw;
+`;
 
 const TitleSet = styled.div`
     opacity: ${({ animate }) => (animate > 0 && 1 - (animate * 0.008))};
@@ -500,7 +500,7 @@ function useScroll() {
 const Home = function () {
     const slideData = []
     const { scrollY } = useScroll()
-    // const { user, loginUser } = useContext(AuthContext)
+    const { user, loginUser } = useContext(AuthContext)
     const [noticeData, setNoticeData] = useState(null)
     const [newsData, setNewsData] = useState(null)
     const [slide, setSlide] = useState(null)
@@ -576,7 +576,7 @@ const Home = function () {
                                         </NoticeSlide>
                                 })}
                             </SlideBox>
-                            {/* <Login>{
+                            <Login>{
                                 user ?
                                     <LoginContent>
                                         <Content>
@@ -601,7 +601,7 @@ const Home = function () {
                                             </SignUpFindID>
                                         </LoginBox>
                                     </div>}
-                            </Login> */}
+                            </Login>
                             <Paper>
                                 <PaperBox>
                                     <PaperTitle>논문검색</PaperTitle>
