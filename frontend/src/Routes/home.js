@@ -450,19 +450,19 @@ const SearchIcon = styled.span`
     }
 `;
 
-const LoginContent = styled.div`
-    color: white;
-    font-size:1vw;
-    display: flex;
-    align-items: center;
-`;
+// const LoginContent = styled.div`
+//     color: white;
+//     font-size:1vw;
+//     display: flex;
+//     align-items: center;
+// `;
 
-const Content = styled.div`
-    width: 100%;
-    padding: 2vw;
-    line-height: 2vw;
-    font-size: 1vw;
-`;
+// const Content = styled.div`
+//     width: 100%;
+//     padding: 2vw;
+//     line-height: 2vw;
+//     font-size: 1vw;
+// `;
 
 const TitleSet = styled.div`
     opacity: ${({ animate }) => (animate > 0 && 1 - (animate * 0.008))};
