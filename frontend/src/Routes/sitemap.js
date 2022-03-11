@@ -7,7 +7,7 @@ const Container = styled.div`
     padding-top:7.7em;
     @media only screen and (max-width: 768px) {
         margin: 0 3%;
-        padding:3.5em 0; 
+        padding-top:3.5em; 
     }
 `;
 
@@ -52,6 +52,7 @@ const Maps = styled.div`
     font-size: large;
     @media only screen and (max-width: 768px) {
         font-size:1em;
+        padding-bottom:5em;
     }
 `;
 const MapNavLists = styled.div`
@@ -62,7 +63,7 @@ const MapNavLists = styled.div`
     row-gap: 10%;
 	column-gap: 20%;
     @media only screen and (max-width: 768px) {
-        grid-template-columns: 60% 60%;
+        grid-template-columns: 50% 50%;
         row-gap: 5%;
         column-gap: 10%;
     }
