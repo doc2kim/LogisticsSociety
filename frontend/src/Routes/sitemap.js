@@ -7,7 +7,7 @@ const Container = styled.div`
     padding-top:7.7em;
     @media only screen and (max-width: 768px) {
         margin: 0 3%;
-        padding-top:3.5em;
+        padding:3.5em 0; 
     }
 `;
 
@@ -15,16 +15,32 @@ const TitleBox = styled.div`
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2% 0;
+    padding: 1vw 0;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 const Title = styled.h1`
-    font-size: xx-large;
+    font-size: 1.3vw;
+    @media only screen and (max-width: 768px) {
+        font-size: 1.5em;
+        padding: 0.5em 0;
+    }
 `;
 
 const Icon = styled(Link)`
     filter: grayscale(100%);  
+`;
+
+const PathRoute = styled.div`
+    font-size: 0.7vw;
+    @media only screen and (max-width: 768px) {
+        font-size: 0.8em;
+        line-height: 2em;
+        padding-bottom: 0.5em;
+    }
 `;
 
 const Maps = styled.div`
@@ -34,6 +50,9 @@ const Maps = styled.div`
     justify-content:center;
     align-items:center;
     font-size: large;
+    @media only screen and (max-width: 768px) {
+        font-size:1em;
+    }
 `;
 const MapNavLists = styled.div`
     display: grid;
@@ -42,6 +61,11 @@ const MapNavLists = styled.div`
     text-align: center;
     row-gap: 10%;
 	column-gap: 20%;
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 60% 60%;
+        row-gap: 5%;
+        column-gap: 10%;
+    }
 `;
 
 const MapLists = styled.ul`
@@ -65,7 +89,7 @@ const SiteMap = function () {
     return <Container>
         <TitleBox>
             <Title>사이트맵</Title>
-            <div><Icon to="/">🏠 </Icon> &gt; <span style={{ color: 'rgb(18, 95, 163)' }}>사이트맵</span></div>
+            <PathRoute><Icon to="/">🏠 </Icon> &gt; <span style={{ color: 'rgb(18, 95, 163)' }}>사이트맵</span></PathRoute>
         </TitleBox>
         <Maps>
             <MapNavLists>{navigate.map(function (i) {

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import home_img from "../assets/home_img.png";
 import slide_img from "../assets/slide.png";
-import AuthContext from "../ApiContext/AuthContext"
+// import AuthContext from "../ApiContext/AuthContext"
 import { noticeAxios } from "../ApiContext/RestApi"
 import { newsAxios } from "../ApiContext/RestApi"
 import { throttle } from 'lodash';
@@ -156,31 +156,31 @@ const SlideTitle = styled.h3`
     }
 `;
 
-const Login = styled.div`
-    width: 24.5%;
-    margin-right: 0.5%;
-    background-color:#16498b;
-    display: flex;
-    align-items: center;
-    @media only screen and (max-width: 768px) {
-        display: none;
-    }
-`;
+// const Login = styled.div`
+//     width: 24.5%;
+//     margin-right: 0.5%;
+//     background-color:#16498b;
+//     display: flex;
+//     align-items: center;
+//     @media only screen and (max-width: 768px) {
+//         display: none;
+//     }
+// `;
 
-const LoginBox = styled.div`
-    padding: 10% 15%;
-`;
+// const LoginBox = styled.div`
+//     padding: 10% 15%;
+// `;
 
-const LoginForm = styled.form`
-    display: flex;
-    align-items: center;
-    padding-top:3%;
-    &:div{ 
-        width:66.666%;
-        display: flex;
-        flex-direction: column;
-    }
-`;
+// const LoginForm = styled.form`
+//     display: flex;
+//     align-items: center;
+//     padding-top:3%;
+//     &:div{ 
+//         width:66.666%;
+//         display: flex;
+//         flex-direction: column;
+//     }
+// `;
 
 const SignUpFindID = styled.span`
     color: white;
@@ -228,7 +228,7 @@ const LoginButton = styled.button`
 `;
 
 const Paper = styled.div`
-    width: 24.5%;
+    width: 49%;
     margin-left: 0.5%;
     background-color:#31a4d1;
     @media only screen and (max-width: 768px) {
@@ -264,7 +264,7 @@ const PaperText = styled.span`
     color: white;
     opacity: 0.6;
     text-align: center;
-    font-size: 0.5vw;
+    font-size: 0.7vw;
     @media only screen and (max-width: 768px) {
         font-size: 3vw;
         padding-bottom:3vw;
@@ -288,6 +288,7 @@ const PaperSearch = styled.input`
         height: 7vw;
             &::placeholder{
             font-size: 3vw;
+            padding-left: 1vw;
             color: rgba(255,255,255,0.7);
         }   
     }
@@ -298,7 +299,7 @@ const PaperSubmission = styled.a`
     display: block;
     color: rgba(255,255,255,0.8);
     text-align: center;
-    font-size: 0.5vw;
+    font-size: 0.7vw;
     @media only screen and (max-width: 768px) {
         font-size:2.5vw;
     }
@@ -327,7 +328,7 @@ const NoticeTitle = styled.h3`
     font-weight:bold;
     padding: 0.5vw 0;
     @media only screen and (max-width: 768px) {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 `;
 
@@ -450,19 +451,38 @@ const SearchIcon = styled.span`
     }
 `;
 
-const LoginContent = styled.div`
-    color: white;
-    font-size:1vw;
+const SearchForm = styled.form`
     display: flex;
     align-items: center;
 `;
 
-const Content = styled.div`
-    width: 100%;
-    padding: 2vw;
-    line-height: 2vw;
-    font-size: 1vw;
+const SearchCategory = styled.select`
+    margin-top: 1vw;
+    background-color: #31a4d1;
+    border: 2px solid white;
+    border-right: none;
+    color: white;
+    height: 2.5vw;
+    font-size: 0.7vw;
+    @media only screen and (max-width: 768px) {
+        height: 7vw;
+        font-size: 3vw;
+    }
 `;
+
+// const LoginContent = styled.div`
+//     color: white;
+//     font-size:1vw;
+//     display: flex;
+//     align-items: center;
+// `;
+
+// const Content = styled.div`
+//     width: 100%;
+//     padding: 2vw;
+//     line-height: 2vw;
+//     font-size: 1vw;
+// `;
 
 const TitleSet = styled.div`
     opacity: ${({ animate }) => (animate > 0 && 1 - (animate * 0.008))};
@@ -500,7 +520,7 @@ function useScroll() {
 const Home = function () {
     const slideData = []
     const { scrollY } = useScroll()
-    const { user, loginUser } = useContext(AuthContext)
+    // const { user, loginUser } = useContext(AuthContext)
     const [noticeData, setNoticeData] = useState(null)
     const [newsData, setNewsData] = useState(null)
     const [slide, setSlide] = useState(null)
@@ -576,7 +596,7 @@ const Home = function () {
                                         </NoticeSlide>
                                 })}
                             </SlideBox>
-                            <Login>{
+                            {/* <Login>{
                                 user ?
                                     <LoginContent>
                                         <Content>
@@ -601,15 +621,20 @@ const Home = function () {
                                             </SignUpFindID>
                                         </LoginBox>
                                     </div>}
-                            </Login>
+                            </Login> */}
                             <Paper>
                                 <PaperBox>
                                     <PaperTitle>논문검색</PaperTitle>
                                     <PaperText>한국해운학회의 논문을 검색하실 수 있습니다.</PaperText>
-                                    <div style={{ position: 'relative' }}>
-                                        <PaperSearch type='search' placeholder='논문 검색' />
+                                    <SearchForm>
+                                        <SearchCategory>
+                                            <option value="thesis">논문명</option>
+                                            <option value="author">저자</option>
+                                            <option value="issue">발행년도</option>
+                                        </SearchCategory>
+                                        <PaperSearch style={{ position: 'relative' }} type='search' placeholder='논문 검색' />
                                         <SearchIcon>☌</SearchIcon>
-                                    </div>
+                                    </SearchForm>
                                     <PaperSubmission href='https://jsl.jams.or.kr/co/main/jmMain.kci' target="_blank">논문투고 jams 시스템 바로가기</PaperSubmission>
                                 </PaperBox>
                             </Paper>

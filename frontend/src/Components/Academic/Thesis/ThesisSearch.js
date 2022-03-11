@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import jsonResults from "./json_results.json";
 import Pagination from "../../Pagination"
 
@@ -93,7 +93,6 @@ const Number = styled.span`
 const ThesisSearch = function () {
     const [results, setResults] = useState(() => localStorage.getItem('results') ? JSON.parse(localStorage.getItem('results')) : null);
     const [page, setPage] = useState(1);
-    const path = useLocation();
     const limit = 15;
     const offset = (page - 1) * limit;
 
