@@ -193,7 +193,6 @@ const ThesisDetail = function () {
     useEffect(function () {
         setResultsData(results)
     }, [])
-    console.log(id)
     return resultsData && <Container>
         <SubTitle title={title[0] && title[0]["#text"] ? title[0]["#text"] : title && title["#text"]} />
         <Table>

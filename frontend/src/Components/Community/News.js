@@ -87,7 +87,7 @@ const News = function () {
         if (!newsData)
             news()
     }, [])
-    console.log(newsData && newsData)
+    console.log(newsData)
     return newsData && <Container>
         <CountInfo style={{ padding: "1% 0" }}>총 <Number>{newsData.length}</Number>개의 게시물이 있습니다.</CountInfo>
         <NewsBox>

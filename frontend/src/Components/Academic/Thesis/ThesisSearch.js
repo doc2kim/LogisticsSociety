@@ -97,9 +97,10 @@ const ThesisSearch = function () {
     const offset = (page - 1) * limit;
 
     const searchThesis = function (e) {
-        e.preventDefault();
+        e.preventDefault()
         const searchResult = [];
         const optionValue = e.target[0].selectedOptions[0].value;
+        setPage(1);
         if (optionValue === "thesis") {
             for (const i of jsonResults) {
                 const titleData = i.articleInfo["title-group"]["article-title"]
@@ -154,10 +155,10 @@ const ThesisSearch = function () {
             <SearchForm onSubmit={searchThesis}>
                 <SearchCategory >
                     <option value="thesis">논문명</option>
-                    <option value="author">저자</option>
+                    <option value="author">저자/소속</option>
                     <option value="issue">발행년도</option>
                 </SearchCategory>
-                <SearchInput name="search" />
+                <SearchInput name="search" required />
             </SearchForm>
         </SearchBox>
         <Results>{

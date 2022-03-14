@@ -3,14 +3,11 @@ import React, { useState, useEffect } from "react";
 
 function Pagination({ total, limit, page, setPage }) {
   const [currentPages, setCurrentPages] = useState(null)
-
   const pageDivide = [];
   const numPages = Math.ceil(total / limit);
-
   const numArray = Array(numPages).fill().map(function (_, i) {
     return i + 1
   })
-
   for (let i = 0; i < numArray.length; i += 10) {
     pageDivide.push(numArray.slice(i, i + 10));
   }
@@ -27,40 +24,42 @@ function Pagination({ total, limit, page, setPage }) {
     } else {
       let next = currentPages[0] + 10
       let value = String(next)[0]
+      console.log(pageDivide[Number(value)])
       setCurrentPages(pageDivide[Number(value)])
     }
   }
 
 
   useEffect(function () {
-    setCurrentPages(pageDivide[0])
-  }, [])
-
-  return currentPages && (
-    <>
-      <Nav>
-        <Button onClick={pagesHandler} disabled={currentPages[0] === 1} id="prev">
-          &lt;
-        </Button>
-        {currentPages && currentPages.map((i) => {
-          return <Button
-            key={i + 1}
-            onClick={() => {
-              window.scrollTo(0, 0)
-              setPage(i)
-            }}
-            aria-current={page === i ? "page" : null}>
-            {i}
+    setCurrentPages(pageDivide && pageDivide[0])
+  }, [total])
+  console.log(pageDivide)
+  console.log(total)
+  return total === 0 ? "검색결과가 없습니다" : currentPages ?
+    (
+      <>
+        <Nav>
+          <Button onClick={pagesHandler} disabled={currentPages[0] === 1} id="prev">
+            &lt;
           </Button>
-        }
-
-        )}
-        <Button onClick={pagesHandler} disabled={currentPages[currentPages.length - 1] === numPages} id="next">
-          &gt;
-        </Button>
-      </Nav>
-    </>
-  );
+          {currentPages && currentPages.map((i) => {
+            return <Button
+              key={i + 1}
+              onClick={() => {
+                window.scrollTo(0, 0)
+                setPage(i)
+              }}
+              aria-current={page === i ? "page" : null}>
+              {i}
+            </Button>
+          }
+          )}
+          <Button onClick={pagesHandler} disabled={currentPages[currentPages.length - 1] === numPages} id="next">
+            &gt;
+          </Button>
+        </Nav>
+      </>
+    ) : null
 }
 
 const Nav = styled.nav`

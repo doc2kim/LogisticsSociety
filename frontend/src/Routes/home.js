@@ -182,50 +182,50 @@ const SlideTitle = styled.h3`
 //     }
 // `;
 
-const SignUpFindID = styled.span`
-    color: white;
-    display: flex;
-    padding: 6% 5% 0 5%;
-    justify-content: space-around;
-    line-height:1vw;
-`;
+// const SignUpFindID = styled.span`
+//     color: white;
+//     display: flex;
+//     padding: 6% 5% 0 5%;
+//     justify-content: space-around;
+//     line-height:1vw;
+// `;
 
-const SignUp = styled.span`
-    font-size: 0.5vw;
-`;
+// const SignUp = styled.span`
+//     font-size: 0.5vw;
+// `;
 
-const FindId = styled.span`
-    font-size: 0.5vw;
-`;
+// const FindId = styled.span`
+//     font-size: 0.5vw;
+// `;
 
-const LoginTitle = styled.h3`
-    color: white;
-    font-size: 1.3vw;
-    text-align: center;
-    padding-top: 2vw;
-`;
+// const LoginTitle = styled.h3`
+//     color: white;
+//     font-size: 1.3vw;
+//     text-align: center;
+//     padding-top: 2vw;
+// `;
 
-const LoginInput = styled.input`
-    padding:0;
-    width: 100%;
-    height:2vw;
-    background-color:#16498b;
-    border: 1px solid rgba(255,255,255,0.5);
-    color: white;
-    padding-left: 0.5vw;
-    &::placeholder{
-        font-size: 0.6vw;
-        color: rgba(255,255,255,0.5);
-    }
-`;
+// const LoginInput = styled.input`
+//     padding:0;
+//     width: 100%;
+//     height:2vw;
+//     background-color:#16498b;
+//     border: 1px solid rgba(255,255,255,0.5);
+//     color: white;
+//     padding-left: 0.5vw;
+//     &::placeholder{
+//         font-size: 0.6vw;
+//         color: rgba(255,255,255,0.5);
+//     }
+// `;
 
-const LoginButton = styled.button`
-    width: 33.3333%;
-    height: 4vw;
-    background-color: white;
-    margin-left:0.6vw;
-    font-size: 0.7vw;
-`;
+// const LoginButton = styled.button`
+//     width: 33.3333%;
+//     height: 4vw;
+//     background-color: white;
+//     margin-left:0.6vw;
+//     font-size: 0.7vw;
+// `;
 
 const Paper = styled.div`
     width: 49%;
@@ -325,7 +325,6 @@ const Notice = styled.div`
 
 const NoticeTitle = styled.h3`
     font-size:1vw;
-    font-weight:bold;
     padding: 0.5vw 0;
     @media only screen and (max-width: 768px) {
         font-size: 1em;
@@ -629,7 +628,7 @@ const Home = function () {
                                     <SearchForm>
                                         <SearchCategory>
                                             <option value="thesis">논문명</option>
-                                            <option value="author">저자</option>
+                                            <option value="author">저자/소속</option>
                                             <option value="issue">발행년도</option>
                                         </SearchCategory>
                                         <PaperSearch style={{ position: 'relative' }} type='search' placeholder='논문 검색' />
