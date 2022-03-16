@@ -52,8 +52,13 @@ const LogoBox = styled.div`
 
 const ContentInfo = styled.div`
 width: 100%;
+margin-left: 3em;
+@media only screen and (max-width: 1070px) {
+    margin: 0;
+}
     @media only screen and (max-width: 768px) {
         display: flex;
+        
         padding: 0;
         flex-direction: column;
         align-items: center;
@@ -102,13 +107,20 @@ const Footer = () => {
                 </LogoBox>
                 <ContentInfo>
                     <TextBox>
-                        <ContentText>개인정보취급방침</ContentText><ContentText>이메일무단수집거부</ContentText> <ContentText>개인정보관리책임자:관리자</ContentText>
-                    </TextBox>
-                    <TextBox>
                         <ContentText>서울시 종로구 세종대로 23길 54 세종빌딩 10층</ContentText> <ContentText>E-mail:master@shipping.or.kr</ContentText>
                     </TextBox>
                     <TextBox>
-                        <CopyRight>copyright © The Korean Association of Shipping and Logistics, Inc. All rights reserved.</CopyRight>
+                    </TextBox>
+                    <TextBox>
+                        <ContentText>사무국:</ContentText>
+                        <ContentText>국장 김선구</ContentText><ContentText>010-5617-9717</ContentText>
+                        <ContentText>간사 황용희</ContentText><ContentText>010-3911-8747</ContentText>
+                    </TextBox>
+                    <TextBox>
+                        <CopyRight>Copyright © The Korean Association of Shipping and Logistics, Inc. All rights reserved </CopyRight>
+                    </TextBox>
+                    <TextBox>
+                        <CopyRight style={{ textAlign: 'center' }}>Created by ODN.</CopyRight>
                     </TextBox>
                 </ContentInfo>
             </ContentBox >

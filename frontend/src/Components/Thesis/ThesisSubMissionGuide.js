@@ -93,7 +93,7 @@ const ThesisSubMissionGuide = function () {
         </ContentBox>
         <div style={{ display: 'flex', paddingTop: '2%' }}>
             {fileData.map(function (i) {
-                return i.file.includes('sample') ? <Button key={i.id} href={i.file} style={{ marginRight: '1%' }}><span>샘플논문</span></Button> :
+                return i.file.includes('sample') ? <Button key={i.id} href={i.file} style={{ marginLeft: '2%' }}><span>샘플논문</span></Button> :
                     i.file.includes('written_oath') && <Button key={i.id} href={i.file}><span>논문심사신청서 및 연구 윤리서약서</span></Button>
             })}
         </div>
