@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import jsonResults from "./json_results.json";
 import Pagination from "../../Pagination"
 
@@ -89,19 +89,33 @@ const Number = styled.span`
     text-decoration: underline;
 `;
 
+const SearchInfo = styled.span`
+    color: blue;
+    font-size:small;
+    text-decoration: underline;
+`;
+
+
+
 
 const ThesisSearch = function () {
     const [results, setResults] = useState(() => localStorage.getItem('results') ? JSON.parse(localStorage.getItem('results')) : null);
+    const [search, setSearch] = useState(() => localStorage.getItem('search') ? JSON.parse(localStorage.getItem('search')) : null);
+    const [select, setSelect] = useState(() => localStorage.getItem('select') ? JSON.parse(localStorage.getItem('select')) : null);
     const [page, setPage] = useState(1);
     const limit = 15;
     const offset = (page - 1) * limit;
+    const inputRef = useRef(null)
+    let state = useLocation();
+
+
 
     const searchThesis = function (e) {
         e.preventDefault()
         const searchResult = [];
         const optionValue = e.target[0].selectedOptions[0].value;
         setPage(1);
-        if (optionValue === "thesis") {
+        if (optionValue === "논문명") {
             for (const i of jsonResults) {
                 const titleData = i.articleInfo["title-group"]["article-title"]
                 if (titleData[0] && titleData[0]["#text"]) {
@@ -114,7 +128,7 @@ const ThesisSearch = function () {
                     }
                 }
             }
-        } else if (optionValue === "author") {
+        } else if (optionValue === "저자") {
             for (const i of jsonResults) {
                 const authorData = i.articleInfo["author-group"]["author"]
                 if (typeof authorData === "object") {
@@ -131,7 +145,7 @@ const ThesisSearch = function () {
                     }
                 }
             }
-        } else if (optionValue === "issue") {
+        } else if (optionValue === "발행년도") {
             for (const i of jsonResults) {
                 const issueData = i.journalInfo["pub-year"];
                 if (issueData.includes(e.target.search.value)) {
@@ -141,24 +155,45 @@ const ThesisSearch = function () {
         }
         setResults(searchResult)
         localStorage.setItem('results', JSON.stringify(searchResult))
+        setSearch(e.target.search.value)
+        localStorage.setItem('search', JSON.stringify(e.target.search.value))
+        setSelect(e.target[0].selectedOptions[0].value)
+        localStorage.setItem('select', JSON.stringify(e.target[0].selectedOptions[0].value))
     }
 
     useEffect(function () {
         if (!results) {
             setResults(jsonResults)
             localStorage.setItem('results', JSON.stringify(jsonResults))
+            setSearch("")
+            localStorage.setItem('search', JSON.stringify(""))
+            setSelect("")
+            localStorage.setItem('select', JSON.stringify(""))
+        }
+        if (JSON.parse(localStorage.getItem('key')) !== state.key && state.state !== null) {
+            setResults(state.state.searchResult)
+            localStorage.setItem('results', JSON.stringify(state.state.searchResult))
+
+            localStorage.setItem('key', JSON.stringify(state.key))
+            setSearch(state.state.searchValue)
+            localStorage.setItem('search', JSON.stringify(state.state.searchValue))
+            setSelect(state.state.selectValue)
+            localStorage.setItem('select', JSON.stringify(state.state.selectValue))
         }
     }, [])
     return results && <Container>
         <SearchBox>
-            <CountInfo>총 <Number>{results.length}</Number>개의 게시물이 있습니다.</CountInfo>
-            <SearchForm onSubmit={searchThesis}>
-                <SearchCategory >
-                    <option value="thesis">논문명</option>
-                    <option value="author">저자/소속</option>
-                    <option value="issue">발행년도</option>
+            <CountInfo>
+                <SearchInfo>{`${select}`}</SearchInfo> / <SearchInfo>{`${search}`}</SearchInfo> 검색결과<br />
+                총<Number> {results.length}</Number>개의 게시물이 있습니다.
+            </CountInfo>
+            <SearchForm onSubmit={searchThesis} name="searchForm" ref={inputRef}>
+                <SearchCategory name="catagory">
+                    <option value="논문명" title="논문명">논문명</option>
+                    <option value="저자" title="저자">저자</option>
+                    <option value="발행년도" title="발행년도">발행년도</option>
                 </SearchCategory>
-                <SearchInput name="search" required />
+                <SearchInput name="search" type="search" />
             </SearchForm>
         </SearchBox>
         <Results>{
@@ -197,7 +232,7 @@ const ThesisSearch = function () {
             })}
         </Results>
         <Pagination total={results && results.length} limit={limit} page={page} setPage={setPage} />
-    </Container>
+    </Container >
 }
 export default ThesisSearch;
 

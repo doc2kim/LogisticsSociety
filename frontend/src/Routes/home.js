@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import jsonResults from "../Components/Academic/Thesis/json_results.json";
 import home_img from "../assets/home_img.png";
 import slide_img from "../assets/slide.png";
 // import AuthContext from "../ApiContext/AuthContext"
@@ -437,18 +438,18 @@ const NewsInfo = styled.span`
     }
 `;
 
-const SearchIcon = styled.span`
-    font-size: 1vw;
-    transform: scaleX(-1) scaleY(-1);
-    opacity:0.7; 
-    color: white; 
-    position: absolute; 
-    top: 1.9vw; 
-    left: 8.7vw;
-    @media only screen and (max-width: 768px) {
-        display:none;
-    }
-`;
+// const SearchIcon = styled.span`
+//     font-size: 1vw;
+//     transform: scaleX(-1) scaleY(-1);
+//     opacity:0.7; 
+//     color: white; 
+//     position: absolute; 
+//     top: 1.9vw; 
+//     left: 8.7vw;
+//     @media only screen and (max-width: 768px) {
+//         display:none;
+//     }
+// `;
 
 const SearchForm = styled.form`
     display: flex;
@@ -524,7 +525,62 @@ const Home = function () {
     const [newsData, setNewsData] = useState(null)
     const [slide, setSlide] = useState(null)
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slideRef = useRef(null)
+    const slideRef = useRef(null);
+    const navigater = useNavigate()
+
+    const searchHandler = function (e) {
+        e.preventDefault()
+        const searchResult = [];
+        const optionValue = e.target[0].selectedOptions[0].value;
+        if (optionValue === "논문명") {
+            for (const i of jsonResults) {
+                const titleData = i.articleInfo["title-group"]["article-title"]
+                if (titleData[0] && titleData[0]["#text"]) {
+                    if (titleData[0]["#text"].includes(e.target.search.value)) {
+                        searchResult.push(i)
+                    }
+                } else {
+                    if (titleData["#text"].includes(e.target.search.value)) {
+                        searchResult.push(i)
+                    }
+                }
+            }
+        } else if (optionValue === "저자") {
+            for (const i of jsonResults) {
+                const authorData = i.articleInfo["author-group"]["author"]
+                if (typeof authorData === "object") {
+                    for (const j of authorData) {
+                        if (j.includes(e.target.search.value)) {
+                            searchResult.push(i)
+                        } else {
+                            continue
+                        }
+                    }
+                } else {
+                    if (authorData.includes(e.target.search.value)) {
+                        searchResult.push(i)
+                    }
+                }
+            }
+        } else if (optionValue === "발행년도") {
+            for (const i of jsonResults) {
+                const issueData = i.journalInfo["pub-year"];
+                if (issueData.includes(e.target.search.value)) {
+                    searchResult.push(i)
+                }
+            }
+        }
+        navigater("/academic/thesis-search",
+            {
+                state:
+                {
+                    searchResult: searchResult,
+                    selectValue: e.target[0].selectedOptions[0].value,
+                    searchValue: e.target.search.value
+                }
+            });
+    }
+
 
     const NextSlide = function () {
         if (currentSlide >= 2) {
@@ -624,15 +680,14 @@ const Home = function () {
                             <Paper>
                                 <PaperBox>
                                     <PaperTitle>논문검색</PaperTitle>
-                                    <PaperText>한국해운학회의 논문을 검색하실 수 있습니다.</PaperText>
-                                    <SearchForm>
+                                    <PaperText>한국해운물류학회의 학술지 논문을 검색하실 수 있습니다.</PaperText>
+                                    <SearchForm onSubmit={searchHandler}>
                                         <SearchCategory>
-                                            <option value="thesis">논문명</option>
-                                            <option value="author">저자/소속</option>
-                                            <option value="issue">발행년도</option>
+                                            <option value="논문명">논문명</option>
+                                            <option value="저자">저자</option>
+                                            <option value="발행년도">발행년도</option>
                                         </SearchCategory>
-                                        <PaperSearch style={{ position: 'relative' }} type='search' placeholder='논문 검색' />
-                                        <SearchIcon>☌</SearchIcon>
+                                        <PaperSearch style={{ position: 'relative' }} name='search' type='search' placeholder='KCI API 논문검색' required />
                                     </SearchForm>
                                     <PaperSubmission href='https://jsl.jams.or.kr/co/main/jmMain.kci' target="_blank">논문투고 jams 시스템 바로가기</PaperSubmission>
                                 </PaperBox>

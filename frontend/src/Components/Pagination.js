@@ -24,7 +24,6 @@ function Pagination({ total, limit, page, setPage }) {
     } else {
       let next = currentPages[0] + 10
       let value = String(next)[0]
-      console.log(pageDivide[Number(value)])
       setCurrentPages(pageDivide[Number(value)])
     }
   }
@@ -33,8 +32,6 @@ function Pagination({ total, limit, page, setPage }) {
   useEffect(function () {
     setCurrentPages(pageDivide && pageDivide[0])
   }, [total])
-  console.log(pageDivide)
-  console.log(total)
   return total === 0 ? "검색결과가 없습니다" : currentPages ?
     (
       <>
