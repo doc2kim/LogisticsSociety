@@ -4,7 +4,9 @@ from users.models import User
 from rest_framework_simplejwt import token_blacklist
 
 # Register your models here.
-
+admin.site.site_header = '한국해운물류학회'
+admin.site.index_title = '한국해운물류학회'  
+admin.site.site_title = '한국해운물류학회'
 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):

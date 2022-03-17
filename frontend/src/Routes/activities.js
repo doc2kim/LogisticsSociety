@@ -7,6 +7,7 @@ import AcademicAward from "../Components/Active/AcademicAward"
 import CulturalAward from "../Components/Active/CulturalAward"
 import ManagementAward from "../Components/Active/ManagementAward"
 import BusinessAward from "../Components/Active/BusinessAward"
+
 const Container = styled.div`
     margin: 0 20%;
     padding-top:7.7em;
