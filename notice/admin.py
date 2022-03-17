@@ -8,7 +8,7 @@ class NoticeAdmin(admin.ModelAdmin):
 
     fieldsets = (
         ("Info", {
-            "fields": ("writer", "title", "hits", "top_fixed", "created_date")}),
+            "fields": ("writer", "title", "hits", "top_fixed")}),
         ("Event Info", {
             "fields": ("schedule", "place", "home_fixed")
         }),
