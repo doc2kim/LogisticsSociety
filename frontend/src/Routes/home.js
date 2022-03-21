@@ -11,16 +11,18 @@ import { throttle } from 'lodash';
 
 
 const Container = styled.div`
-    padding-top:5vw;
-    height:43vw;
+    width:100%;
+    height:47em;
+    padding-top:6.2em;
     @media only screen and (max-width: 768px) {
-        height:240vw;
+        padding-top:3em;
+        height:250vw;
     }
 `;
 
 const Title = styled.h1`
-    padding-top:1vw;
-    font-size:2vw;
+    padding-top:0.5em;
+    font-size:2.5em;
     font-weight:bold;
     color:white;
     text-align: center;
@@ -33,7 +35,7 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.span`
-    font-size:1.5vw;
+    font-size:1.5em;
     color:white;
     text-align: center;
     @media only screen and (max-width: 768px) {
@@ -46,7 +48,7 @@ const SubTitle = styled.span`
 
 const TitleImage = styled.div`
     width: 100%;
-    height:20vw;
+    height:26em;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -54,48 +56,57 @@ const TitleImage = styled.div`
     @media only screen and (max-width: 768px) {
         height: 80vw;
     }
+    `;
+
+const InfoContainer = styled.div`
+    position: absolute;
+    top: 27em;
+    right: 0;
+    left: 0; 
+    @media only screen and (max-width: 768px) {
+        top: 70vw;
+    }
 `;
 
-const StickyBox = styled.div`
+
+const FlexBox = styled.div`
+    display: flex;
+    justify-content: center;
 `;
+
+
+const Box = styled.div`
+    width: 1130px;
+    margin: 0 3%;
+    @media only screen and (max-width: 768px) {
+        width: 94%;
+    }
+`;
+
 
 const InfoBox = styled.div`
     display: flex;
-    padding: 0 20%;
-    height: 13vw;
+    justify-content: space-between;
+    height:16em;
     @media only screen and (max-width: 768px) {
         display: block;
-        padding: 5% 3%;
         height: auto;
     }
 `;
 
 
 const NoticeBox = styled.ul`
-    padding: 2vw 20%;
     display:flex;
     justify-content: space-between;
     z-index: 1;
     @media only screen and (max-width: 768px) {
-        padding:0 3%;
         display: block;
     }
 `;
 
-const Box = styled.div`
-    position: absolute;
-    top: 22vw;
-    right: 0;
-    left: 0;
-    padding-top:1vw;
-    @media only screen and (max-width: 768px) {
-        top: 65vw;
-    }
-`;
 
 const SlideBox = styled.div`
     width: 49%;
-    margin-right: 1%;
     display: flex;
     @media only screen and (max-width: 768px) {
         width: 100%;
@@ -106,14 +117,16 @@ const SlideBox = styled.div`
 
 const NoticeSlide = styled.div`
     width: 100%;
+    display: flex;
     color: white;
+    position: relative;
 `;
 
 const SlideButton = styled.div`
-    width:1.3vw;
-    height:1.3vw;
-    line-height:1.3vw;
-    font-size:0.7em;
+    width:1.5em;
+    height:1.5em;
+    line-height:1.5em;
+    font-size:1em;
     text-align: center;
     border:1px solid rgba(0, 0, 0, .4);
     border-radius: 2px;
@@ -135,22 +148,25 @@ const SlideNumberButton = styled(SlideButton)`
 `;
 
 const SlideButtonBox = styled.div`
+    position: absolute;
     display: flex;
-    justify-content:flex-end;
+    justify-content:end;
+    right:0;
 `;
 
 const SlideContent = styled(Link)`
-    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 10%;
+
 `;
 
 const SlideTitle = styled.h3`
-    font-size: 1.4vw;
+    font-size: 1.5em;
+    line-height: 1.5em;
     color: white;
-    padding-bottom:2%;
+    padding-bottom:7%;
     @media only screen and (max-width: 768px) {
         font-size: 5vw;
         padding-bottom: 5%;
@@ -230,7 +246,6 @@ const SlideTitle = styled.h3`
 
 const Paper = styled.div`
     width: 49%;
-    margin-left: 0.5%;
     background-color:#31a4d1;
     @media only screen and (max-width: 768px) {
         display: flex;
@@ -241,14 +256,14 @@ const Paper = styled.div`
     }
 `;
 const PaperBox = styled.div`
-    padding: 0 15%;
+    padding: 0 10%;
 `;
 
 const PaperTitle = styled.h3`
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.7em;
     text-align: center;
-    padding-top: 2vw;
+    padding-top: 1.5em;
     @media only screen and (max-width: 768px) {
         padding: 4vw 0 2vw 0;
         font-size: 4vw;        
@@ -261,32 +276,54 @@ const PaperText = styled.span`
     white-space:nowrap;
     text-overflow:ellipsis;
     display: block;
-    padding-top: 1vw;
+    padding-top: 1.5em;
     color: white;
     opacity: 0.6;
     text-align: center;
-    font-size: 0.7vw;
+    font-size: 0.8em;
     @media only screen and (max-width: 768px) {
         font-size: 3vw;
         padding-bottom:3vw;
     }
 `;
 
+const SearchForm = styled.form`
+    display: flex;
+`;
+
+const SearchCategory = styled.select`
+    margin-top: 1.3em;
+    background-color: #31a4d1;
+    border: 2px solid white;
+    border-right: none;
+    color: white;
+    height: 3.4em;
+    font-size: 0.9em;
+    @media only screen and (max-width: 768px) {
+        height: 9vw;
+        font-size: 3vw;
+        margin-top: 0;
+    }
+`;
+
 const PaperSearch = styled.input`
-    margin-top: 1vw;
+    margin-top: 1.3em;
     padding:0;
     border: 2px solid white;
     background-color: #31a4d1;
     color: white;
-    width: 94%;
-    height: 2.5vw;
-    padding-left: 0.5vw;
+    width: 100%;
+    height: 3.4em;
+    padding-left: 1em;
+    font-size: 0.9em;
     &::placeholder{
-        font-size: 0.7vw;
+        font-size: 0.9em;
         color: rgba(255,255,255,0.7);
     }
     @media only screen and (max-width: 768px) {
-        height: 7vw;
+        height: 9vw;
+        font-size: 3vw;
+        margin-top: 0;
             &::placeholder{
             font-size: 3vw;
             padding-left: 1vw;
@@ -295,22 +332,24 @@ const PaperSearch = styled.input`
     }
 `;
 
+
+
 const PaperSubmission = styled.a`
     padding: 2em;
     display: block;
     color: rgba(255,255,255,0.8);
     text-align: center;
-    font-size: 0.7vw;
+    font-size: 0.9em;
     @media only screen and (max-width: 768px) {
         font-size:2.5vw;
     }
     `;
 
 const NoticeSections = styled.div`
-    width: 48%;
+    width: 49%;
     @media only screen and (max-width: 768px) {
         width:100%;
-        padding-bottom: 5%;
+        padding-top: 5%;
     }
 `;
 
@@ -318,25 +357,20 @@ const Notice = styled.div`
     display: flex;
     justify-content:space-between;
     align-items:center;
-    border-bottom: 0.2vw solid rgba(0, 0, 0, .3);
-    @media only screen and (max-width: 768px) {
-        
-    }
+    border-bottom: 0.2em solid rgba(0, 0, 0, .3);
 `;
 
 const NoticeTitle = styled.h3`
-    font-size:1vw;
-    padding: 0.5vw 0;
-    @media only screen and (max-width: 768px) {
-        font-size: 1em;
-    }
+    font-size:1em;
+    padding: 0.8em 0;
+
 `;
 
 const PlusButton = styled.div`
-    width:1vw;
-    height:1vw;
-    line-height:1vw;
-    font-size:0.7vw;
+    width:1.5em;
+    height:1.5em;
+    line-height:1.5em;
+    font-size:1em;
     opacity: 0.4 ;
     text-align: center;
     border:1px solid rgba(0, 0, 0, .4);
@@ -359,25 +393,23 @@ const PlusButton = styled.div`
 `;
 
 const NoticeList = styled.li`
-    width: 66%;
     list-style: inside;
-    overflow:hidden;
-    white-space:nowrap;
-    text-overflow:ellipsis;
     opacity:0.7;
-    font-size: 0.7vw;
-    line-height:2vw;
+    font-size: 0.9em;
     @media only screen and (max-width: 768px) {
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
         font-size: 1.2em;
         line-height:7vw;
+        width: 80%;
     }
 `;
 
 const ListBox = styled.div`
     display: flex;
     justify-content:space-between;
-    align-items: end;
-    height:1.5vw;
+    height:1.7em;
     align-items: center;
     @media only screen and (max-width: 768px) {
         height: auto;   
@@ -393,13 +425,12 @@ const NewsBox = styled.div`
 
 const News = styled.div`
     width: 32.333333%;
-    line-height:1vw;
- 
+    line-height:1.2em;
 `;
 
 const NewsImg = styled.img`
     width:100%;
-    height: 6vw;
+    height: 5.5em;
     @media only screen and (max-width: 768px) {
         height: 20vw;   
     }
@@ -408,12 +439,12 @@ const NewsImg = styled.img`
 const NewsContent = styled.span`
     width: 90%;
     display:block;
-    font-size:0.7vw;
+    font-size:1em;
     opacity: 0.8;
     overflow:hidden;
     white-space:nowrap;
     text-overflow:ellipsis;
-    height: 1vw;
+    height: 1.3em;
     @media only screen and (max-width: 768px) {
         line-height:3vw;
         height: 4vw;
@@ -422,9 +453,10 @@ const NewsContent = styled.span`
 `;
 
 const TimeStamp = styled.div`
+    width: 5.4em;
     opacity:0.2;
-    font-size:0.7vw;
-    
+    font-size:0.8em;
+    text-align: end;
     @media only screen and (max-width: 768px) {
         font-size:3vw;
     }
@@ -451,24 +483,7 @@ const NewsInfo = styled.span`
 //     }
 // `;
 
-const SearchForm = styled.form`
-    display: flex;
-    align-items: center;
-`;
 
-const SearchCategory = styled.select`
-    margin-top: 1vw;
-    background-color: #31a4d1;
-    border: 2px solid white;
-    border-right: none;
-    color: white;
-    height: 2.5vw;
-    font-size: 0.7vw;
-    @media only screen and (max-width: 768px) {
-        height: 7vw;
-        font-size: 3vw;
-    }
-`;
 
 // const LoginContent = styled.div`
 //     color: white;
@@ -489,7 +504,7 @@ const TitleSet = styled.div`
 `;
 
 const EventText = styled.span`
-    font-size:1vw;
+    font-size: 1.2em;
     @media only screen and (max-width: 768px) {
         font-size: 3vw;
     }
@@ -631,27 +646,28 @@ const Home = function () {
                         <Title>한국해운물류학회</Title>
                     </TitleSet>
                 </TitleImage>
-                <StickyBox>
-                    <Box>
-                        <InfoBox>
-                            <SlideBox ref={slideRef}>
-                                {slide.map(function (i, index) {
-                                    return index <= 2 && index === currentSlide &&
-                                        <NoticeSlide key={index} style={{ background: `url(${slide_img})`, backgroundSize: 'cover' }}>
-                                            <SlideButtonBox>
-                                                <SlideNumberButton>{index + 1}/3</SlideNumberButton>
-                                                <SlideButton onClick={PrevSlide}>&lt;</SlideButton>
-                                                <SlideButton onClick={NextSlide}>&gt;</SlideButton>
-                                            </SlideButtonBox>
-                                            <SlideContent to={`community/notice/${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
-                                                <SlideTitle>{i.title}</SlideTitle>
-                                                <EventText>일시: {i.schedule}</EventText><br />
-                                                <EventText>장소: {i.place}</EventText>
-                                            </SlideContent>
-                                        </NoticeSlide>
-                                })}
-                            </SlideBox>
-                            {/* <Login>{
+                <InfoContainer>
+                    <FlexBox>
+                        <Box>
+                            <InfoBox>
+                                <SlideBox ref={slideRef}>
+                                    {slide.map(function (i, index) {
+                                        return index <= 2 && index === currentSlide &&
+                                            <NoticeSlide key={index} style={{ background: `url(${slide_img})`, backgroundSize: 'cover' }}>
+                                                <SlideButtonBox>
+                                                    <SlideNumberButton>{index + 1}/3</SlideNumberButton>
+                                                    <SlideButton onClick={PrevSlide}>&lt;</SlideButton>
+                                                    <SlideButton onClick={NextSlide}>&gt;</SlideButton>
+                                                </SlideButtonBox>
+                                                <SlideContent to={`community/notice/${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
+                                                    <SlideTitle>{i.title}</SlideTitle>
+                                                    <EventText>일시: {i.schedule}</EventText><br />
+                                                    <EventText>장소: {i.place}</EventText>
+                                                </SlideContent>
+                                            </NoticeSlide>
+                                    })}
+                                </SlideBox>
+                                {/* <Login>{
                                 user ?
                                     <LoginContent>
                                         <Content>
@@ -677,62 +693,63 @@ const Home = function () {
                                         </LoginBox>
                                     </div>}
                             </Login> */}
-                            <Paper>
-                                <PaperBox>
-                                    <PaperTitle>논문검색</PaperTitle>
-                                    <PaperText>한국해운물류학회의 학술지 논문을 검색하실 수 있습니다.</PaperText>
-                                    <SearchForm onSubmit={searchHandler}>
-                                        <SearchCategory>
-                                            <option value="논문명">논문명</option>
-                                            <option value="저자">저자</option>
-                                            <option value="발행년도">발행년도</option>
-                                        </SearchCategory>
-                                        <PaperSearch style={{ position: 'relative' }} name='search' type='search' placeholder='KCI API 논문검색' required />
-                                    </SearchForm>
-                                    <PaperSubmission href='https://jsl.jams.or.kr/co/main/jmMain.kci' target="_blank">논문투고 jams 시스템 바로가기</PaperSubmission>
-                                </PaperBox>
-                            </Paper>
-                        </InfoBox>
-                        <NoticeBox>
-                            <NoticeSections>
-                                <Notice>
-                                    <NoticeTitle>공지사항</NoticeTitle><Link to="/community/notice"><PlusButton /></Link>
-                                </Notice>
-                                {noticeData && noticeData
-                                    .sort((a, b) => b.id - a.id)
-                                    .map(function (i, index) {
-                                        return index <= 4 && <ListBox key={index}>
-                                            <NoticeList>
-                                                <Link to={`community/notice/${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
-                                                    {i.title}
-                                                </Link>
-                                            </NoticeList>
-                                            <TimeStamp>{i.created_date.substr(0, 10)}</TimeStamp>
-                                        </ListBox>
-                                    })}
-                            </NoticeSections>
-                            <NoticeSections>
-                                <Notice style={{ borderBottom: 'none' }}>
-                                    <NoticeTitle>학회소식</NoticeTitle><Link to="/community/news"><PlusButton /></Link>
-                                </Notice>
-                                <NewsBox style={{ paddingTop: '2px' }}>
-                                    {newsData && newsData
+                                <Paper>
+                                    <PaperBox>
+                                        <PaperTitle>논문검색</PaperTitle>
+                                        <PaperText>한국해운물류학회의 학술지 논문을 검색하실 수 있습니다.</PaperText>
+                                        <SearchForm onSubmit={searchHandler}>
+                                            <SearchCategory>
+                                                <option value="논문명">논문명</option>
+                                                <option value="저자">저자</option>
+                                                <option value="발행년도">발행년도</option>
+                                            </SearchCategory>
+                                            <PaperSearch style={{ position: 'relative' }} name='search' type='search' placeholder='KCI API 논문검색' required />
+                                        </SearchForm>
+                                        <PaperSubmission href='https://jsl.jams.or.kr/co/main/jmMain.kci' target="_blank">논문투고 jams 시스템 바로가기</PaperSubmission>
+                                    </PaperBox>
+                                </Paper>
+                            </InfoBox>
+                            <NoticeBox>
+                                <NoticeSections>
+                                    <Notice>
+                                        <NoticeTitle>공지사항</NoticeTitle><Link to="/community/notice"><PlusButton /></Link>
+                                    </Notice>
+                                    {noticeData && noticeData
                                         .sort((a, b) => b.id - a.id)
                                         .map(function (i, index) {
-                                            return index <= 2 &&
-                                                <News key={index}>
-                                                    <Link to={`community/news/${i.id} `} state={{ data: i.id, allData: newsData, index: index }}>
-                                                        <NewsImg style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }} />
-                                                        <NewsContent>{i.title}</NewsContent>
-                                                    </Link >
-                                                    <NewsInfo>{i.created_date.substr(0, 10)}</NewsInfo>
-                                                </News >
+                                            return index <= 4 && <ListBox key={index}>
+                                                <NoticeList>
+                                                    <Link to={`community/notice/${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
+                                                        {i.title}
+                                                    </Link>
+                                                </NoticeList>
+                                                <TimeStamp>{i.created_date.substr(0, 10)}</TimeStamp>
+                                            </ListBox>
                                         })}
-                                </NewsBox >
-                            </NoticeSections >
-                        </NoticeBox >
-                    </Box >
-                </StickyBox >
+                                </NoticeSections>
+                                <NoticeSections>
+                                    <Notice style={{ borderBottom: 'none' }}>
+                                        <NoticeTitle>학회소식</NoticeTitle><Link to="/community/news"><PlusButton /></Link>
+                                    </Notice>
+                                    <NewsBox style={{ paddingTop: '2px' }}>
+                                        {newsData && newsData
+                                            .sort((a, b) => b.id - a.id)
+                                            .map(function (i, index) {
+                                                return index <= 2 &&
+                                                    <News key={index}>
+                                                        <Link to={`community/news/${i.id} `} state={{ data: i.id, allData: newsData, index: index }}>
+                                                            <NewsImg style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }} />
+                                                            <NewsContent>{i.title}</NewsContent>
+                                                        </Link >
+                                                        <NewsInfo>{i.created_date.substr(0, 10)}</NewsInfo>
+                                                    </News >
+                                            })}
+                                    </NewsBox >
+                                </NoticeSections >
+                            </NoticeBox >
+                        </Box>
+                    </FlexBox>
+                </InfoContainer >
             </Container >
         );
 }

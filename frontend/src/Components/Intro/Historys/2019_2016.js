@@ -24,14 +24,14 @@ const DivideLeft = styled.div`
 `;
 
 const Circle = styled.div`
-    border:0.2vw solid rgb(18, 95, 163);
+    border:0.3em solid rgb(18, 95, 163);
     border-radius:50%;
     background-color:white;
-    width:0.5vw;
-    height:0.5vw;
+    width:0.8em;
+    height:0.8em;
     position:absolute;
-    left:49.4%;
-    margin-top:1.2vw;
+    left:49.2%;
+    margin-top:1.2em;
     @media only screen and (max-width: 768px) {
         width:1.2vw;
         height:1.2vw;
@@ -42,7 +42,7 @@ const Circle = styled.div`
 
 const Line = styled.div`
     height: 100%;
-    width: 0.2vw;
+    width: 0.3em;
     background-color:rgba(0, 0, 0, .2);
     position: absolute;
     left: 50%;
@@ -56,9 +56,9 @@ const Line = styled.div`
 
 const ContentYear = styled.div`
     color:rgb(18, 95, 163);
-    font-size:1.3vw;
+    font-size:1.3em;
     font-weight:bold;
-    padding: 1vw 1.5vw 0 1.7vw;
+    padding: 1em 1.5em 0 1.6em;
     @media only screen and (max-width: 768px) {
         font-size: 1em;
         padding-left:6%;
@@ -66,10 +66,10 @@ const ContentYear = styled.div`
 `;
 
 const Content = styled.div`
-    font-size:0.8vw;
+    font-size:1em;
     display: flex;
-    padding-top:1vw;
-    line-height:1.5vw;
+    padding-top:1em;
+    line-height:1.5em;
     width: 100%;
     @media only screen and (max-width: 768px) {
         font-size:0.8em;
@@ -90,7 +90,7 @@ const ContentLeft = styled(Content)`
 const ContentSubYear = styled.span`
     opacity: 0.8;
     font-weight:bold;
-    margin: 0 6%;
+    margin: 0 2.1em;
     @media only screen and (max-width: 768px) {
         margin: 0 6%;
     }
@@ -117,6 +117,25 @@ const History2016 = function () {
     return (
         <HistoryBox >
             <Line />
+            <Circle />
+            <DivideLeft>
+                <ContentYear>2020</ContentYear>
+                <ContentLeft>
+                    <ConstSubYearLeft>11.10</ConstSubYearLeft>
+                    <ContentText>
+                        제76회 한국해운물류학회 추계 정기학술대회
+                    </ContentText>
+                </ContentLeft>
+                <ContentLeft>
+
+                    <ConstSubYearLeft>4.10</ConstSubYearLeft>
+
+                    <ContentText>
+                        제75회 한국해운물류학회 춘계 정기학술대회
+                    </ContentText>
+                </ContentLeft>
+            </DivideLeft>
+
             <Circle />
             <DivideRight>
                 <ContentYear>2019</ContentYear>

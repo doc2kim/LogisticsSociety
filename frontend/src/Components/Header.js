@@ -14,26 +14,45 @@ const Container = styled.div`
     z-index:9999;
 `;
 
+const Box = styled.div`
+    width: 1130px;
+    margin: 0 3%;
+    display: flex;
+`;
+
+const TopListBox = styled(Box)`
+    justify-content: end ;
+`;
+
+const LogoContainerBox = styled(Box)`
+    justify-content: space-between;
+    padding: 0.3em 0;
+`;
+
+// const TopBox = styled(Box)`
+// @media only screen and (min-width: 1940px) {
+//     justify-content: center; 
+// }`;
+
 const Bar = styled.span`
     color:#bdbebd;
-    padding:0 0.5%;
+    padding:0 1em;
     font-weight: bold;
     font-size:0.5em;
 `;
 
 const TopList = styled.ul`
-    padding: 0 20%;   
     background-color:#4d5362;
     color: #eaeaea;
     display: flex;
-    justify-content: end;
-    line-height: 1.2vw;
+    justify-content: center;
+    line-height: 1.2em;
     @media only screen and (max-width: 768px) {
         display: none;
   }
 `;
 
-// styled component 사용시 html= styled.###, react method = styled(###)
+
 
 const TopItem = styled.li`
     cursor: pointer;
@@ -47,13 +66,12 @@ const TopItem = styled.li`
 
 const LogoContainer = styled.div`
     background-color: #ffff;
-    padding: 0.5vw 20%;
     display: flex;
+    justify-content: center; 
     border-bottom: 2px solid rgba(0, 0, 0, .1);
-    justify-content: space-between;
+    
     @media only screen and (max-width: 768px) {
         padding:1% 3%;
-        display: flex;
         background-color: #165fa3;
     }
 `;
@@ -105,16 +123,16 @@ const OverLogoBox = styled.a`
 
 const OverLogo = styled.img`
 
-    @media only screen and (max-width: 1070px) {
-            height: 0.7em;
-    }
+    /* @media only screen and (max-width: 1070px) {
+            height: 0.7em; */
+    /* } */
     @media only screen and (max-width: 768px) {
             display: none;
     }
 `;
 
 const OverText = styled.span`
-    font-size: 0.5vw;
+    font-size: 0.7em;
     color: #165fa3;
     @media only screen and (max-width: 768px) {
             display: none;
@@ -122,9 +140,10 @@ const OverText = styled.span`
 `;
 
 
-const NavBox = styled.div`
-    padding:0 20%;
+const NavContainer = styled.div`
     background-color:white;
+    display:flex;
+    justify-content:center;
     border-bottom:2px solid  #165fa3;
     @media only screen and (max-width: 768px) {
         display: none;
@@ -132,10 +151,10 @@ const NavBox = styled.div`
 `;
 
 
-const Nav = styled.div`
-    width:100%;
-    display: flex;
+const NavBox = styled(Box)`
+    
     @media only screen and (max-width: 768px) {
+        margin: 0;
         width: 70%;
         position: absolute;
         left: 0;
@@ -184,12 +203,9 @@ const NavTitle = styled.div`
     display: flex;
     flex-direction: column;
     font-size:1em;
-    line-height: 1.5vw;
+    line-height: 1.5em;
     border-bottom:1px solid rgba(0, 0, 0, .1);
     cursor:pointer;
-    @media only screen and (max-width: 1050px) {
-            font-size:0.7em;
-    }
     @media only screen and (max-width: 768px) {
         justify-content:space-between;
         font-size:0.7em;
@@ -204,7 +220,6 @@ const NavTitleContent = styled.ul`
     display: flex;
     padding: 0;
     justify-content: center;
-
     opacity: 0.8;
     @media only screen and (max-width: 768px) {
         justify-content: space-between;    
@@ -240,8 +255,8 @@ const NavSubTitle = styled.ul`
 `;
 
 function NavHandler() {
-    if (document.querySelector('.nav').style.display !== 'block') {
-        document.querySelector('.nav').style.display = 'block';
+    if (document.querySelector('.nav').style.display !== 'flex') {
+        document.querySelector('.nav').style.display = 'flex';
     } else {
         document.querySelector('.nav').style.display = 'none';
     }
@@ -280,12 +295,13 @@ const Header = function () {
     window.onresize = function () {
         const innerWidth = window.innerWidth;
         let nav = document.querySelector('.nav');
-        innerWidth >= "768" ? nav.style.display = 'block' : nav.style.display = 'none'
+        innerWidth >= "768" ? nav.style.display = 'flex' : nav.style.display = 'none'
     }
     return (
         <Container>
             <TopList>
-                {/* {user ?
+                <TopListBox>
+                    {/* {user ?
                     <>
                         <TopItem><Link to="/profile">회원정보관리</Link></TopItem>
                         <Bar>|</Bar>
@@ -296,27 +312,30 @@ const Header = function () {
                         <TopItem><Link to="/signup">회원가입</Link></TopItem>
                     </>}
                 <Bar>|</Bar> */}
-                <TopItem><Link to="/">홈</Link></TopItem>
-                <Bar>|</Bar>
-                <TopItem><Link to={'/sitemap'} state={{ navigate }}>사이트맵</Link></TopItem>
+                    <TopItem><Link to="/">홈</Link></TopItem>
+                    <Bar>|</Bar>
+                    <TopItem><Link to={'/sitemap'} state={{ navigate }}>사이트맵</Link></TopItem>
+                </TopListBox>
             </TopList>
             <LogoContainer>
-                <IntroBox>
-                    <MenuButton onClick={NavHandler}>
-                        <Hamburger src={hamburger}></Hamburger>
-                    </MenuButton>
-                    <LogoBox to='/'>
-                        <HeaderLogo />
-                    </LogoBox>
-                    <MenuButton></MenuButton>
-                </IntroBox>
-                <OverLogoBox href="http://www.ajsl.info/" target="_blank">
-                    <OverLogo src={over_logo} />
-                    <OverText>Steering of international Shipping and Logistics</OverText>
-                </OverLogoBox>
+                <LogoContainerBox>
+                    <IntroBox>
+                        <MenuButton onClick={NavHandler}>
+                            <Hamburger src={hamburger}></Hamburger>
+                        </MenuButton>
+                        <LogoBox to='/'>
+                            <HeaderLogo />
+                        </LogoBox>
+                        <MenuButton></MenuButton>
+                    </IntroBox>
+                    <OverLogoBox href="http://www.ajsl.info/" target="_blank">
+                        <OverLogo src={over_logo} />
+                        <OverText>Steering of international Shipping and Logistics</OverText>
+                    </OverLogoBox>
+                </LogoContainerBox>
             </LogoContainer>
-            <NavBox className='nav'>
-                <Nav>
+            <NavContainer className='nav'>
+                <NavBox>
                     <div style={{ width: '100%' }}>
                         <Login>
                             <TopItem style={{ width: "50%" }} ><Link to="/">홈</Link></TopItem>
@@ -353,8 +372,8 @@ const Header = function () {
                         </NavLists>
                     </div>
                     <Xbox onClick={NavHandler}>✕</Xbox>
-                </Nav>
-            </NavBox>
+                </NavBox>
+            </NavContainer>
         </Container >
     )
 };

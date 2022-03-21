@@ -2,7 +2,18 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+    display:flex;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 5%;
+    }
 `;
+const Box = styled.div`
+    width: 1130px;
+    margin: 0 3%;
+    
+`;
+
 
 const Chapter = styled.h1`
     margin-top: 2% ;
@@ -67,7 +78,7 @@ const Value = styled.div`
 
 
 const Activity = function () {
-    return <Container>
+    return <Container><Box>
         <Chapter>시상규칙</Chapter>
         <ContentBox>
             <span>
@@ -182,6 +193,7 @@ const Activity = function () {
                 <Value style={{ width: '20%' }}><span>한국해운학회지 제33호</span></Value>
             </Tuple>
         </Table>
+    </Box>
     </Container>
 }
 

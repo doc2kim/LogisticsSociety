@@ -5,28 +5,41 @@ import { newsAxios } from "../../ApiContext/RestApi"
 import Pagination from "../Pagination"
 
 const Container = styled.div`
+    display:flex;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 5%;
+    }
+`;
+const Box = styled.div`
+    width: 1130px;
+    margin: 0 3%;
 `;
 
 const NewsBox = styled.div`
+    display:flex;
+    justify-content: center;
     padding: 1%;
 `;
 
 const NewsGridBox = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 13vw);
+    grid-template-columns: repeat(4, 23.7%);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2vw 2vw;
+    gap: 2em 2em;
     justify-content:center;
     align-items: center;
     @media only screen and (max-width: 768px) {
         display: block;
+        width:100%;
 
     }
 `;
 
 const ImgBox = styled.div`
     width:100%;
-    height: 8vw;
+    height: 9em;
+    border: 1px solid;
     @media only screen and (max-width: 768px) {
         height: 55vw;
     }
@@ -89,9 +102,10 @@ const News = function () {
     }, [])
     console.log(newsData)
     return newsData && <Container>
-        <CountInfo style={{ padding: "1% 0" }}>총 <Number>{newsData.length}</Number>개의 게시물이 있습니다.</CountInfo>
-        <NewsBox>
-            <div>
+        <Box>
+            <CountInfo style={{ padding: "1% 0" }}>총 <Number>{newsData.length}</Number>개의 게시물이 있습니다.</CountInfo>
+            <NewsBox>
+
                 <NewsGridBox>
                     {newsData
                         .sort((a, b) => b.id - a.id)
@@ -111,14 +125,13 @@ const News = function () {
                             </div>
                         })}
                 </NewsGridBox>
+
+            </NewsBox>
+            <div style={{ paddingTop: "5%" }}>
+                <Pagination total={newsData.length} limit={limit} page={page} setPage={setPage} />
             </div>
-        </NewsBox>
-        <div style={{ paddingTop: "5%" }}>
-            <Pagination total={newsData.length} limit={limit} page={page} setPage={setPage} />
-        </div>
+        </Box>
     </Container>
 }
-
-
 
 export default News;

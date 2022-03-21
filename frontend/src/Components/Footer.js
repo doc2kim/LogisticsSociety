@@ -7,8 +7,9 @@ import Slider from "./Slider";
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    padding-top: 3vw;
+    padding-top: 3em;
     z-index:2;
     @media only screen and (max-width: 768px) {
         background-color:rgb(63, 66, 73);
@@ -18,8 +19,8 @@ const Container = styled.div`
     `;
 
 const ContentBox = styled.div`
-    margin: 0 20%;
-    padding: 1vw 0;
+    width:1130px;
+    padding: 1em 0;
     display: flex;
     align-items: center;
     @media only screen and (max-width: 1070px) {
@@ -28,7 +29,6 @@ const ContentBox = styled.div`
     @media only screen and (max-width: 768px) {
         width: 100%;
         margin: 0;
-        
         justify-content: center;
     }
 `;
@@ -37,11 +37,7 @@ const LogoBox = styled.div`
     display: flex;
     align-items: center;
     position:relative;
-    width:30%;
     opacity:0.4;
-    @media only screen and (max-width: 1070px) {
-        width:auto;
-    }
     @media only screen and (max-width: 768px) {
         justify-content:center;
         padding-top:10px;
@@ -51,14 +47,13 @@ const LogoBox = styled.div`
 // 
 
 const ContentInfo = styled.div`
-width: 100%;
-margin-left: 3em;
-@media only screen and (max-width: 1070px) {
-    margin: 0;
-}
+    width: 100%;
+    margin-left: 3em;
+    @media only screen and (max-width: 1070px) {
+        margin: 0;
+    }
     @media only screen and (max-width: 768px) {
         display: flex;
-        
         padding: 0;
         flex-direction: column;
         align-items: center;
@@ -87,8 +82,8 @@ const CopyRight = styled.span`
 
 const ContentText = styled.span`
     opacity: 0.5;
-    margin-right:2%;
-    font-size: 0.6vw;
+    margin-right:1em;
+    font-size: 0.7em;
     @media only screen and (max-width: 768px) {
         font-size:0.7em;
         color: #bbbbbb;
@@ -107,9 +102,8 @@ const Footer = () => {
                 </LogoBox>
                 <ContentInfo>
                     <TextBox>
-                        <ContentText>서울시 종로구 세종대로 23길 54 세종빌딩 10층</ContentText> <ContentText>E-mail:master@shipping.or.kr</ContentText>
-                    </TextBox>
-                    <TextBox>
+                        <ContentText>서울시 종로구 세종대로 23길 54 세종빌딩 10층&emsp;</ContentText>
+                        <ContentText>E-mail:master@shipping.or.kr</ContentText>
                     </TextBox>
                     <TextBox>
                         <ContentText>사무국:</ContentText>
@@ -117,7 +111,7 @@ const Footer = () => {
                         <ContentText>간사 황용희</ContentText><ContentText>010-3911-8747</ContentText>
                     </TextBox>
                     <TextBox>
-                        <CopyRight>Copyright © The Korean Association of Shipping and Logistics, Inc. All rights reserved </CopyRight>
+                        <CopyRight>Copyright © The Korean Association of Shipping and Logistics, Inc. All rights reserved. </CopyRight>
                     </TextBox>
                     <TextBox>
                         <CopyRight style={{ textAlign: 'center' }}>Created by ODN.</CopyRight>

@@ -2,7 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
-
+    display:flex;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 5%;
+    }
+`;
+const Box = styled.div`
+    width: 1130px;
+    margin: 0 3%;
 `;
 
 const Chapter = styled.h1`
@@ -57,62 +65,64 @@ const Value = styled.div`
 const Committee = function () {
 
     return <Container>
-        <Chapter>해운물류연구</Chapter>
-        <Table>
-            <Tuple>
-                <Tuple style={{ width: '50%' }}>
-                    <Attributes style={{ width: '50%' }}>직책</Attributes>
-                    <Attributes style={{ width: '50%' }}>성명</Attributes>
+        <Box>
+            <Chapter>해운물류연구</Chapter>
+            <Table>
+                <Tuple>
+                    <Tuple style={{ width: '50%' }}>
+                        <Attributes style={{ width: '50%' }}>직책</Attributes>
+                        <Attributes style={{ width: '50%' }}>성명</Attributes>
+                    </Tuple>
+                    <Attributes style={{ width: '50%' }}>소속</Attributes>
                 </Tuple>
-                <Attributes style={{ width: '50%' }}>소속</Attributes>
-            </Tuple>
-            <Tuple>
-                <Tuple style={{ width: '50%' }}>
-                    <Value style={{ width: '50%' }}>위원장</Value>
-                    <Value style={{ width: '50%' }}>최용석</Value>
+                <Tuple>
+                    <Tuple style={{ width: '50%' }}>
+                        <Value style={{ width: '50%' }}>위원장</Value>
+                        <Value style={{ width: '50%' }}>최용석</Value>
+                    </Tuple>
+                    <Value style={{ width: '50%' }}>순천대학교 교수</Value>
                 </Tuple>
-                <Value style={{ width: '50%' }}>순천대학교 교수</Value>
-            </Tuple>
-            <Tuple>
-                <Tuple style={{ width: '50%' }}>
-                    <Value style={{ width: '50%' }}>부위원장</Value>
-                    <Value style={{ width: '50%' }}>안우철</Value>
+                <Tuple>
+                    <Tuple style={{ width: '50%' }}>
+                        <Value style={{ width: '50%' }}>부위원장</Value>
+                        <Value style={{ width: '50%' }}>안우철</Value>
+                    </Tuple>
+                    <Value style={{ width: '50%' }}>강릉원주대학교 교수</Value>
                 </Tuple>
-                <Value style={{ width: '50%' }}>강릉원주대학교 교수</Value>
-            </Tuple>
-            <Tuple>
-                <Tuple style={{ width: '50%' }}>
-                    <Value style={{ width: '50%' }}>위원</Value>
+                <Tuple>
+                    <Tuple style={{ width: '50%' }}>
+                        <Value style={{ width: '50%' }}>위원</Value>
+                        <div style={{ width: '50%' }}>
+                            <Value>하병천</Value>
+                            <Value>문상영</Value>
+                            <Value>배희성</Value>
+                            <Value>허윤석</Value>
+                            <Value>박두진</Value>
+                            <Value>이성운</Value>
+                            <Value>김창범</Value>
+                            <Value>Vihn V. THAI</Value>
+                        </div>
+                    </Tuple>
                     <div style={{ width: '50%' }}>
-                        <Value>하병천</Value>
-                        <Value>문상영</Value>
-                        <Value>배희성</Value>
-                        <Value>허윤석</Value>
-                        <Value>박두진</Value>
-                        <Value>이성운</Value>
-                        <Value>김창범</Value>
-                        <Value>Vihn V. THAI</Value>
+                        <Value>서강대학교 교수</Value>
+                        <Value>한경대학교 교수</Value>
+                        <Value>경기대학교 교수</Value>
+                        <Value>제주대학교 교수</Value>
+                        <Value>동명대학교 교수</Value>
+                        <Value>한국해양수산개발원 연구위원</Value>
+                        <Value>조선대학교 연구교수</Value>
+                        <Value>RMIT Uni.Australia</Value>
                     </div>
                 </Tuple>
-                <div style={{ width: '50%' }}>
-                    <Value>서강대학교 교수</Value>
-                    <Value>한경대학교 교수</Value>
-                    <Value>경기대학교 교수</Value>
-                    <Value>제주대학교 교수</Value>
-                    <Value>동명대학교 교수</Value>
-                    <Value>한국해양수산개발원 연구위원</Value>
-                    <Value>조선대학교 연구교수</Value>
-                    <Value>RMIT Uni.Australia</Value>
-                </div>
-            </Tuple>
-            <Tuple>
-                <Tuple style={{ width: '50%' }}>
-                    <Value style={{ width: '50%' }}>편집국장</Value>
-                    <Value style={{ width: '50%' }}>김선구</Value>
+                <Tuple>
+                    <Tuple style={{ width: '50%' }}>
+                        <Value style={{ width: '50%' }}>편집국장</Value>
+                        <Value style={{ width: '50%' }}>김선구</Value>
+                    </Tuple>
+                    <Value style={{ width: '50%' }}>순천대학교 강사</Value>
                 </Tuple>
-                <Value style={{ width: '50%' }}>순천대학교 강사</Value>
-            </Tuple>
-        </Table>
+            </Table>
+        </Box>
     </Container>
 }
 

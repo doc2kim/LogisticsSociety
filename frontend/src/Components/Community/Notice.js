@@ -5,6 +5,15 @@ import { noticeAxios, noticeSearchAxios } from "../../ApiContext/RestApi"
 import Pagination from "../Pagination"
 
 const Container = styled.div`
+    display:flex;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 5%;
+    }
+`;
+const Box = styled.div`
+    width: 1130px;
+    margin: 0 3%;
 `;
 
 const NoticeBox = styled.div`
@@ -17,7 +26,7 @@ const NoticeList = styled.li`
 `;
 
 const Table = styled.h1`
-    border-top: 0.2vw solid #16498b; 
+    border-top: 4px solid #16498b; 
 `;
 
 const Tuple = styled.div`
@@ -26,13 +35,12 @@ const Tuple = styled.div`
 `;
 
 const Attribute = styled.div`
-    font-size:0.8vw;
+    font-size:1em;
     background-color: rgba(0, 0, 0, .02);
-    border-top: 2px solid #16498b;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height:1.5vw;
+    line-height:2em;
     @media only screen and (max-width: 768px) {
         line-height:7vw;
         font-size: 2.5vw;
@@ -85,8 +93,8 @@ const HitsAttr = styled(Attribute)`
 `;
 
 const Value = styled.div`
-    font-size:0.7vw;
-    line-height:2vw;
+    font-size:1em;
+    line-height:2.5em;
     color: rgba(0, 0, 0, .7);
     text-align:center;
     @media only screen and (max-width: 768px) {
@@ -111,36 +119,36 @@ const TitleValue = styled(Value)`
 `;
 
 const WriterValue = styled(Value)`
-width:10%;
-@media only screen and (max-width: 768px) {
-    display:none;
-}
+    width:10%;
+    @media only screen and (max-width: 768px) {
+        display:none;
+    }
 `;
 
 const NumberValue = styled(Value)`
     width: 10%;
-@media only screen and (max-width: 768px) {
-    display:none;
-}
+    @media only screen and (max-width: 768px) {
+        display:none;
+    }
 `;
 
 const HitsValue = styled(Value)`
     width: 10%;   
-@media only screen and (max-width: 768px) {
-    display:none;
-}`;
+    @media only screen and (max-width: 768px) {
+        display:none;
+    }`;
 
 const CreatedDateValue = styled(Value)`
     width: 15%;
     color: rgba(0, 0, 0, .4);
-@media only screen and (max-width: 768px) {
-    width: 20%;
-    text-align: center;
-    font-size: 0.5em;
-}
-@media only screen and (max-width:280px){
-    display:none;
-}
+    @media only screen and (max-width: 768px) {
+        width: 20%;
+        text-align: center;
+        font-size: 0.5em;
+    }
+    @media only screen and (max-width:280px){
+        display:none;
+    }
 `;
 
 const SearchBox = styled.div`
@@ -219,61 +227,63 @@ const Notice = function () {
             notice()
     }, [])
     return noticeData && <Container>
-        <NoticeBox>
-            <SearchBox>
-                <CountInfo>총 <Number>{noticeData && noticeData.length}</Number>개의 게시물이 있습니다.</CountInfo>
-                <SearchForm onSubmit={searchNotice}>
-                    <SearchCategory>
-                        <option>제목</option>
-                        <option>작성자</option>
-                        <option>파일이름</option>
-                    </SearchCategory>
-                    <SearchInput name="search" />
-                </SearchForm>
-            </SearchBox>
-            <Table>
-                <Tuple>
-                    <NumberAttr >번호</NumberAttr>
-                    <TitleAttr>제목</TitleAttr>
-                    <WriterAttr>작성자</WriterAttr>
-                    <CreatedDateAttr>등록일</CreatedDateAttr>
-                    <HitsAttr >조회</HitsAttr>
-                </Tuple>
-                <NoticeLists>
-                    {noticeData
-                        .sort((a, b) => (b.top_fixed === true) - (a.top_fixed === true) || b.id - a.id)
-                        .slice(offset, offset + limit)
-                        .map(function (i, index) {
-                            return <NoticeList key={i.id}>
-                                <Tuple>
-                                    {i.top_fixed ?
-                                        <>
-                                            <NumberValue style={{ color: 'red' }}>공지</NumberValue>
-                                            <TitleValue style={{ color: 'red' }} selected={path.pathname === `/${i.id}`}>
-                                                <Link to={`${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
-                                                    {i.title}
-                                                </Link>
-                                            </TitleValue>
-                                        </>
-                                        : <> <NumberValue>{i.id}</NumberValue>
-                                            <TitleValue selected={path.pathname === `/${i.id}`}>
-                                                <Link to={`${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
-                                                    {i.title}
-                                                </Link>
-                                            </TitleValue>
-                                        </>}
-                                    <WriterValue>{i.writer}</WriterValue>
-                                    <CreatedDateValue>{i.created_date.substr(0, 10)}</CreatedDateValue>
-                                    <HitsValue>{i.hits}</HitsValue>
-                                </Tuple>
-                            </NoticeList>
-                        })}
-                </NoticeLists>
-                <div style={{ padding: "2%" }}>
-                    <Pagination total={noticeData.length} limit={limit} page={page} setPage={setPage} />
-                </div>
-            </Table>
-        </NoticeBox>
+        <Box>
+            <NoticeBox>
+                <SearchBox>
+                    <CountInfo>총 <Number>{noticeData && noticeData.length}</Number>개의 게시물이 있습니다.</CountInfo>
+                    <SearchForm onSubmit={searchNotice}>
+                        <SearchCategory>
+                            <option>제목</option>
+                            <option>작성자</option>
+                            <option>파일이름</option>
+                        </SearchCategory>
+                        <SearchInput name="search" />
+                    </SearchForm>
+                </SearchBox>
+                <Table>
+                    <Tuple>
+                        <NumberAttr >번호</NumberAttr>
+                        <TitleAttr>제목</TitleAttr>
+                        <WriterAttr>작성자</WriterAttr>
+                        <CreatedDateAttr>등록일</CreatedDateAttr>
+                        <HitsAttr >조회</HitsAttr>
+                    </Tuple>
+                    <NoticeLists>
+                        {noticeData
+                            .sort((a, b) => (b.top_fixed === true) - (a.top_fixed === true) || b.id - a.id)
+                            .slice(offset, offset + limit)
+                            .map(function (i, index) {
+                                return <NoticeList key={i.id}>
+                                    <Tuple>
+                                        {i.top_fixed ?
+                                            <>
+                                                <NumberValue style={{ color: 'red' }}>공지</NumberValue>
+                                                <TitleValue style={{ color: 'red' }} selected={path.pathname === `/${i.id}`}>
+                                                    <Link to={`${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
+                                                        {i.title}
+                                                    </Link>
+                                                </TitleValue>
+                                            </>
+                                            : <> <NumberValue>{i.id}</NumberValue>
+                                                <TitleValue selected={path.pathname === `/${i.id}`}>
+                                                    <Link to={`${i.id}`} state={{ data: i.id, allData: noticeData, index: index }}>
+                                                        {i.title}
+                                                    </Link>
+                                                </TitleValue>
+                                            </>}
+                                        <WriterValue>{i.writer}</WriterValue>
+                                        <CreatedDateValue>{i.created_date.substr(0, 10)}</CreatedDateValue>
+                                        <HitsValue>{i.hits}</HitsValue>
+                                    </Tuple>
+                                </NoticeList>
+                            })}
+                    </NoticeLists>
+                    <div style={{ padding: "2%" }}>
+                        <Pagination total={noticeData.length} limit={limit} page={page} setPage={setPage} />
+                    </div>
+                </Table>
+            </NoticeBox>
+        </Box>
     </Container >
 }
 

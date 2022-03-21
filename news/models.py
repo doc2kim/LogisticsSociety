@@ -22,7 +22,7 @@ class CoverImage(models.Model):
 class News(models.Model):
     writer = models.CharField(max_length=50, verbose_name='작성자')
     title = models.CharField(max_length=100, verbose_name='제목')
-    content = models.TextField(null=False, verbose_name='내용')
+    content = models.TextField(null=True, verbose_name='내용')
     hits = models.PositiveIntegerField(default=0, verbose_name='조회수')
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='작성일')
     modified_date = models.DateTimeField(auto_now=True, verbose_name='변경일')

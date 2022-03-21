@@ -3,19 +3,31 @@ import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
 
 const Container = styled.div`
-    margin: 0 20%;
-    padding-top:7.7em;
+    width:100%;
+    padding-top:6.3em;
     @media only screen and (max-width: 768px) {
-        margin: 0 3%;
-        padding-top:3.5em; 
+        padding-top:3.5em;
     }
 `;
+const ContainerBox = styled.div`
+    display:flex;
+    justify-content: center;
+`;
+const Box = styled.div`
+    width: 1130px;
+    margin: 0 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+`;
+
+
 
 const TitleBox = styled.div`
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1vw 0;
+    padding: 1em 0;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     @media only screen and (max-width: 768px) {
         flex-direction: column;
@@ -23,9 +35,8 @@ const TitleBox = styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: 1.3vw;
+    font-size: 1.5em;
     @media only screen and (max-width: 768px) {
-        font-size: 1.5em;
         padding: 0.5em 0;
     }
 `;
@@ -35,11 +46,10 @@ const Icon = styled(Link)`
 `;
 
 const PathRoute = styled.div`
-    font-size: 0.7vw;
+    font-size: 0.8em;
     @media only screen and (max-width: 768px) {
-        font-size: 0.8em;
         line-height: 2em;
-        padding-bottom: 0.5em;
+        padding: 0.5em;
     }
 `;
 
@@ -88,10 +98,14 @@ const SiteMap = function () {
     const navigate = location.state.navigate;
     const { pathname } = useLocation()
     return <Container>
-        <TitleBox>
-            <Title>사이트맵</Title>
-            <PathRoute><Icon to="/">🏠 </Icon> &gt; <span style={{ color: 'rgb(18, 95, 163)' }}>사이트맵</span></PathRoute>
-        </TitleBox>
+        <ContainerBox>
+            <Box>
+                <TitleBox>
+                    <Title>사이트맵</Title>
+                    <PathRoute><Icon to="/">🏠 </Icon> &gt; <span style={{ color: 'rgb(18, 95, 163)' }}>사이트맵</span></PathRoute>
+                </TitleBox>
+            </Box>
+        </ContainerBox>
         <Maps>
             <MapNavLists>{navigate.map(function (i) {
                 return <MapLists key={i.index} selected={pathname === ` ${i.path}`}>

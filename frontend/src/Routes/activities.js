@@ -9,10 +9,9 @@ import ManagementAward from "../Components/Active/ManagementAward"
 import BusinessAward from "../Components/Active/BusinessAward"
 
 const Container = styled.div`
-    margin: 0 20%;
-    padding-top:7.7em;
+    width:100%;
+    padding-top:6.3em;
     @media only screen and (max-width: 768px) {
-        margin: 0 3%;
         padding-top:3.5em;
     }
 `;

@@ -24,9 +24,15 @@ import partner15 from "../assets/Lloyds.jpg";
 
 const Container = styled.div`
     overflow:hidden; 
-    padding: 0 20%;
+    width:1130px;
+    .slick-prev{
+        left:5px;
+    }
+    .slick-next{
+        right:5px;
+    }
     @media only screen and (max-width: 768px) {
-        padding: 0 8%;
+        width: 100%;
     }
 `;
 
@@ -34,24 +40,25 @@ const Partners = styled.div`
     background-color: #ebebeb;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 4vw;
+    height: 5em;
     @media only screen and (max-width: 768px) {
         height: 30vw;
     }
 `;
 
 const StyledSlider = styled(Slider)`
+    padding: 0 2em;
     .slick-slide div{
       outline: none;
-    }
-    
+    }   
 `;
 
 const ImageContainer = styled.div`
-    margin-right: 1vw;
-    padding: 0.1vw 1vw;
-    height: 2.5vw;
+    margin-right: 0.5em;
+    padding: 0.1em 1em;
+    height: 3em;
     background-color: white;
     display: flex;
     justify-content: center;
