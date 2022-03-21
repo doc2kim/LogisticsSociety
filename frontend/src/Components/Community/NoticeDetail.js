@@ -246,11 +246,6 @@ const Post = styled.div`
 
 const PostTitle = styled.span`
     padding: 0 1%;
-    @media only screen and (max-width: 768px) {
-        overflow:hidden;
-        text-overflow:ellipsis;
-        white-space:nowrap;
-    }
 `;
 
 const UpDownIcon = styled.div`
@@ -420,13 +415,13 @@ const NoticeDetail = function () {
                                             </Post>
                                         })}
                                         <Post style={{ cursor: 'default' }}><UpDownIcon>다음글 ▼</UpDownIcon>
-                                            <PostTitle>없음</PostTitle>
+                                            <PostTitle style={{ whiteSpace: 'nowrap' }}>없음</PostTitle>
                                         </Post>
                                     </Posts>
                                     : dataIndex === 0 &&
                                     <Posts>
                                         <Post style={{ borderBottom: '1px solid rgba(0, 0, 0,0.2)', cursor: 'default' }}><UpDownIcon>이전글 ▲</UpDownIcon>
-                                            <PostTitle>없음</PostTitle>
+                                            <PostTitle style={{ whiteSpace: 'nowrap' }}>없음</PostTitle>
                                         </Post>
                                         {allData.map(function (i, index) {
                                             return dataIndex + 1 === index && <Post key={index}
