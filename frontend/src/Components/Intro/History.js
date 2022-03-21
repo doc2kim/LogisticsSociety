@@ -37,7 +37,7 @@ const Year = styled.div`
 
 
 const History = function () {
-    const [history, setHistory] = useState('1');
+    const [history, setHistory] = useState('4');
 
     function historyHandler(e) {
 

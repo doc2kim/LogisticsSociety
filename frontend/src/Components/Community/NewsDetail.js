@@ -238,6 +238,11 @@ const Post = styled.div`
 
 const PostTitle = styled.span`
     padding: 0 1%;
+    @media only screen and (max-width: 768px) {
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
 `;
 
 const UpDownIcon = styled.div`
@@ -344,7 +349,7 @@ const NewsDetail = function () {
                                 </Posts>
                                 : dataIndex === 0 &&
                                 <Posts>
-                                    <Post style={{ borderBottom: '1px solid rgba(0, 0, 0,0.2)', cursor: 'default' }}>이전글<UpDownIcon>▲</UpDownIcon>
+                                    <Post style={{ borderBottom: '1px solid rgba(0, 0, 0,0.2)', cursor: 'default' }}><UpDownIcon>이전글 ▲</UpDownIcon>
                                         <PostTitle>없음</PostTitle>
                                     </Post>
                                     {allData.map(function (i, index) {

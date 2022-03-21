@@ -246,6 +246,11 @@ const Post = styled.div`
 
 const PostTitle = styled.span`
     padding: 0 1%;
+    @media only screen and (max-width: 768px) {
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
 `;
 
 const UpDownIcon = styled.div`

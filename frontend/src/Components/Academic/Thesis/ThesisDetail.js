@@ -278,13 +278,13 @@ const ThesisDetail = function () {
                                             </Post>
                                         })}
                                         <Post style={{ cursor: 'default' }}>다음글<UpDownIcon>▼</UpDownIcon>
-                                            <PostTitle>없음</PostTitle>
+                                            <PostTitle style={{ whiteSpace: "nowrap" }}>없음</PostTitle>
                                         </Post>
                                     </Posts>
                                     : dataIndex === 0 &&
                                     <Posts>
                                         <Post style={{ borderBottom: '1px solid rgba(0, 0, 0,0.2)', cursor: 'default' }}><UpDownIcon>이전글 ▲</UpDownIcon>
-                                            <PostTitle>없음</PostTitle>
+                                            <PostTitle style={{ whiteSpace: "nowrap" }}>없음</PostTitle>
                                         </Post>
                                         {resultsData.map(function (i, index) {
                                             return dataIndex + 1 === index && <Post key={index}
