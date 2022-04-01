@@ -116,7 +116,7 @@ const News = function () {
                                     <Date>{i.created_date.substr(0, 10)}</Date>
                                 </SubInfo>
                                 <Link to={`${i.id}`} state={{ data: i.id, allData: newsData, index: index }}>
-                                    <ImgBox style={{ background: `url(http://127.0.0.1:8000/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></ImgBox>
+                                    <ImgBox style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></ImgBox>
                                     <TitleBox>
                                         <Title>{i.title}</Title>
                                     </TitleBox>
