@@ -21,8 +21,10 @@ export const noticeSearchAxios = (e) => {
     })
 }
 
-
 export const noticeDetailAxios = (id) => api.get(`notice/${id}/`)
+
+export const conferenceAxios = () => api.get("conference")
+export const icaslAxios = () => api.get("icasl")
 export const newsAxios = () => api.get("news")
 export const newsDetailAxios = (id) => api.get(`news/${id}/`)
 export const fileAxios = () => api.get('files/')

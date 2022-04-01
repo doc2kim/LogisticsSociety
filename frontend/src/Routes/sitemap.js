@@ -9,18 +9,18 @@ const Container = styled.div`
         padding-top:3.5em;
     }
 `;
-const ContainerBox = styled.div`
+
+const Container2 = styled.div`
     display:flex;
     justify-content: center;
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 5%;
+    }
 `;
 const Box = styled.div`
     width: 1130px;
     margin: 0 3%;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
 `;
-
 
 
 const TitleBox = styled.div`
@@ -66,14 +66,15 @@ const Maps = styled.div`
     }
 `;
 const MapNavLists = styled.div`
+    width: 100%;
     display: grid;
-    grid-template-columns: 60% 60% 60%;
+    grid-template-columns: repeat(3, 30%);
     justify-content: center;
     text-align: center;
     row-gap: 10%;
-	column-gap: 20%;
+    column-gap: 5%;
     @media only screen and (max-width: 768px) {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 45%);
         row-gap: 5%;
         column-gap: 10%;
     }
@@ -98,27 +99,30 @@ const SiteMap = function () {
     const navigate = location.state.navigate;
     const { pathname } = useLocation()
     return <Container>
-        <ContainerBox>
+        <Container2>
             <Box>
                 <TitleBox>
                     <Title>사이트맵</Title>
                     <PathRoute><Icon to="/">🏠 </Icon> &gt; <span style={{ color: 'rgb(18, 95, 163)' }}>사이트맵</span></PathRoute>
                 </TitleBox>
             </Box>
-        </ContainerBox>
-        <Maps>
-            <MapNavLists>{navigate.map(function (i) {
-                return <MapLists key={i.index} selected={pathname === ` ${i.path}`}>
-                    <MapList key={i.index} style={{ borderTop: '3px solid #16498b', backgroundColor: 'rgba(0, 0, 0, .05)' }}>{i.title}</MapList>
-                    {i.subNav.map(function (j) {
-                        return j.subPath ?
-                            <MapList key={j.id} style={{ opacity: '0.6' }}><Link to={`${i.path + j.subPath}`}>{j.subTitle}</Link></MapList> :
-                            <MapList key={j.id} style={{ opacity: '0.6' }}><Alink target="_blank" href={j.url}>{j.subTitle}</Alink></MapList>
-                    })}
-                </MapLists>;
-            })}</MapNavLists>
-        </Maps>
-
+        </Container2>
+        <Container2>
+            <Box>
+                <Maps>
+                    <MapNavLists>{navigate.map(function (i) {
+                        return <MapLists key={i.index} selected={pathname === ` ${i.path}`}>
+                            <MapList key={i.index} style={{ borderTop: '3px solid #16498b', backgroundColor: 'rgba(0, 0, 0, .05)' }}>{i.title}</MapList>
+                            {i.subNav.map(function (j) {
+                                return j.subPath ?
+                                    <MapList key={j.id} style={{ opacity: '0.6' }}><Link to={`${i.path + j.subPath}`}>{j.subTitle}</Link></MapList> :
+                                    <MapList key={j.id} style={{ opacity: '0.6' }}><Alink target="_blank" href={j.url}>{j.subTitle}</Alink></MapList>
+                            })}
+                        </MapLists>;
+                    })}</MapNavLists>
+                </Maps>
+            </Box>
+        </Container2>
     </Container >
 }
 

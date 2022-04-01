@@ -21,6 +21,8 @@ import { AuthProvider } from "../ApiContext/AuthContext"
 import NoticeDetail from "../Components/Community/NoticeDetail"
 import NewsDetail from "../Components/Community/NewsDetail"
 import ThesisDetail from "../Components/Academic/Thesis/ThesisDetail"
+import ConferenceDetail from "../Components/Active/ConferenceDetail"
+import IcaslDetail from "../Components/Active/IcaslDetail"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -54,6 +56,8 @@ export default () => {
                     <Route path="/community/notice/:id" element={<NoticeDetail />}></Route>
                     <Route path="/community/news/:id" element={<NewsDetail />}></Route>
                     <Route path="/academic/thesis-search/:id" element={<ThesisDetail />}></Route>
+                    <Route path="/active/conference/:id" element={<ConferenceDetail />}></Route>
+                    <Route path="/active/icasl/:id" element={<IcaslDetail />}></Route>
                 </Routes>
                 <Footer />
             </AuthProvider>

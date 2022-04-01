@@ -59,6 +59,8 @@ PROJECT_APPS = [
     "users.apps.UsersConfig",
     "notice.apps.NoticeConfig",
     "news.apps.NewsConfig",
+    "conference.apps.ConferenceConfig",
+    "icasl.apps.IcaslConfig",
     "etc.apps.EtcConfig"
 ]
 

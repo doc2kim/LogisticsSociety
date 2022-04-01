@@ -69,12 +69,15 @@ const Nav = styled.nav`
 const Button = styled.button`
   border: none;
   background: none;
-  padding: 8px;
+  padding: 10px;
   margin: 0;
   font-size: medium;
   &:hover {
     cursor: pointer;
     transform: translateY(-2px);
+  }
+  @media only screen and (max-width:768px){
+    padding: 5px;
   }
 
   &[disabled] {

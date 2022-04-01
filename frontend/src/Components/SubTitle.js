@@ -22,7 +22,7 @@ const TitleBox = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 1em 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
     @media only screen and (max-width: 768px) {
         flex-direction: column;
     }
@@ -30,7 +30,9 @@ const TitleBox = styled.div`
 
 const Title = styled.h1`
     font-size: 1.5em;
+    width: 40%;
     @media only screen and (max-width: 768px) {
+        text-align: center;
         font-size: 1.5em;
         padding: 0.5em 0;
     }
@@ -41,6 +43,7 @@ const Icon = styled(Link)`
 
 const PathRoute = styled.div`
     font-size: 0.8em;
+    line-height:1.5em;
     @media only screen and (max-width: 768px) {
         line-height: 2em;
         padding: 0.5em;
@@ -52,6 +55,7 @@ const HomeIcon = styled.img`
 
 const SubTitle = function ({ title }) {
     const { pathname } = useLocation();
+    console.log(title)
     return (
         <Container>
             <Box>

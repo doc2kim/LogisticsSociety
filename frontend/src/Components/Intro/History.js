@@ -13,11 +13,11 @@ const Container = styled.div`
         margin-bottom: 5%;
     }
 `;
+
 const Box = styled.div`
     width: 1130px;
     margin: 0 3%;
 `;
-
 
 const Years = styled.div`
     display: flex;
@@ -84,8 +84,7 @@ const History = function () {
                 {history === '1' ? <History1981 /> :
                     history === '2' ? <History2005 /> :
                         history === '3' ? <History2016 /> :
-                            history === '4' && <History2021 />
-                }
+                            history === '4' && <History2021 />}
             </Box>
         </Container>
     )

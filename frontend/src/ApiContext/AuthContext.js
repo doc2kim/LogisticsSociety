@@ -3,9 +3,7 @@ import axios from "axios";
 import jwt_decode from "jwt-decode";
 import { useNavigate } from 'react-router-dom';
 
-// 일반적인 React application에서 data는 부모로부터 자식에게 props를 통해 전달되지만, 
-// application안의 여러 component에 전해줘야 하는 props의 경우 부모/자식 관계의 모든 component에 data를 공유해주어야한다.
-// context는 이 번거로운 과정을 개선해 React component tree 안에서 전역적으로 데이터를 공유할 수 있도록 고안된 방법이다.
+
 
 const AuthContext = createContext();
 

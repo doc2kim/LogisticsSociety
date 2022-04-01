@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { useLocation } from "react-router-dom";
 import SubTitle from "../Components/SubTitle";
 import Activity from "../Components/Active/Activity"
+import Conference from "../Components/Active/Conference"
+import Icasl from "../Components/Active/Icasl"
 import AcademicAward from "../Components/Active/AcademicAward"
 import CulturalAward from "../Components/Active/CulturalAward"
 import ManagementAward from "../Components/Active/ManagementAward"
@@ -21,10 +23,12 @@ const Active = function () {
     return <Container>
         <SubTitle />
         {pathname.includes('activity') ? <Activity /> :
-            pathname.includes('academic-award') ? <AcademicAward /> :
-                pathname.includes('cultural-award') ? <CulturalAward /> :
-                    pathname.includes('management-award') ? <ManagementAward /> :
-                        pathname.includes('business-award') && <BusinessAward />}
+            pathname.includes('conference') ? <Conference /> :
+                pathname.includes('icasl') ? <Icasl /> :
+                    pathname.includes('academic-award') ? <AcademicAward /> :
+                        pathname.includes('cultural-award') ? <CulturalAward /> :
+                            pathname.includes('management-award') ? <ManagementAward /> :
+                                pathname.includes('business-award') && <BusinessAward />}
     </Container>
 }
 

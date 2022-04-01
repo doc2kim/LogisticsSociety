@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
-import jsonResults from "./json_results.json";
+import jsonKoResults from "./json_ko_results.json";
+import jsonEnResults from "./json_en_results.json";
 import Pagination from "../../Pagination"
 
 const Container = styled.div`
@@ -33,13 +34,14 @@ const ArticleTitle = styled.div`
     opacity: 0.8;
 `;
 
-const JournalInfo = styled.div`
+const JournalInfo = styled.ul`
     font-size: 0.7em;
     opacity: 0.6;
 `;
 
-const Author = styled.span`
+const Author = styled.li`
     font-size: 0.7em;
+    list-style: inside;
 `;
 
 const SearchBox = styled.div`
@@ -110,6 +112,7 @@ const ThesisSearch = function () {
     const [results, setResults] = useState(() => localStorage.getItem('results') ? JSON.parse(localStorage.getItem('results')) : null);
     const [search, setSearch] = useState(() => localStorage.getItem('search') ? JSON.parse(localStorage.getItem('search')) : null);
     const [select, setSelect] = useState(() => localStorage.getItem('select') ? JSON.parse(localStorage.getItem('select')) : null);
+    const [journal, setJournal] = useState(() => localStorage.getItem('journal') ? JSON.parse(localStorage.getItem('journal')) : null);
     const [page, setPage] = useState(1);
     const limit = 15;
     const offset = (page - 1) * limit;
@@ -121,7 +124,9 @@ const ThesisSearch = function () {
     const searchThesis = function (e) {
         e.preventDefault()
         const searchResult = [];
-        const optionValue = e.target[0].selectedOptions[0].value;
+        const optionValue = e.target[1].selectedOptions[0].value;
+        const journalValue = e.target[0].selectedOptions[0].value;
+        let jsonResults = journalValue === "국문지" ? jsonKoResults : jsonEnResults;
         setPage(1);
         if (optionValue === "논문명") {
             for (const i of jsonResults) {
@@ -163,16 +168,19 @@ const ThesisSearch = function () {
         }
         setResults(searchResult)
         localStorage.setItem('results', JSON.stringify(searchResult))
+        setJournal(e.target[0].selectedOptions[0].value)
+        localStorage.setItem('journal', JSON.stringify(e.target[0].selectedOptions[0].value))
         setSearch(e.target.search.value)
         localStorage.setItem('search', JSON.stringify(e.target.search.value))
-        setSelect(e.target[0].selectedOptions[0].value)
-        localStorage.setItem('select', JSON.stringify(e.target[0].selectedOptions[0].value))
+        setSelect(e.target[1].selectedOptions[0].value)
+        localStorage.setItem('select', JSON.stringify(e.target[1].selectedOptions[0].value))
     }
 
     useEffect(function () {
         if (!results) {
-            setResults(jsonResults)
-            localStorage.setItem('results', JSON.stringify(jsonResults))
+            setResults(jsonKoResults)
+            setJournal('국문지')
+            localStorage.setItem('results', JSON.stringify(jsonKoResults))
             setSearch("")
             localStorage.setItem('search', JSON.stringify(""))
             setSelect("")
@@ -183,6 +191,8 @@ const ThesisSearch = function () {
             localStorage.setItem('results', JSON.stringify(state.state.searchResult))
 
             localStorage.setItem('key', JSON.stringify(state.key))
+            setJournal(state.state.journalValue)
+            localStorage.setItem('journal', JSON.stringify(state.state.journalValue))
             setSearch(state.state.searchValue)
             localStorage.setItem('search', JSON.stringify(state.state.searchValue))
             setSelect(state.state.selectValue)
@@ -193,10 +203,14 @@ const ThesisSearch = function () {
         <Box>
             <SearchBox>
                 <CountInfo>
-                    <SearchInfo>{`${select}`}</SearchInfo> / <SearchInfo>{`${search}`}</SearchInfo> 검색결과<br />
+                    <SearchInfo>{`${journal}`}</SearchInfo> / <SearchInfo>{`${select}`}</SearchInfo> / <SearchInfo>{`${search}`}</SearchInfo> 검색결과<br />
                     총<Number> {results.length}</Number>개의 게시물이 있습니다.
                 </CountInfo>
                 <SearchForm onSubmit={searchThesis} name="searchForm" ref={inputRef}>
+                    <SearchCategory name='journal'>
+                        <option value="국문지" title="국문지">국문지</option>
+                        <option value="영문지" title="영문지">영문지</option>
+                    </SearchCategory>
                     <SearchCategory name="catagory">
                         <option value="논문명" title="논문명">논문명</option>
                         <option value="저자" title="저자">저자</option>
@@ -207,12 +221,14 @@ const ThesisSearch = function () {
             </SearchBox>
             <Results>{
                 results && results.slice(offset, offset + limit).map(function (i, index) {
+                    const authorJoin = typeof i.articleInfo["author-group"]["author"] === "object" ? i.articleInfo["author-group"]["author"].join("") : i.articleInfo["author-group"]["author"]
+                    const authorReplace = authorJoin.replace(/\(/g, ' - ');
+                    const authorGroup = authorReplace.split(')').slice(0, -1)
                     const articleTitle = i.articleInfo["title-group"]["article-title"]
-                    const authorGroup = i.articleInfo["author-group"]["author"]
                     const journalInfo = i.journalInfo
                     const id = i.articleInfo["@article-id"]
                     return <Tuple key={index}>
-                        <Link to={id} state={{ id: id, data: i, results: results, index: index }}>
+                        <Link to={id} state={{ id: id, data: i, results: results, index: index, journal: journal }}>
                             {articleTitle && articleTitle[0] ?
                                 <>
                                     <ArticleTitle>{articleTitle[0]["#text"]}</ArticleTitle>

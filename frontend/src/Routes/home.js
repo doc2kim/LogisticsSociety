@@ -1,9 +1,12 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
-import jsonResults from "../Components/Academic/Thesis/json_results.json";
+import jsonKoResults from "../Components/Academic/Thesis/json_ko_results.json";
+import jsonEnResults from "../Components/Academic/Thesis/json_en_results.json";
 import home_img from "../assets/home_img.png";
 import slide_img from "../assets/slide.png";
+import icasl_icon from "../assets/icasl_icon.png";
+import academic_icon from "../assets/academic_icon.png";
 // import AuthContext from "../ApiContext/AuthContext"
 import { noticeAxios } from "../ApiContext/RestApi"
 import { newsAxios } from "../ApiContext/RestApi"
@@ -16,7 +19,7 @@ const Container = styled.div`
     padding-top:6.2em;
     @media only screen and (max-width: 768px) {
         padding-top:3em;
-        height:250vw;
+        height:430vw;
     }
 `;
 
@@ -60,11 +63,11 @@ const TitleImage = styled.div`
 
 const InfoContainer = styled.div`
     position: absolute;
-    top: 27em;
+    top: 24em;
     right: 0;
     left: 0; 
     @media only screen and (max-width: 768px) {
-        top: 70vw;
+        top: 67vw;
     }
 `;
 
@@ -110,7 +113,7 @@ const SlideBox = styled.div`
     display: flex;
     @media only screen and (max-width: 768px) {
         width: 100%;
-        height: 45vw;
+        height: 50vw;
         padding-bottom:5vw;
     }
 `;
@@ -245,30 +248,31 @@ const SlideTitle = styled.h3`
 // `;
 
 const Paper = styled.div`
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 49%;
-    background-color:#31a4d1;
     @media only screen and (max-width: 768px) {
-        display: flex;
-        justify-content:center;
-        align-items: center;
         width: 100%;
-        margin: 0;
+        height: 50vw;
+        margin-bottom:5vw;
     }
 `;
+
 const PaperBox = styled.div`
     padding: 0 10%;
+    height: 69%;
+    background-color:#31a4d1;
 `;
 
 const PaperTitle = styled.h3`
     color: white;
     font-size: 1.7em;
     text-align: center;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     @media only screen and (max-width: 768px) {
-        padding: 4vw 0 2vw 0;
-        font-size: 4vw;        
+        font-size: 4vw;
     }
-    
 `;
 
 const PaperText = styled.span`
@@ -276,7 +280,7 @@ const PaperText = styled.span`
     white-space:nowrap;
     text-overflow:ellipsis;
     display: block;
-    padding-top: 1.5em;
+    padding-top: 1em;
     color: white;
     opacity: 0.6;
     text-align: center;
@@ -292,13 +296,13 @@ const SearchForm = styled.form`
 `;
 
 const SearchCategory = styled.select`
-    margin-top: 1.3em;
+    margin-top: 1em;
     background-color: #31a4d1;
     border: 2px solid white;
     border-right: none;
     color: white;
-    height: 3.4em;
-    font-size: 0.9em;
+    height: 3.85em;
+    font-size: 0.8em;
     @media only screen and (max-width: 768px) {
         height: 9vw;
         font-size: 3vw;
@@ -307,7 +311,7 @@ const SearchCategory = styled.select`
 `;
 
 const PaperSearch = styled.input`
-    margin-top: 1.3em;
+    margin-top: 0.9em;
     padding:0;
     border: 2px solid white;
     background-color: #31a4d1;
@@ -335,15 +339,18 @@ const PaperSearch = styled.input`
 
 
 const PaperSubmission = styled.a`
-    padding: 2em;
+    padding: 1em;
     display: block;
     color: rgba(255,255,255,0.8);
     text-align: center;
     font-size: 0.9em;
     @media only screen and (max-width: 768px) {
+        padding: 4vw;
         font-size:2.5vw;
     }
-    `;
+`;
+
+
 
 const NoticeSections = styled.div`
     width: 49%;
@@ -357,6 +364,7 @@ const Notice = styled.div`
     display: flex;
     justify-content:space-between;
     align-items:center;
+    margin-bottom: 0.5em;
     border-bottom: 0.2em solid rgba(0, 0, 0, .3);
 `;
 
@@ -400,7 +408,7 @@ const NoticeList = styled.li`
         overflow:hidden;
         white-space:nowrap;
         text-overflow:ellipsis;
-        font-size: 1.2em;
+        font-size: 3.5vw;
         line-height:7vw;
         width: 80%;
     }
@@ -409,10 +417,10 @@ const NoticeList = styled.li`
 const ListBox = styled.div`
     display: flex;
     justify-content:space-between;
-    height:1.7em;
     align-items: center;
+    line-height: 2em;
     @media only screen and (max-width: 768px) {
-        height: auto;   
+        
     }
 
 `;
@@ -420,26 +428,33 @@ const ListBox = styled.div`
 const NewsBox = styled.div`
     display: flex;
     justify-content:space-between;
-   
+    @media only screen and (max-width: 768px) {
+        display:block;
+    }
 `;
 
 const News = styled.div`
     width: 32.333333%;
     line-height:1.2em;
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+        padding-bottom: 5vw;
+        width:100%;
+    }
 `;
 
 const NewsImg = styled.img`
     width:100%;
-    height: 5.5em;
+    height: 7em;
     @media only screen and (max-width: 768px) {
-        height: 20vw;   
+        height: 50vw;   
     }
 `;
 
 const NewsContent = styled.span`
     width: 90%;
     display:block;
-    font-size:1em;
+    font-size:0.8em;
     opacity: 0.8;
     overflow:hidden;
     white-space:nowrap;
@@ -460,6 +475,9 @@ const TimeStamp = styled.div`
     @media only screen and (max-width: 768px) {
         font-size:3vw;
     }
+    @media only screen and (max-width: 280px) {
+        display:none;
+    }
 `;
 
 const NewsInfo = styled.span`
@@ -469,6 +487,61 @@ const NewsInfo = styled.span`
         display: none;
     }
 `;
+
+const Conference = styled.div`
+    height: 29%;
+    display: flex;
+    justify-content: space-between;
+`;
+
+const Academic = styled(Link)`
+    background-color: #31a4d1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 49.5%;
+    color: white;
+    
+`;
+
+const AcademicInfo = styled.div`
+    text-align: center;
+`;
+
+const AcademicImage = styled.img`
+    width: 3em; 
+    height: 3em;
+    @media only screen and (max-width: 768px) {
+        width: 10vw;
+        height: 10vw;
+    }
+`;
+
+const IcaslImage = styled.img`
+ @media only screen and (max-width: 768px) {
+        width: 12vw;
+        height: 12vw;
+    }
+`;
+
+const AcademicTitle = styled.h1`
+    font-size: 1.5em;
+    @media only screen and (max-width: 768px) {
+        font-size: 4vw;
+    }
+`;
+
+const AcademicText = styled.span`
+    font-size: 0.8em;
+    @media only screen and (max-width: 768px) {
+        font-size: 2vw;
+    }
+`;
+
+
+
+
+
 
 // const SearchIcon = styled.span`
 //     font-size: 1vw;
@@ -504,11 +577,14 @@ const TitleSet = styled.div`
 `;
 
 const EventText = styled.span`
-    font-size: 1.2em;
+    line-height: 1.5em;
     @media only screen and (max-width: 768px) {
         font-size: 3vw;
     }
 `;
+
+
+
 
 
 function useScroll() {
@@ -541,12 +617,14 @@ const Home = function () {
     const [slide, setSlide] = useState(null)
     const [currentSlide, setCurrentSlide] = useState(0);
     const slideRef = useRef(null);
-    const navigater = useNavigate()
+    const navigator = useNavigate()
 
     const searchHandler = function (e) {
         e.preventDefault()
         const searchResult = [];
-        const optionValue = e.target[0].selectedOptions[0].value;
+        const optionValue = e.target[1].selectedOptions[0].value;
+        const journalValue = e.target[0].selectedOptions[0].value;
+        let jsonResults = journalValue === "국문지" ? jsonKoResults : jsonEnResults;
         if (optionValue === "논문명") {
             for (const i of jsonResults) {
                 const titleData = i.articleInfo["title-group"]["article-title"]
@@ -585,12 +663,13 @@ const Home = function () {
                 }
             }
         }
-        navigater("/academic/thesis-search",
+        navigator("/academic/thesis-search",
             {
                 state:
                 {
                     searchResult: searchResult,
-                    selectValue: e.target[0].selectedOptions[0].value,
+                    journalValue: e.target[0].selectedOptions[0].value,
+                    selectValue: e.target[1].selectedOptions[0].value,
                     searchValue: e.target.search.value
                 }
             });
@@ -628,14 +707,14 @@ const Home = function () {
         const { data } = await newsAxios();
         setNewsData(data)
     }
+
     useEffect(function () {
         if (!noticeData) {
             notice()
-            if (!newsData) {
-                news()
-            }
         }
-
+        if (!newsData) {
+            news()
+        }
     }, [])
     return noticeData && newsData && slide &&
         (
@@ -696,8 +775,12 @@ const Home = function () {
                                 <Paper>
                                     <PaperBox>
                                         <PaperTitle>논문검색</PaperTitle>
-                                        <PaperText>한국해운물류학회의 학술지 논문을 검색하실 수 있습니다.</PaperText>
+                                        <PaperText>학술지 논문을 검색하실 수 있습니다.</PaperText>
                                         <SearchForm onSubmit={searchHandler}>
+                                            <SearchCategory name='journal'>
+                                                <option value="국문지" title="국문지">국문지</option>
+                                                <option value="영문지" title="영문지">영문지</option>
+                                            </SearchCategory>
                                             <SearchCategory>
                                                 <option value="논문명">논문명</option>
                                                 <option value="저자">저자</option>
@@ -707,6 +790,22 @@ const Home = function () {
                                         </SearchForm>
                                         <PaperSubmission href='https://jsl.jams.or.kr/co/main/jmMain.kci' target="_blank">논문투고 jams 시스템 바로가기</PaperSubmission>
                                     </PaperBox>
+                                    <Conference>
+                                        <Academic to="/active/conference">
+                                            <AcademicImage src={academic_icon} />
+                                            <AcademicInfo>
+                                                <AcademicTitle>학술대회</AcademicTitle>
+                                                <AcademicText>논문 바로가기</AcademicText>
+                                            </AcademicInfo>
+                                        </Academic>
+                                        <Academic to="/active/icasl">
+                                            <IcaslImage src={icasl_icon} />
+                                            <AcademicInfo>
+                                                <AcademicTitle>ICASL</AcademicTitle>
+                                                <AcademicText>논문 바로가기</AcademicText>
+                                            </AcademicInfo>
+                                        </Academic>
+                                    </Conference>
                                 </Paper>
                             </InfoBox>
                             <NoticeBox>
@@ -728,10 +827,10 @@ const Home = function () {
                                         })}
                                 </NoticeSections>
                                 <NoticeSections>
-                                    <Notice style={{ borderBottom: 'none' }}>
+                                    <Notice>
                                         <NoticeTitle>학회소식</NoticeTitle><Link to="/community/news"><PlusButton /></Link>
                                     </Notice>
-                                    <NewsBox style={{ paddingTop: '2px' }}>
+                                    <NewsBox>
                                         {newsData && newsData
                                             .sort((a, b) => b.id - a.id)
                                             .map(function (i, index) {

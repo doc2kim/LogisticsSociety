@@ -23,10 +23,11 @@ const NewsBox = styled.div`
 `;
 
 const NewsGridBox = styled.div`
+    width:100%;
     display: grid;
-    grid-template-columns: repeat(4, 23.7%);
+    grid-template-columns: repeat(4, 24.5%);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2em 2em;
+    gap: 1%;
     justify-content:center;
     align-items: center;
     @media only screen and (max-width: 768px) {
@@ -104,7 +105,6 @@ const News = function () {
         <Box>
             <CountInfo style={{ padding: "1% 0" }}>총 <Number>{newsData.length}</Number>개의 게시물이 있습니다.</CountInfo>
             <NewsBox>
-
                 <NewsGridBox>
                     {newsData
                         .sort((a, b) => b.id - a.id)
@@ -116,7 +116,7 @@ const News = function () {
                                     <Date>{i.created_date.substr(0, 10)}</Date>
                                 </SubInfo>
                                 <Link to={`${i.id}`} state={{ data: i.id, allData: newsData, index: index }}>
-                                    <ImgBox style={{ background: `url(/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></ImgBox>
+                                    <ImgBox style={{ background: `url(http://127.0.0.1:8000/media/${i.cover_image})`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></ImgBox>
                                     <TitleBox>
                                         <Title>{i.title}</Title>
                                     </TitleBox>

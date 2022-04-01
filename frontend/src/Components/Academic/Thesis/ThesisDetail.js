@@ -39,10 +39,8 @@ const Title = styled.h1`
 `;
 
 const EngTitle = styled(Title)`
-    font-size:1em;
-    
-    `;
-
+    font-size:1em;    
+`;
 
 const InfoBox = styled.div`
     display: flex;
@@ -55,18 +53,13 @@ const InfoBox = styled.div`
     opacity: 0.8;
 `;
 
-
-
 const Journal = styled.h2`
 `;
-
 
 const Research = styled.h2`
 `;
 
-
 const Date = styled.div`
-    
 `;
 
 const Volume = styled.div`  
@@ -75,14 +68,16 @@ const Volume = styled.div`
 const Page = styled.div`
 `;
 
-const AuthorBox = styled.div`
+const AuthorBox = styled.ul`
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    line-height: 1.5em;
     padding: 1em 0;
     opacity: 0.8;
 `;
 
-const Author = styled.span`
+const Author = styled.li`
     font-size: 0.8em;
+    list-style: inside;
 `;
 
 const AbstractBox = styled.div`
@@ -93,8 +88,7 @@ const AbstractBox = styled.div`
 
 const AbstractTitle = styled.h1`
     font-size: 1.5em;
-    padding-bottom:0.5em;
-    
+    padding-bottom:0.5em;    
 `;
 
 const Abstract = styled.div`
@@ -107,6 +101,7 @@ const EngAbstract = styled(Abstract)`
 
 const ShortCut = styled.div`
     display: flex;
+    white-space: nowrap;
 `;
 
 const UrlButton = styled.a`
@@ -116,7 +111,7 @@ const UrlButton = styled.a`
     width: 3em; ;
     border-radius:0.5em;
     text-align: center;
-    margin: 0 1em;
+    margin: 0 0.5em;
     cursor: pointer;
 `;
 
@@ -174,19 +169,29 @@ const Back = styled.div`
     font-size: 0.9em;
 `;
 
+const DownloadLink = styled.div`
+    padding: 2px 0; 
+    color: blue; 
+    @media only screen and (max-width: 768px){
+        font-size: 0.7em ;
+    }
+`;
 
 
 const ThesisDetail = function () {
     const [resultsData, setResultsData] = useState(null)
+    const [language, setLanguage] = useState(null)
     const property = useLocation();
     const navigate = useNavigate()
     const results = property.state.results;
     const data = property.state.data;
-    const id = property.state.id;
     const dataIndex = property.state.index;
+    const journal = property.state.journal;
     const title = data.articleInfo["title-group"]["article-title"];
-    const author = data.articleInfo["author-group"]["author"];
     const abstract = data.articleInfo["abstract-group"]["abstract"];
+    const authorGroup = data.articleInfo["author-group"]["author"];
+    const author = typeof authorGroup === 'object' ? authorGroup.join("").replace(/\(/g, ' - ').split(')').slice(0, -1) : authorGroup.replace(/\(/g, ' - ').split(')').slice(0, -1);
+
 
     const pageControl = function (prop, id, detailIndex) {
         navigate(`/academic/thesis-search/${id}`, { state: { data: prop, id: id, results: results, index: detailIndex }, replace: true })
@@ -196,7 +201,9 @@ const ThesisDetail = function () {
 
     useEffect(function () {
         setResultsData(results)
+        setLanguage(journal)
     }, [])
+    console.log(language)
     return resultsData &&
         <Container>
             <SubTitle title={title[0] && title[0]["#text"] ? title[0]["#text"] : title && title["#text"]} />
@@ -204,8 +211,9 @@ const ThesisDetail = function () {
                 <Box>
                     <Table>
                         <TitleBox>
-                            <Title>{title[0] && title[0]["#text"] ? title[0]["#text"] : title && title["#text"]}</Title>
-                            <EngTitle>{title[1] && title[1]["#text"] ? title[1]["#text"] : ""}</EngTitle>
+                            {language === "국문지" ? <><Title>{title[0] && title[0]["#text"] ? title[0]["#text"] : title && title["#text"]}</Title>
+                                <EngTitle>{title[1] && title[1]["#text"] ? title[1]["#text"] : ""}</EngTitle></> : <Title>{title[0] && title[0]["#text"] ? title[0]["#text"] : title && title["#text"]}</Title>}
+
                         </TitleBox>
                         <InfoBox>
                             <div>
@@ -226,23 +234,29 @@ const ThesisDetail = function () {
                                 </Date>
                             </div>
                             <ShortCut>
+                                <DownloadLink>원문 다운로드 링크 : </DownloadLink>
                                 {data.articleInfo["doi"] &&
                                     <UrlButton href={data.articleInfo["doi"]} target="_blank" title={data.articleInfo["doi"]}>doi</UrlButton>}
                                 {data.articleInfo["url"] &&
                                     <UrlButton href={data.articleInfo["url"]} target="_blank" title={data.articleInfo["url"]}>kci</UrlButton>}
+
                             </ShortCut>
                         </InfoBox>
                         <AuthorBox>
                             {typeof author !== "string" ? author.map(function (j, index) {
-                                return <Author key={index}>{j}&emsp;</Author>
-                            }) : <Author>{author}&emsp;</Author>}
+                                return <Author key={index}>{j}&nbsp;&nbsp;</Author>
+                            }) : <Author>{author}&nbsp;&nbsp;</Author>}
                         </AuthorBox>
                         <AbstractBox>
                             <AbstractTitle>초록</AbstractTitle>
-                            {typeof abstract !== "string" ?
+                            {language === "국문지" ? typeof abstract !== "string" ?
                                 <>
                                     <Abstract>{abstract[0] && abstract[0]["#text"]}</Abstract>
                                     <EngAbstract>{abstract[1] && abstract[1]["#text"]}</EngAbstract>
+                                </>
+                                : <Abstract>{abstract["#text"]}</Abstract> : typeof abstract !== "string" ?
+                                <>
+                                    <Abstract>{abstract[0] && abstract[0]["#text"]}</Abstract>
                                 </>
                                 : <Abstract>{abstract["#text"]}</Abstract>}
                         </AbstractBox>
@@ -296,7 +310,7 @@ const ThesisDetail = function () {
                         </div>
                     </NoticeNav>
                 </Box></Container2>
-        </Container>
+        </Container >
 }
 
 export default ThesisDetail;
