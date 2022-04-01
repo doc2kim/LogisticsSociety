@@ -84,6 +84,7 @@ const CurrentExecutives = function () {
                             &emsp;박종규&lt;KSS해운고문&gt;<br />
                             &emsp;박현규&lt;한국해사문제연구소 이사장&gt;<br />
                             &emsp;박홍균&lt;순천대 교수&gt;
+
                         </span>
                     </Value>
                     <Value>
@@ -94,7 +95,8 @@ const CurrentExecutives = function () {
                             &emsp;전준수&lt;서강대 교수&gt;<br />
                             &emsp;최재수&lt;KSS해운 사외이사&gt;<br />
                             &emsp;하영석&lt;계명대 교수&gt;<br />
-                            &emsp;한종길&lt;성결대 교수&gt;
+                            &emsp;한종길&lt;성결대 교수&gt;<br />
+                            &emsp;정태원&lt;성결대 교수&gt;
                         </span>
                     </Value>
                 </Tuple>
@@ -117,9 +119,8 @@ const CurrentExecutives = function () {
                             &emsp;백석현&lt;SK해운 사장&gt;<br />
                             &emsp;이광배&lt;순천대 교수&gt;<br />
                             &emsp;이원근&lt;대구대 교수&gt;<br />
-                            &emsp;조동현&lt;두양상선 사장&gt;<br />
-                            &emsp;안우철&lt;강릉원주대 교수&gt;<br />
-                            &emsp;이현우&lt;농협물류 사장&gt;
+                            &emsp;조동현&lt;두양상선 사장&gt;
+
                         </span>
                     </Value>
                     <Value>
@@ -129,7 +130,9 @@ const CurrentExecutives = function () {
                             &emsp;서문성&lt;금강대 교수&gt;<br />
                             &emsp;양창호&lt;KMI 원장&gt;<br />
                             &emsp;이경재&lt;창명해운 회장&gt;<br />
-                            &emsp;이상복&lt;범주해운 회장&gt;
+                            &emsp;이상복&lt;범주해운 회장&gt;<br />
+                            &emsp;안우철&lt;강릉원주대 교수&gt;<br />
+                            &emsp;이현우&lt;농협물류 사장&gt;
                         </span>
                     </Value>
                 </Tuple>
@@ -186,7 +189,8 @@ const CurrentExecutives = function () {
                             &emsp;성낙서&lt;금호렌터카 이사&gt;<br />
                             &emsp;송민근&lt;인천대학 교수&gt;<br />
                             &emsp;신광섭&lt;인천대학 교수&gt;<br />
-                            &emsp;신학승&lt;동의대 무역유통학부 교수&gt;
+                            &emsp;신학승&lt;동의대 무역유통학부 교수&gt;<br />
+                            &emsp;최동호&lt;(주) 한국항만기술단 전무&gt;
                         </span>
                     </Value>
                     <Value>
@@ -255,29 +259,6 @@ const CurrentExecutives = function () {
                         <span>
                             &emsp;장정언&lt;보람법률사무소 변호사&gt;
                         </span>
-                    </Value>
-                </Tuple>
-                <Tuple>
-                    <Attributes><span>사무국장</span></Attributes>
-                    <Value>
-                        <span>
-                            &emsp;김선구&lt;순천대학교 강사&gt;
-                        </span>
-                    </Value>
-                    <Value>
-                        <span>
-                            &emsp;전준우&lt;성결대학교 교수&gt;<br />
-                        </span>
-                    </Value>
-                </Tuple>
-                <Tuple>
-                    <Attributes><span>편집국장</span></Attributes>
-                    <Value>
-                        <span>
-                            &emsp;정현재&lt;평택대학교 교수&gt;
-                        </span>
-                    </Value>
-                    <Value>
                     </Value>
                 </Tuple>
                 <Tuple>
