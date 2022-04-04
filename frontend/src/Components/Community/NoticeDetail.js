@@ -94,7 +94,7 @@ const TitleContent = styled.div`
     display:flex;
     align-items: center;
     @media only screen and (max-width: 768px) {
-        font-size: 3vw;
+        font-size: 5vw;
         padding: 4% 0;
     }
     @media only screen and (max-width: 280px) {
