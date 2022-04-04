@@ -49,44 +49,35 @@ const SearchBox = styled.div`
     justify-content:space-between;
     margin: 0.5% 0;
     width: 100%;
-    
-    @media only screen and (max-width: 280px) {
-        justify-content:center;
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items:center;
     }
 `;
 
 const SearchForm = styled.form`
-    width:25%;
     display:flex;
     justify-content:flex-end;
-    @media only screen and (max-width: 280px) {
-        width:10%;
-        justify-content:center;
-    }
 `;
 
 const SearchInput = styled.input`
     padding:1%;
     @media only screen and (max-width: 768px) {
         font-size: 0.7em;
-        width: 20vw;
-        display:block;
     }
 `;
 
 const SearchCategory = styled.select`
     padding: 1%;
-    display: block;
     @media only screen and (max-width: 768px) {
         font-size:0.7em;
-        width: 15vw;
     }
 `;
 
 
 const CountInfo = styled.span`
     font-size:small;
-    line-height: 2em;
+    line-height: 3em;
     @media only screen and (max-width: 280px) {
         display: none;
     }
@@ -203,7 +194,7 @@ const ThesisSearch = function () {
         <Box>
             <SearchBox>
                 <CountInfo>
-                    <SearchInfo>{`${journal}`}</SearchInfo> / <SearchInfo>{`${select}`}</SearchInfo> / <SearchInfo>{`${search}`}</SearchInfo> 검색결과<br />
+                    <SearchInfo>{`${journal}`}</SearchInfo> / <SearchInfo>{`${select}`}</SearchInfo> / <SearchInfo>{`${search}`}</SearchInfo> 검색결과
                     총<Number> {results.length}</Number>개의 게시물이 있습니다.
                 </CountInfo>
                 <SearchForm onSubmit={searchThesis} name="searchForm" ref={inputRef}>

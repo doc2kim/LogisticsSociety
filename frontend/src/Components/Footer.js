@@ -18,8 +18,8 @@ const Container = styled.div`
     }
     `;
 
-const ContentBox = styled.div`
-    width:1130px;
+const Box = styled.div`
+    width: 1130px;
     padding: 1em 0;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@ const CopyRight = styled.span`
 
 const ContentText = styled.span`
     opacity: 0.5;
-    margin-right:1em;
+    margin-right:0.5em;
     font-size: 0.7em;
     @media only screen and (max-width: 768px) {
         font-size:0.7em;
@@ -96,17 +96,19 @@ const Footer = () => {
     return (
         <Container>
             <Slider />
-            <ContentBox>
+            <Box>
+
                 <LogoBox>
                     <FooterLogo />
                 </LogoBox>
                 <ContentInfo>
                     <TextBox>
                         <ContentText>서울시 종로구 세종대로 23길 54 세종빌딩 10층&emsp;</ContentText>
-                        <ContentText>E-mail:master@shipping.or.kr</ContentText>
+
                     </TextBox>
+                    <TextBox><ContentText>E-mail : master@shipping.or.kr</ContentText></TextBox>
                     <TextBox>
-                        <ContentText>사무국:</ContentText>
+                        <ContentText>사무국 : </ContentText>
                         <ContentText>국장 김선구</ContentText><ContentText>010-5617-9717</ContentText>
                         <ContentText>간사 황용희</ContentText><ContentText>010-3911-8747</ContentText>
                     </TextBox>
@@ -117,7 +119,7 @@ const Footer = () => {
                         <CopyRight style={{ textAlign: 'center' }}>Created by ODN.</CopyRight>
                     </TextBox>
                 </ContentInfo>
-            </ContentBox >
+            </Box >
         </Container >
 
     )

@@ -40,8 +40,8 @@ const TitleDivide = styled(Divide)`
     width: 80%;
     align-items: center;
     @media only screen and (max-width: 768px) {
-        border-bottom: 1px solid rgba(0, 0, 0,0.2);
         width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0,0.2);
     }
 `;
 
@@ -88,30 +88,14 @@ const FileDivide = styled(Divide)`
 `;
 
 
-const Title = styled.div`
-    width: 10%;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.7);
-    @media only screen and (max-width: 768px) {
-        font-size: 0.8em;
-        width:15%
-    }
-   
-`;
-
 const TitleContent = styled.div`
     font-size: 1.5em;
-    width: 90%;
-    padding-left: 3%;
-    height:100%;
-    border-left: 1px solid rgba(0, 0, 0,0.2); 
+    padding: 2% 0;
     display:flex;
     align-items: center;
     @media only screen and (max-width: 768px) {
-        font-size: 1.3em;
-        padding:1em 0;
-        padding-left:4%;
-        width: 85%;
+        font-size: 3vw;
+        padding: 4% 0;
     }
     @media only screen and (max-width: 280px) {
         font-size: 0.9em;
@@ -330,7 +314,6 @@ const NoticeDetail = function () {
                     <Table>
                         <Tuple>
                             <TitleDivide>
-                                <Title>제목</Title>
                                 <TitleContent>
                                     <h1>{detailData.title}</h1>
                                 </TitleContent>

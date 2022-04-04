@@ -461,9 +461,11 @@ const NewsContent = styled.span`
     text-overflow:ellipsis;
     height: 1.3em;
     @media only screen and (max-width: 768px) {
-        line-height:3vw;
+        width: 100%;
+        text-align: center;
+        line-height:4vw;
         height: 4vw;
-        font-size:3vw; 
+        font-size:4vw; 
     }
 `;
 
