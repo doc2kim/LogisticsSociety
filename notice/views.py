@@ -1,3 +1,4 @@
+from django.http import HttpResponse 
 from .models import Notice
 from .serializers import NoticeSerializer
 from rest_framework import viewsets
@@ -5,7 +6,19 @@ from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 from rest_framework.filters import SearchFilter
+from mimetypes import guess_type
+from urllib.parse import quote
+from django.http import HttpResponse
 
+
+def file_response(content, filename):
+	ctype, encoding = guess_type(filename)
+	response = HttpResponse(content, content_type=ctype or 'applicatioin/octet-stream')
+	if encoding:
+		response['Content-Encoding'] = encoding
+    # 파일명에 UTF-8 속성을 부여하여 한글로 지정할수 있게함.
+	response['Content-Disposition'] = "attachment; filename*=UTF-8''{}".format(quote(filename.encode('utf-8')))
+	return response
 
 class NoticeView(viewsets.ModelViewSet):
     serializer_class = NoticeSerializer
