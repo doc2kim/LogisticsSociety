@@ -1,4 +1,4 @@
-from django.http import HttpResponse 
+ 
 from .models import Notice
 from .serializers import NoticeSerializer
 from rest_framework import viewsets
@@ -6,20 +6,25 @@ from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 from rest_framework.filters import SearchFilter
-from mimetypes import guess_type
-from urllib.parse import quote
-from django.http import HttpResponse
+import urllib
+import os
+from django.http import HttpResponse, Http404
+import mimetypes
 
 
-def file_response(content, filename):
-	ctype, encoding = guess_type(filename)
-	response = HttpResponse(content, content_type=ctype or 'applicatioin/octet-stream')
-	if encoding:
-		response['Content-Encoding'] = encoding
-    # 파일명에 UTF-8 속성을 부여하여 한글로 지정할수 있게함.
-	response['Content-Disposition'] = "attachment; filename*=UTF-8''{}".format(quote(filename.encode('utf-8')))
-	return response
-
+def notice_download_view(request, pk):
+    notice = get_object_or_404(Notice, pk=pk)
+    url = notice.upload_files.url[1:]
+    file_url = urllib.parse.unquote(url)
+    
+    if os.path.exists(file_url):
+        with open(file_url, 'rb') as fh:
+            quote_file_url = urllib.parse.quote(notice.filename.encode('utf-8'))
+            response = HttpResponse(fh.read(), content_type=mimetypes.guess_type(file_url)[0])
+            response['Content-Disposition'] = 'attachment;filename*=UTF-8\'\'%s' % quote_file_url
+            return response
+    raise Http404
+    
 class NoticeView(viewsets.ModelViewSet):
     serializer_class = NoticeSerializer
     queryset = Notice.objects.all()
