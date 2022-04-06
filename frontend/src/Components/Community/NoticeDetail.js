@@ -263,6 +263,7 @@ const File = styled.div`
     border-left: 1px solid rgba(0, 0, 0,0.2);
     line-height:2em;
     @media only screen and (max-width:768px){
+        width:100%;
         border:none;
     }
 `;
@@ -279,6 +280,7 @@ const FileIcon = styled.span`
 const FileName = styled.div`
     color: blue;
     opacity: 0.7;
+    font-size: 0.9em;
     @media only screen and (max-width: 280px) {
         font-size: 0.7em;
     }
