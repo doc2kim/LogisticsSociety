@@ -26,7 +26,6 @@ from rest_framework.filters import SearchFilter
 class NoticeView(viewsets.ModelViewSet):
     serializer_class = NoticeSerializer
     queryset = Notice.objects.all()
-    print(vars(queryset.model.file.field))
     permission_classes = [AllowAny]
     # SearchFilter 기반으로 검색
     filter_backends = [SearchFilter]

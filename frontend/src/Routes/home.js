@@ -19,7 +19,7 @@ const Container = styled.div`
     padding-top:6.2em;
     @media only screen and (max-width: 768px) {
         padding-top:3em;
-        height:430vw;
+        height:450vw;
     }
 `;
 

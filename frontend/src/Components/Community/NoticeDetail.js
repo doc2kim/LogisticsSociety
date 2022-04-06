@@ -171,8 +171,7 @@ const AttachTitle = styled.div`
     text-align: center;
     color: rgba(0, 0, 0,0.7);
     @media only screen and (max-width: 768px) {
-        width: 20%;
-        padding:0.5em;
+        display: none;
     }
 `;
 
@@ -263,6 +262,9 @@ const File = styled.div`
     padding-left: 3%;
     border-left: 1px solid rgba(0, 0, 0,0.2);
     line-height:2em;
+    @media only screen and (max-width:768px){
+        border:none;
+    }
 `;
 
 const FileBox = styled.a`
