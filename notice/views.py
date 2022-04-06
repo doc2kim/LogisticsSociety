@@ -5,6 +5,7 @@ from django.shortcuts import get_object_or_404, Http404
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 from rest_framework.filters import SearchFilter
+
 # import urllib
 # import os
 # import mimetypes
@@ -22,11 +23,10 @@ from rest_framework.filters import SearchFilter
 #             return response
 #     raise Http404
 
-
-
 class NoticeView(viewsets.ModelViewSet):
     serializer_class = NoticeSerializer
     queryset = Notice.objects.all()
+    print(vars(queryset.model.file.field))
     permission_classes = [AllowAny]
     # SearchFilter 기반으로 검색
     filter_backends = [SearchFilter]
