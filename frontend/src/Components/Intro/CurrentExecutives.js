@@ -244,7 +244,8 @@ const CurrentExecutives = function () {
                             &emsp;허남준&lt;아이엘아이앤디(주) 대표&gt;<br />
                             &emsp;허윤석&lt;제주대학 교수&gt;<br />
                             &emsp;허정석&lt;여수광야항만공사 부장&gt;<br />
-                            &emsp;황경연&lt;충남대학교 교수&gt;
+                            &emsp;황경연&lt;충남대학교 교수&gt;<br />
+                            &emsp;서정수&lt;계명대학교 교수&gt;
                         </span>
                     </Value>
                 </Tuple>
