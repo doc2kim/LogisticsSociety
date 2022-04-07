@@ -55,7 +55,6 @@ const HomeIcon = styled.img`
 
 const SubTitle = function ({ title }) {
     const { pathname } = useLocation();
-    console.log(title)
     return (
         <Container>
             <Box>
