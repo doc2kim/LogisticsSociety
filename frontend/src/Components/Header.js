@@ -353,22 +353,31 @@ const Header = function () {
                                 </>} */}
                         </Login>
                         <NavLists onMouseLeave={CategoryHandler}>
-                            {navigate.map(function (i) {
-                                return <NavTitle className='nav_title' key={i.index}>
-                                    <div onClick={CategoryHandler} className={`${i.title}`}>
-                                        <NavTitleContent>{i.title}<PlusMinus>➕</PlusMinus></NavTitleContent>
-                                    </div>
-                                    <NavSubTitle className={`${i.title} subTitle`}>
-                                        {i.subNav.map(function (j) {
-                                            return j.subPath ?
-                                                <SubNavLink pathcolor={path.pathname.includes(j.subPath) ? 1 : undefined} to={`${i.path + j.subPath}`}>
-                                                    <SubNavTitleContent>{j.subTitle}</SubNavTitleContent>
-                                                </SubNavLink>
-                                                : j.url && <a target="_blank" href={j.url}><SubNavTitleContent>{j.subTitle}</SubNavTitleContent></a>
-                                        })}
-                                    </NavSubTitle>
-                                </NavTitle>
-                            })}
+                            {navigate
+
+                                .map(function (i) {
+                                    return <NavTitle className='nav_title' key={i.index}>
+                                        <div onClick={CategoryHandler} className={`${i.title}`}>
+                                            <NavTitleContent>{i.title}<PlusMinus>➕</PlusMinus></NavTitleContent>
+                                        </div>
+                                        <NavSubTitle className={`${i.title} subTitle`}>
+                                            {i.subNav
+                                                .filter((element) => {
+                                                    if (element.id !== 17 && element.id !== 18) {
+                                                        return true;
+                                                    }
+                                                    return false;
+                                                })
+                                                .map(function (j) {
+                                                    return j.subPath ?
+                                                        <SubNavLink pathcolor={path.pathname.includes(j.subPath) ? 1 : undefined} to={`${i.path + j.subPath}`}>
+                                                            <SubNavTitleContent>{j.subTitle}</SubNavTitleContent>
+                                                        </SubNavLink>
+                                                        : j.url && <a target="_blank" href={j.url}><SubNavTitleContent>{j.subTitle}</SubNavTitleContent></a>
+                                                })}
+                                        </NavSubTitle>
+                                    </NavTitle>
+                                })}
                         </NavLists>
                     </div>
                     <Xbox onClick={NavHandler}>✕</Xbox>

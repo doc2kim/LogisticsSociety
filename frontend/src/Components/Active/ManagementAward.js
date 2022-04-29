@@ -126,57 +126,7 @@ const ManagementAward = function () {
                     2. 이 규칙은 2007년 1월 10일부터 시행한다.<br />
                 </span>
             </ContentBox>
-            <Chapter>역대 해운물류경영대상 수상자</Chapter>
-            <Table>
-                <Tuple>
-                    <Attributes style={{ width: '30%' }}>시상일</Attributes>
-                    <Attributes style={{ width: '70%' }}>수상자</Attributes>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2007년</span></Value>
-                    <Value style={{ width: '70%' }}><span>이진방(대한해운)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2008년</span></Value>
-                    <Value style={{ width: '70%' }}><span>이경재(창명해운)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2010년</span></Value>
-                    <Value style={{ width: '70%' }}><span>이종철(STX팬오션)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2012년</span></Value>
-                    <Value style={{ width: '70%' }}><span>오공균(한국선급)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2013년</span></Value>
-                    <Value style={{ width: '70%' }}><span>정태순(장금상선)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2014년</span></Value>
-                    <Value style={{ width: '70%' }}><span>박정석(고려해운)/특별상 김춘선(IPA)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2015년</span></Value>
-                    <Value style={{ width: '70%' }}><span>이대성(KSS해운)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2016년</span></Value>
-                    <Value style={{ width: '70%' }}><span>박범식(한국선급)</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2017년</span></Value>
-                    <Value style={{ width: '70%' }}><span>없음</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2018년</span></Value>
-                    <Value style={{ width: '70%' }}><span>없음</span></Value>
-                </Tuple>
-                <Tuple>
-                    <Value style={{ width: '30%' }}><span>2019년</span></Value>
-                    <Value style={{ width: '70%' }}><span>마상곤(협운해운 회장)</span></Value>
-                </Tuple>
-            </Table>
+
         </Box>
     </Container>
 }

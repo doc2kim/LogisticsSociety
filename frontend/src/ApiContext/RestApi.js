@@ -5,6 +5,7 @@ import axios from "axios";
 // console.log(process.env.HOME_URL)
 const api = axios.create({
     baseURL: './api/',
+    // baseURL: './api/',
     headers: {
         'Content-Type': 'application/json'
     }

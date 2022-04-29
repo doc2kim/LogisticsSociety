@@ -47,6 +47,11 @@ const Button = styled.a`
     }
 `;
 
+const Alink = styled.a`
+color: blue;
+text-decoration: underline;
+`;
+
 
 const ThesisSubMissionGuide = function () {
     const [fileData, setFileData] = useState(null)
@@ -71,10 +76,7 @@ const ThesisSubMissionGuide = function () {
             <Chapter>논문마감(국문지 및 영문지(ASIAN JOURNAL OF SHIPPING AND LOGISTICS))</Chapter>
             <ContentBox>
                 <span>
-                    1) 춘계지( 3월 30일 발간) : 12월 31일까지 수시 접수<br />
-                    2) 하계지( 6월 30일 발간) : 4월 30일까지 수시 접수<br />
-                    3) 추계지( 9월 30일 발간) : 7월 31일까지 수시 접수<br />
-                    4) 동계지(12월 30일 발간) : 10월 31일까지 수시 접수
+                    논문 발간인 : 3월 30일, 6월 30일, 9월30일, 12월 30일(연 4회 발간)<br />
                 </span>
             </ContentBox>
             <Chapter>투고 자격</Chapter>
@@ -89,15 +91,15 @@ const ThesisSubMissionGuide = function () {
                     1. 국문지 투고 방법<br />
                     1) 아래의“샘플논문”을 이용하여 논문 작성(스타일키 F6 이용)<br />
                     2) 연회비 완납 후 투고 (투고료는 없음)<br />
-                    * 반드시 입금자명을 확인 할 수 있도록 명기(예: 김창범연회비)<br />
-                    3) 투고자 논문제출 메뉴얼, 심사결과 답변서 양식, 논문심사신청서 및 연구윤리서약서 등은 https://jsl.jams.or.kr/co/main/jmMain.kci 참조<br />
+                    * 반드시 입금자명을 확인 할 수 있도록 명기<br />
+                    3) 논문투고, 심사, 심사결과 확인은 논문투고 시스템인 jams( <Alink href="https://jsl.jams.or.kr" target="_blank">https://jsl.jams.or.kr</Alink> )를 통해 진행<br />
                     4)논문게재가 확정된 경우 일반논문은 30만원, 연구비 수혜논문은 40만원 납부<br />
                     * 20페이지를 초과하는 경우 초과 페이지당 10,000원의 추가 게재료 납부<br />
                     <span style={{ color: '#165fa3' }}>한국해운물류학회 송금처 : 국민은행 421101-90-210893(한국해운물류학회)</span><br />
                     <br />
                     2. 영문지 투고 방법<br />
                     - 영문지는 아래에 접속하여, Elsevier 출판사의 Editorial Manager 투고시스템을 사용하여 투고함.<br />
-                    - <a href="https://www.editorialmanager.com/ajsl/default.aspx" target="_blank" style={{ color: 'red' }}>https://www.editorialmanager.com/ajsl/default.aspx</a><br />
+                    - <Alink href="https://www.editorialmanager.com/ajsl/default.aspx" target="_blank">https://www.editorialmanager.com/ajsl/default.aspx</Alink><br />
                 </span>
             </ContentBox>
             <div style={{ display: 'flex', paddingTop: '2%' }}>

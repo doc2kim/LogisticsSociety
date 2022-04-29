@@ -101,9 +101,9 @@ const SearchInfo = styled.span`
 
 const ThesisSearch = function () {
     const [results, setResults] = useState(() => localStorage.getItem('results') ? JSON.parse(localStorage.getItem('results')) : null);
-    const [search, setSearch] = useState(() => localStorage.getItem('search') ? JSON.parse(localStorage.getItem('search')) : null);
-    const [select, setSelect] = useState(() => localStorage.getItem('select') ? JSON.parse(localStorage.getItem('select')) : null);
-    const [journal, setJournal] = useState(() => localStorage.getItem('journal') ? JSON.parse(localStorage.getItem('journal')) : null);
+    const [search, setSearch] = useState(() => localStorage.getItem('search') ? JSON.parse(localStorage.getItem('search')) : "");
+    const [select, setSelect] = useState(() => localStorage.getItem('select') ? JSON.parse(localStorage.getItem('select')) : "");
+    const [journal, setJournal] = useState(() => localStorage.getItem('journal') ? JSON.parse(localStorage.getItem('journal')) : "국문지");
     const [page, setPage] = useState(1);
     const limit = 15;
     const offset = (page - 1) * limit;

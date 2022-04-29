@@ -9,6 +9,8 @@ import AcademicAward from "../Components/Active/AcademicAward"
 import CulturalAward from "../Components/Active/CulturalAward"
 import ManagementAward from "../Components/Active/ManagementAward"
 import BusinessAward from "../Components/Active/BusinessAward"
+import JournalPublication from "../Components/Active/JournalPublication"
+import SymposiumOperation from "../Components/Active/SymposiumOperation"
 
 const Container = styled.div`
     width:100%;
@@ -28,7 +30,10 @@ const Active = function () {
                     pathname.includes('academic-award') ? <AcademicAward /> :
                         pathname.includes('cultural-award') ? <CulturalAward /> :
                             pathname.includes('management-award') ? <ManagementAward /> :
-                                pathname.includes('business-award') && <BusinessAward />}
+                                pathname.includes('business-award') ? <BusinessAward /> :
+                                    pathname.includes('journal-publication') ? <JournalPublication /> :
+                                        pathname.includes('symposium-operation') && <SymposiumOperation />
+        }
     </Container>
 }
 

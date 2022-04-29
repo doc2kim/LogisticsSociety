@@ -1,9 +1,10 @@
 import requests
 import xmltodict
 import json
+import threading
 
-# year = ["02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21"]
-# print(year)
+
+
 def kci_ko_api():
     results=[]
     year= 200201
@@ -32,7 +33,7 @@ def kci_ko_api():
             year = int(year)++100
         else:
             results.reverse()
-            with open("../frontend/src/Components/Academic/Thesis/json_ko_results.json", 'w') as outfile:
+            with open("./frontend/src/Components/Academic/Thesis/json_ko_results.json", 'w') as outfile:
                 json.dump(results, outfile, indent=4, ensure_ascii=False)
             break
         
@@ -57,16 +58,23 @@ def kci_en_api():
         xmlData = xmltodict.parse(response.text)
         json_data = json.dumps(xmlData)
         json_results = json.loads(json_data)
-        json_get = json_results.get("MetaData").get("outputData")
+        if json_results.get("MetaData") != None:
+            json_get = json_results.get("MetaData").get("outputData")
+        else:
+            continue
         record_get = json_get.get("record")
         if json_get.get("record") != None:
             results.extend(record_get)
             year = int(year)++100
         else:
             results.reverse()
-            with open("../frontend/src/Components/Academic/Thesis/json_en_results.json", 'w') as outfile:
+            with open("./frontend/src/Components/Academic/Thesis/json_en_results.json", 'w') as outfile:
                 json.dump(results, outfile, indent=4, ensure_ascii=False)
             break
-    
-kci_ko_api()
-kci_en_api()
+
+
+def start_timer():
+    print("data refresh")
+    kci_ko_api()
+    kci_en_api()
+    threading.Timer(604800, start_timer).start()

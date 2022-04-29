@@ -7,6 +7,9 @@ import home_img from "../assets/home_img.png";
 import slide_img from "../assets/slide.png";
 import icasl_icon from "../assets/icasl_icon.png";
 import academic_icon from "../assets/academic_icon.png";
+import presentation from "../assets/presentation.png";
+import research from "../assets/research.png";
+
 // import AuthContext from "../ApiContext/AuthContext"
 import { noticeAxios } from "../ApiContext/RestApi"
 import { newsAxios } from "../ApiContext/RestApi"
@@ -491,9 +494,19 @@ const NewsInfo = styled.span`
 `;
 
 const Conference = styled.div`
-    height: 29%;
+    height: 14%;
     display: flex;
     justify-content: space-between;
+`;
+
+const PaperBlock = styled.div`
+    background-color: #31a4d1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 49.5%;
+    color: white;
+    cursor: pointer;
 `;
 
 const Academic = styled(Link)`
@@ -503,38 +516,55 @@ const Academic = styled(Link)`
     align-items: center;
     width: 49.5%;
     color: white;
-    
+`;
+
+const Alink = styled.a`
+background-color: #31a4d1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 49.5%;
+    color: white;
 `;
 
 const AcademicInfo = styled.div`
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
     text-align: center;
+    line-height: 0.8em;
+    @media only screen and (max-width: 768px) {
+        display:block;
+    }
 `;
 
 const AcademicImage = styled.img`
-    width: 3em; 
-    height: 3em;
+    width: 1.6em; 
+    height: 1.6em;
     @media only screen and (max-width: 768px) {
-        width: 10vw;
-        height: 10vw;
+        width: 5vw;
+        height: 5vw;
     }
 `;
 
 const IcaslImage = styled.img`
+    width: 1.8em; 
+    height: 1.8em;
  @media only screen and (max-width: 768px) {
-        width: 12vw;
-        height: 12vw;
+        width: 6vw;
+        height: 6vw;
     }
 `;
 
 const AcademicTitle = styled.h1`
-    font-size: 1.5em;
+    font-size: 1em;
     @media only screen and (max-width: 768px) {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 `;
 
 const AcademicText = styled.span`
-    font-size: 0.8em;
+    font-size: 0.6em;
     @media only screen and (max-width: 768px) {
         font-size: 2vw;
     }
@@ -608,6 +638,9 @@ function useScroll() {
         scrollY
     };
 }
+
+
+
 // eslint-disable-next-line import/no-anonymous-default-export
 
 const Home = function () {
@@ -620,6 +653,22 @@ const Home = function () {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slideRef = useRef(null);
     const navigator = useNavigate()
+
+
+    const koreanPaper = function (e) {
+        e.preventDefault()
+        navigator("/academic/thesis-search",
+            {
+                state:
+                {
+                    searchResult: jsonKoResults,
+                    journalValue: "국문지",
+                    selectValue: "논문명",
+                    searchValue: "",
+                }
+            });
+    }
+
 
     const searchHandler = function (e) {
         e.preventDefault()
@@ -792,6 +841,22 @@ const Home = function () {
                                         </SearchForm>
                                         <PaperSubmission href='https://jsl.jams.or.kr/co/main/jmMain.kci' target="_blank">논문투고 jams 시스템 바로가기</PaperSubmission>
                                     </PaperBox>
+                                    <Conference>
+                                        <PaperBlock onClick={koreanPaper}>
+                                            <AcademicImage src={presentation} />
+                                            <AcademicInfo>
+                                                <AcademicTitle>해운물류연구</AcademicTitle>
+                                                <AcademicText>논문 바로가기</AcademicText>
+                                            </AcademicInfo>
+                                        </PaperBlock>
+                                        <Alink target="_blank" href="http://www.ajsl.info/journal_table.html">
+                                            <IcaslImage src={research} />
+                                            <AcademicInfo>
+                                                <AcademicTitle>AJSL</AcademicTitle>
+                                                <AcademicText>논문 바로가기</AcademicText>
+                                            </AcademicInfo>
+                                        </Alink>
+                                    </Conference>
                                     <Conference>
                                         <Academic to="/active/conference">
                                             <AcademicImage src={academic_icon} />

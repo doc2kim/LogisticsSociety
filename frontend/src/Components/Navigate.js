@@ -37,8 +37,8 @@ const navigate = [
         subNav: [
             {
                 id: 16,
-                subTitle: '학술활동',
-                subPath: '/activity'
+                subTitle: '학술지 발간',
+                subPath: '/journal-publication'
             }, {
                 id: 17,
                 subTitle: '학술대회',
@@ -49,20 +49,16 @@ const navigate = [
                 subPath: '/icasl'
             }, {
                 id: 19,
-                subTitle: '초청학술상 시상',
-                subPath: '/academic-award'
+                subTitle: '학술대회 운영',
+                subPath: '/symposium-operation'
             }, {
                 id: 20,
-                subTitle: '해사문화상 시상',
+                subTitle: '해사문화상',
                 subPath: '/cultural-award'
             }, {
                 id: 21,
-                subTitle: '해운물류 경영대상 시상',
+                subTitle: '해운물류 경영대상',
                 subPath: '/management-award'
-            }, {
-                id: 22,
-                subTitle: '해운물류e-비즈니스 대상',
-                subPath: '/business-award'
             }
         ]
     }, {
@@ -71,19 +67,19 @@ const navigate = [
         title: '학술지',
         subNav: [
             {
-                id: 23,
+                id: 22,
                 subTitle: '학술위원회',
                 subPath: '/committee'
             }, {
-                id: 24,
+                id: 23,
                 subTitle: '산하 분과위원회',
                 subPath: '/subcommittee'
             }, {
-                id: 25,
+                id: 24,
                 subTitle: '학술위원회 규칙',
                 subPath: '/rule'
             }, {
-                id: 26,
+                id: 25,
                 subTitle: '논문검색',
                 subPath: '/thesis-search'
             }
@@ -95,27 +91,27 @@ const navigate = [
         subNav: [
 
             {
-                id: 27,
+                id: 26,
                 subTitle: '국문지 바로가기',
                 url: 'https://jsl.jams.or.kr/co/main/jmMain.kci'
             }, {
-                id: 28,
+                id: 27,
                 subTitle: '영문지 바로가기',
                 url: 'http://www.ajsl.info/'
             }, {
-                id: 29,
+                id: 28,
                 subTitle: '논문투고 안내',
                 subPath: '/thesis-submission-guide'
             }, {
-                id: 30,
+                id: 29,
                 subTitle: '논문집필 요령',
                 subPath: '/thesis-writing'
             }, {
-                id: 31,
+                id: 30,
                 subTitle: '논문심사 방법',
                 subPath: '/thesis-review'
             }, {
-                id: 32,
+                id: 31,
                 subTitle: '윤리 규정',
                 subPath: '/code-of-ethics'
             },
@@ -126,7 +122,7 @@ const navigate = [
         title: '정회원가입 정보',
         subNav: [
             {
-                id: 33,
+                id: 32,
                 subTitle: '정회원가입 안내',
                 subPath: '/sign-up-information'
             }
@@ -137,11 +133,11 @@ const navigate = [
         title: '커뮤니티',
         subNav: [
             {
-                id: 34,
+                id: 33,
                 subTitle: '공지사항',
                 subPath: '/notice'
             }, {
-                id: 35,
+                id: 34,
                 subTitle: '학회소식',
                 subPath: '/news'
             }

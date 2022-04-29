@@ -4,6 +4,548 @@
             "journal-name": "해운물류연구",
             "publisher-name": "한국해운물류학회",
             "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828893",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "SNA 분석을 이용한 물류산업의 드론 연구동향 분석에 관한 연구"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Study on the Analysis of Drone Research Trend in Logistics Industry using SNA Analysis"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "최영서()",
+                    "박영진(인천대학교 동북아물류경영연구소)",
+                    "진가영(독립연구자)",
+                    "여기태(인천대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "물류 시스템에서 드론의 비중은 계속 증가하는 상황이다. 이러한 측면에서 본 연구는 SNA 방법론을 활용하여 물류산업에서 드론의 연구동향을 파악하는 것을 목적으로 하였다. 분석을 위해 국외 학술논문 DB를 이용해 논문을 수집하여 키워드 네트워크 분석을 수행하였다. 먼저 연결중심성 분석결과, 1위는 Drone, 다음으로는 UAV, Logistics, City Logistics 등이 도출되었고, 5위와 6위로 각각 Last-Mile Delivery, Autonomous Vehicles가 나타났다. 분석결과를 통해 물류산업에서 최신 연구동향 파악이 용이하다. 또한, 2019년부터 게재된 논문들은 물류의 효율성을 위해 우선적으로 고려해야 하는 라스트 마일과 드론을 이용한 복합적인 연구가 진행되는 것을 확인할 수 있었다. 매개중심성 분석결과, Drone, UAV, Logistics가 연결중심성 결과와 마찬가지로 1~3위를 차지했다. 한편 근접중심성 분석결과, Drone, UAV, Logistics, Last-Mile Delivery, Autonomous Vehicles가 각각 1위부터 5위로 나타났다. 연구결과는 향후 국내 물류산업에서 드론의 추가 활용분야 파악에 시사점을 제시할 수 있다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The proportion of the use of drones has increased in the logistics system continuously. In this respect, this study aims to identify the research trend of drones in the logistics industry using social network analysis method. For the analysis, a keyword network analysis was conducted by collecting papers using academic paper databases in overseas. First, in the Degree centrality analysis results, a drone was ranked first followed by an UAV, logistics, and city logistics. The fifth and sixth were last-mile delivery and autonomous vehicles. The latest research trend in the logistics industry can be easily identified through the analysis results. In addition, this study verified that papers published since 2019 were composite studies using last mile and drones that should be considered first for the efficiency of logistics. The Betweenness centrality analysis results exhibited that drone was ranked first followed by UAV and logistics, which was the same results as the degree centrality. The Closeness centrality analysis results revealed that UAV ranked first followed by UAV, logistics, last-mile delivery, and autonomous vehicles from the first to fifth. The study results can present the implications to identify the additional use areas of drones in the logistics industry in Korea in the future."
+                    }
+                ]
+            },
+            "fpage": "205",
+            "lpage": "228",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828893",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828892",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "상선 선원의 선박근무 중 안전 위험요인의 중요도 분석"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "An analysis of the importance of safety risk factors for merchant ship seafarers working on ships"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "이해찬(인천대학교)",
+                    "고기환(인천대학교 동북아물류대학원)",
+                    "김유나(독립연구자)",
+                    "여기태(인천대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "우리나라는 선원법 및 선박직원법을 제정해 선원의 안전교육을 강화했지만 명확한 가이드라인의 부재와 각 법령 간의 혼선 등의 이유로 제대로 시행되지 못하고 있다. 이러한 측면에서 본 연구는 상선 선원을 위협하는 안전 위험요인을 파악하고 요인 간의 중요도 비교를 하기 위해 CFPR(Consistent Fuzzy Preference Relations) 분석을 실시하였다. 선박 및 선원 안전 관련 종사자 중 경력 15년 이상 전문가를 대상으로 심층 면담을 진행하여 최종적으로 3개 대요인과 21개 세부 요인을 도출하였다. 분석 결과, 항해 및 입출항(0.471) 요인이 대요인 중 가장 중요도가 높게 나타났으며, 화물 작업(0.327), 선내 작업(0.202) 순으로 2위와 3위의 중요도를 나타냈다. 본 연구는 상선 선원을 위협하는 위험요인 간 중요도 분석을 통해 위험요인 간의 순위를 파악했으며 이를 활용해 선원 안전교육의 예방자료로 활용될 수 있다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "South Korea reinforced the safety training of seafarers through the enactment of the Ship Act and the Ship Personnel Act. However, they are not being implemented properly due to lack of clear guidelines and confusion among different laws. In this respect the present study conducted the Consistent Fuzzy Preference Relations (CFPR) analysis to identify safety risk factors that threaten merchant ship seafarers and to compare importance among various factors. 3 major factors and 31 detailed factors were finally derived by conducting in-depth interviews with experts having 10 years or longer experience among workers related to ship and seafarer safety. According to the analysis results, voyage and entry/exit factor (0.471) showed the highest importance among the major factors, followed by cargo work (0.327) and work on board (0.202). This study identified the rankings of risk factors through the analysis of importance among the risk factors that threaten merchant ship seafarers. These results can be used as safety training materials for seafarers."
+                    }
+                ]
+            },
+            "fpage": "179",
+            "lpage": "204",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828892",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828891",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "자율운항선박에 대비한 선박관리감독자  역량 분석에 관한 연구"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A Study on the Capability Analysis of Ship Management Superintendent(SI) for Maritime Autonomous Surface Ship(MASS)"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "정진욱((주)POS SM)",
+                    "남정우(한국해양대학교)",
+                    "이정민(한국해양대학교)",
+                    "신영란(한국해양대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "자율운항선박의 등장으로 선박운영관리의 패러다임은 크게 변화할 것으로 판단된다. 이에 본 연구는 자율운항선박에 대비하여 선박관리감독이 갖추어야 할 필요 역량을 조사하고 IPA 분석 및 Borich 요구도 분석을 통해 필요 역량의 우선순위를 도출하였다. 분석결과 자율운항선박으로 전환 시 선박을 관리할 수 있는 능력과 관리자의 진취적인 지식습득능력이 높은 우선순위로 도출되었다. 따라서 선박관리감독의 원격운항, 자율제어 등 기술적인 측면의 역량 개발을 위한 교육프로그램의 우선적 개발과 각 선박의 특성에 맞춘 모듈형 트레이닝 프로그램 개발이 필요하다. 또한, 기업 및 정부는 선박관리감독의 진취적인 역량 향상을 위한 교육프로그램 및 비용을 지원하고. 선박의 높은 운영적 효율달성 및 비용절감을 위한 선박 빅데이터 센터 구축 및 분석적·판단적 역량을 강화할 필요가 있다. 그리고 정보통신기술(ICT) 역량 강화를 통한 선박관리감독의 직무전환으로 선박 사이버보안위협에 대응할 필요가 있다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "* Superintendent, POS SM Co.,Ltd (First Author) ** PhD Student, Graduate School of Korea Maritime and Ocean University (Collaborate Research) *** Msster program, Korea Maritime and Ocean University (Collaborate Research) **** Professor, Korea Maritime and Ocean University (Corresponding Author) With the advent of autonomous ships, the paradigm of ship operation management is expected to change significantly. Therefore, this study investigated the necessary capabilities that the ship management supervisor should have in preparation for autonomously operated ships and derived the priority of the necessary capabilities through IPA analysis and Borich demand analysis. As a result of the analysis, the ability to manage the vessel and the advanced knowledge acquisition ability of the manager were deduced as high priorities when converting to a maritime autonomous surface ship. Therefore, it is judged that it is necessary to develop an educational program for the development of competence in the technical aspect of ship management supervision and to support companies and the government to support enterprising capacity improvement. In addition, it is necessary to strengthen information and communication technology capabilities to cope with cyber threats to ships."
+                    }
+                ]
+            },
+            "fpage": "157",
+            "lpage": "178",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828891",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828890",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "컨테이너 야드 장치율에 영향을 미치는 요인에 대한 탐색적 연구"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Exploratory Study of the Factors Affecting Yard Occupancy in Container Terminal"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "정성훈(부산신항만터미널)",
+                    "이정민(한국해양대학교)",
+                    "심민섭(한국해양대학교)",
+                    "신영란(한국해양대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "컨테이너 시장은 COVID-19 사태에 대비하여 선복 조정을 진행하였다. 그러나 예기치 못한 물동량의 폭증으로 물량대비 선복량이 부족해졌으며 항만 혼잡도가 증가하였다. 이에 전 세계 항만의 야드 장치율이 증가하였고 컨테이너터미널 생산성 및 선박 정시성이 하락하였다. 따라서 본 연구에서는 컨테이너 야드 장치율에 영향을 미치는 터미널 내부요인을 도출하고자 하였다. 연구 분석은 실제 컨테이너터미널 ‘A’사의 다년간 누적된 데이터를 기반으로 회귀분석을 실시하였다. 분석결과, 야드 장치율 유지는 터미널 효율성 측면에서 가장 중요한 요소이며 야드 장치율 변동을 정확하게 예측할 수 있는 시스템적인 접근과 환적물량 대비 적정 수준의 장치율 유지를 위한 다각적인 접근의 필요성을 알 수 있었다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The container market was adjusted in preparation for the COVID-19 incident. However, due to the unexpected surge in volume, the volume of ships compared to the volume was insufficient, and the port congestion increased. Accordingly, the rate of yard equipment at ports around the world increased, and container terminal productivity and schedule reliability decreased. Therefore, this study attempted to derive terminal internal factors that affect the container yard rate. The research analysis was conducted based on data accumulated over many years from the actual container terminal 'A'. As a result of the analysis, it was found that maintaining the yard rate is the most important factor in terms of terminal efficiency, and that there is a need for a systematic approach to accurately predict fluctuations in yard rate and a multilateral approach to maintain an appropriate level of device rate compared to transshipment volume."
+                    }
+                ]
+            },
+            "fpage": "137",
+            "lpage": "156",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828890",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828889",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "현금흐름 분석을 통한 해운기업 부실 유형에 관한 연구"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A Study on the Insolvency of Korean Shipping Companies by Analysing Cash Flows"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "박종연(한국해양진흥공사)",
+                    "오용식(한국해양대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본 연구는 현금흐름 관점에서 우리나라 부실 해운기업과 정상 해운기업의 현금흐름 차이를 살펴보고자 하였다. 최근 실제 부실이 발생했던 해운기업 중 부실발생의 시기에 따라 12개사(A)와 11개사(B)로 구분하였고, 이와 비교 분석이 가능한 정상기업 93개사를 분석 대상으로 하였다. 현금흐름에 대한 수직적 비율분석 결과, 부실기업과 정상기업은 영업활동현금흐름에서 차이를 보였다. 또한 부실집단 A와 B는 부실발생 이전 3년 동안 투자 및 재무활동으로 인한 현금흐름에서 차이가 나타났다. 마지막으로, 부실기업과 정상기업은 현금흐름 유형에서 차이를 보였다. 본 연구는 해운기업을 현금흐름유형으로 분류한 첫 번째 시도이며, 기존 부실연구의 연구범위 확대 가능성을 확인하였다는 점에서 의미를 찾을 수 있다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The purpose of this study was to examine the characteristics of insolvency of Korean shipping companies and the difference in cash flow between insolvent and normal companies. As a result of the vertical ratio analysis, there was a difference in operating cash flows. In the cash flow analysis for the three years before the occurrence of insolvency group A and group B, there was a difference in cash flows from investment and financing activities. As a result of analyzing the difference in cash flow types , the proportion of cash flows (types E to H) from negative (-) operating activities in normal firms was lower than in insolvent group B. This study is the first attempt to classify Korean shipping companies into cash flow types, and it contributes in that it confirms the possibility of expanding the research scope of existing insolvency studies by analyzing the financial characteristics of shipping companies from the point of cash flow analysis."
+                    }
+                ]
+            },
+            "fpage": "119",
+            "lpage": "136",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828889",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828888",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "항만 운영시스템의 인공지능 로직 적용  방안 연구"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Application of Artificial Intelligence Logic of Port Operation System"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": "최용석(순천대학교)"
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본 연구는 항만의 운영시스템을 대상으로 운영의 개선 및 생산성 향상을 위해 적용이 필요한 인공지능 로직의 적용방안에 대해서 적용의 우선순위를 분석하여 컨테이너터미널 운영 효율화를 위한 방안을 도출하고자 하였으며, 연구의 목표를 달성하기 위해 운영시스템 세부 개술들에 대한 필요 요인들을 도출하고 평가하였다. AHP를 통한 분석 결과는 1계층에서 야드시스템, 안벽시스템, 하역장비, 정보시스템의 순으로 중요도가 나타났다. 2계층 평가에서는 선석계획, 야드계획, 이송차량 풀링, 안벽크레인 스케줄링, 야드크레인 스케줄링 순으로 중요도가 높게 나타났으며, 야드시스템평가에서는 야드계획, 이송차량 풀링, 야드크레인 스케줄링 순으로 나타났다. 환산가중치를 이용한 종합평가 결과는 선석계획이 1위, 야드계획이 2위, 이송차량 풀링이 3위로 중요도가 높게 나타났다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "This study analyzes the priority of application of artificial intelligence logic, which needs to be applied to improve operation and productivity, to derive measures for efficient operation of container terminals. In order to achieve the goal of the study, necessary factors for detailed outline of the operating system were derived and evaluated. The analysis results through AHP showed importance in the order of yard system, berth system, stevedoring equipment, and information system in the first tier. In the second-tier evaluation, berth planning, yard planning, transport vehicle pooling, quay crane scheduling, and yard crane scheduling were of high importance in the order of yard planning, transport vehicle pooling, and yard crane scheduling. As a result of the comprehensive evaluation using the converted weight, the berth planning ranked first, the yard planning ranked second, and the transport vehicle pooling ranked third, showing high importance."
+                    }
+                ]
+            },
+            "fpage": "101",
+            "lpage": "118",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828888",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828887",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "국적 근해 정기선사의 디지털 전환 성공요인의 중요도 평가에 관한 연구"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A study on the Evaluation of the importance of Success Factors for Digital Transformation in Korean Short sea liner Shipping"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": "김영수(동명대학교)"
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본 연구의 목적은 AHP를 활용한 국적 근해 정기선사의 디지털 전환 성공요인의 중요도를 평가하는 것이다. 이를 위해 본 연구에서는 조직요인, 경영전략, 환경적 요인, 최고경영층의 리더십, 외부지원의 5가지 영역과 세부적으로 속한 21개의 항목으로 구성된 AHP 분석모형을 구성하였다. 분석결과 디지털 전환 추진 성공요인 1계층요인들 중에는 최고경영층의 리더십, 경영전략, 조직요인, 환경적 요인, 외부지원 순으로 중요한 것으로 나타났다. 세부항목인 2계층요인 종합 중요도 순위는 최고경영층 추진의지 및 지원, 디지털 전환 전략적 목표설정, 기업전략과 연계, 최고경영층의 조정역할, 충분한 자원(인력, 시간 , 예산) 투입 순으로 나타났다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The purpose of this study is to analyze the importance of digital transformation success factors in short sea liner shipping using the AHP method. To analyze the success factors of digital transformation, we constructed an AHP analysis model consisting of 21 items in detail with five areas of organizational factor, management strategy factor, environmental factor, leadership of top management class and external support factors. Our findings show that leadership of the top management class factor, management strategies factor, organizational factor, environmental factor, and external support factor were important success factors for promoting digital transformation. The overall ranking of importance of the tier-two factors, which are detailed items, was in the order of the will and support of the top management, setting strategic goals for digital transformation,  connecting with corporate strategy, the coordination role of the top management, and input of sufficient resources (manpower, time, budget)."
+                    }
+                ]
+            },
+            "fpage": "75",
+            "lpage": "99",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828887",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828886",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "해외취업 해기사의 외화획득액 실증분석: 미국선사 Lasco의 사례"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Empirical Analysis of Foreign Currency Acquisition by an overseas employed Mercantile Marine Officer: A Case of Lasco Shipping, an American Shipping Company"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "김성준(한국해양대학교)",
+                    "한종길(성결대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "우리나라 해운업이 반세기 만에 세계적인 수준으로 성장하는 데 해기사들이 해외취업을 바탕으로 선원선박관리업, 해운대리점업, 선박소유업 등의 연관 산업 발전에 ‘내외부경제효과’를 미침으로써 주도적인 역할을 했다. 그 중에서도 해외취업선원의 외화획득은 경제발전 초창기에 절대적으로 필요했던 외화를 제공했지만, 선원 개개인의 구체적인 외화수입액에 대한 분석은 전무하였다. 이 연구는 미국선사인 Lasco에서 근무한 해기사 K의 급여명세서와 선원기록부를 활용해 해기사 근무기간 중의 총 외화획득액을 분석한 것이다. 분석 결과, K 씨는 11년 5개월간의 승선기간 중 총 24만 3,230달러(1억 6,606만 7,839원)을 벌어들인 것으로 나타났다. 여기에 본선불 30%을 더해 실질월평균임금을 추정하면, 우리나라 제조업 월평균임금의 약 3.8배에 상당한 것으로 드러났다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "It is a well-known fact that merchant marine officers played a leading role in the development of Korea’s modern shipping industry to a global level in just half a century. This had ‘internal and external economic effect’ on the growth of the shipping industry through the development of related industries such as overseas employment which started in the mid-1960s, foreign currency acquisition, manpower supply business, shipping agency business, and shipowning. Among them, it can be said that the acquisition of foreign currency by overseas employed seafarers was of great economic significance in that it provided foreign currency that was absolutely necessary in the early stages of economic development. From 1965 to 1999, overseas employed seafarers earned US$ 826,178,000, while the Korean nurses and miners in West Germany remitted US$ 100,150,000 to Korea between 1963 and 1977.\nThis study will calculate the lifetime foreign currency wage earning of a Korean marine officer who worked for Lasco, an American shipping company, by analyzing his monthly wage statement from 1978 to 1992. As a result of the analysis, it was found that he earned US$ 234,230, equivalent to 166,067,839 Korean Won, during the 11 years and 5 months on board. Converting this to the average monthly wage during the on-boarding period, it is 1,205,282 Won(current value 4,570,587 Won), and when converted to the average monthly wage during the working period, it is 1,031,602 Won(current value 3,911,968 Won). If we add 30% of onboard pay to this and estimate the real average monthly wage, this is equivalent to about 3.8 times the average monthly wage in manufacturing industry. This study is meaningful in that it empirically confirmed the claims that the wage of seafarers were 3 – 4 times higher than that of land workers."
+                    }
+                ]
+            },
+            "fpage": "61",
+            "lpage": "73",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828886",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828885",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "해상운임 안정화를 위한 정책방안 도출 연구"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A Study on the Priorities of Response Policies on Freight Rates’ Volatility"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "안영균(한국해양수산개발원)",
+                    "이민규(부경대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "글로벌 무역의 성장은 현저한 해상운임 변동을 가져왔으며, 왕성한 선복수요와 운임 경쟁을 통해 큰 폭의 해상운임 등락이 만성화되고 있다. 한편 코로나19로 해상운임이 큰 폭으로 상승하면서 해상운임 안정화의 필요성이 더욱 강조되고 있다. 이러한 상황을 배경으로 본 논문은 AHP(Analytical Hierarchy Process) 방법론을 사용하여 해상운임 안정화를 위한 정책대안별 가중치를 계측하였다. 본 연구는 해운기업, 해운협회, 그리고 해운정책당국 등을 대상으로 총 4회에 걸친 AHP 설문조사를 실시하고 설문조사를 수행하였다. 본 연구는 구체적인 정책 우선순위를 제시하고 있어 정책당국에 현실적인 정책 입안 동기를 제공하고 있으며, 향후 정책당국이 고객 니즈에 보다 매칭이 되는 정책을 수행하는 데 유용한 근거자료가 될 수 있을 것으로 기대된다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The growth of global trade has brought about significant fluctuations in seaborne freight rates, and the fluctuations are becoming chronic against the backdrop of vigorous demand and fierce competition for freight rates. Meanwhile, as seaborne freight rates have risen sharply due to COVID-19, the need to stabilize freight rates is being emphasized more. Against this backdrop, this paper measured the weights for each policy alternative for stabilizing seaborne freight rates using the Analytical Hierarchy Process (AHP) methodology. This study conducted a total of four times AHP surveys of shipping companies, shipping associations, and shipping policy authorities over about three months from April 1 to June 25, 2021, and received statistically meaningful responses from 52 people. This study presents specific policy priorities, providing policy authorities with realistic policy-making motives, and is expected to be a useful reference for policy authorities to implement policies that match customer needs in the future."
+                    }
+                ]
+            },
+            "fpage": "37",
+            "lpage": "59",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828885",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2022",
+            "pub-mon": "03",
+            "volume": "38",
+            "issue": "1"
+        },
+        "articleInfo": {
+            "@article-id": "ART002828884",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "국내 컨테이너 리스금융 활성화를 위한 컨테이너 리스사 설립방안에 대한 분석"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Vitalization of domestic distribution industry with container lease companies"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "홍기훈(홍익대학교)",
+                    "김진희(홍익대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본 연구는 자본집약적인 물류산업에 컨테이너 리스회사를 추가함으로써 산업 및 국가경쟁력을 증진시킬 수 있는 효과적인 방법을 규명하고, 그 효과를 극대화할 수 있는 리스회사의 효율적인 구조를 밝혀내는 데 연구 목적이 있다. 대한민국은 GDP 대비 수출입비율이 매우 높고 대외의존도가 높은 경제구조를 가지고 있어 물류산업은 국내 경제에 매우 중요한 역할을 하고 있다. 따라서 물류산업에서 핵심적인 역할을 수행하는 해운산업의 중요성과 특성 및 문제점을 파악하여 해운업을 중심으로 국내 물류산업을 파악한 후, 컨테이너 리스시장의 현황 및 특성을 파악하고, 리스금융 평가 프로세스와 리스사 설립의 기능과 기대효과를 확인할 것이다. 위 정보와 주요 글로벌 리스사에 대한 분석을 토대로 한국형 컨테이너 리스사 설립방안을 제시하고자 한다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The purpose of this study is to identify an effective and efficient way of enhancing South Korea’s industrial and national competitiveness by adding a container leasing company. The logistics industry is known to be capital intensive and a well structured container leasing company can enhance efficiency of such capital intensive industry. In this study, we identify the domestic logistics of the shipping industry by investigating the importance of shipping industry, we identify characteristics and problems of the industry. Then the status and characteristics of the container leasing market are analyzed and its implication are derived. The role of the newly established leasing company is investigated and its expected effects and implications to the shipping industry are analyzed. Based on the above information and analysis of major global leasing companies, we would like to present a plan to establish a Korean container leasing company."
+                    }
+                ]
+            },
+            "fpage": "1",
+            "lpage": "36",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": null,
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002828884",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
             "pub-year": "2021",
             "pub-mon": "12",
             "volume": "37",
@@ -4667,7 +5209,7 @@
             "orte-open-yn": "Y",
             "doi": "http://dx.doi.org/10.37059/tjosal.2019.35.2.305",
             "uci": null,
-            "citation-count": "1",
+            "citation-count": "2",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002477882",
             "verified": "Y"
         }
@@ -5478,7 +6020,7 @@
             "orte-open-yn": "Y",
             "doi": "http://dx.doi.org/10.37059/tjosal.2019.35.1.1",
             "uci": null,
-            "citation-count": "1",
+            "citation-count": "2",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002449977",
             "verified": "Y"
         }
@@ -11677,7 +12219,7 @@
             "orte-open-yn": "Y",
             "doi": "http://dx.doi.org/10.37059/tjosal.2015.31.3.587",
             "uci": "G704-000463.2015.31.3.003",
-            "citation-count": "12",
+            "citation-count": "13",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002031362",
             "verified": "Y"
         }
@@ -12084,7 +12626,7 @@
             "orte-open-yn": "Y",
             "doi": "http://dx.doi.org/10.37059/tjosal.2015.31.2.427",
             "uci": "G704-000463.2015.31.2.009",
-            "citation-count": "1",
+            "citation-count": "2",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002003221",
             "verified": "Y"
         }
@@ -33330,61 +33872,6 @@
             "issue": "46"
         },
         "articleInfo": {
-            "@article-id": "ART000971249",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "컨테이너 선사의 항만결정요인 분석"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "Factors Affecting Liners' Port Selection by Trade Route"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "Factors Affecting Liners' Port Selection by Trade Route"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": "장영태(인하대학교)"
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "이 연구의 목적은 선사들이 항만을 선택하는데 있어서 어떤 요인들을 중요시하는가를 분석하는 것이다. 이 연구는 두 가지 종류의 항로에 그 촛점을 맞춘다. 첫째, 원양항로로서 극동아시아로부터 구주로 가는 항로, 태평양횡단항로, 대서양횡단항로를 각각 포함하게 된다. 둘째, 아시아 역내의 근해항로에 촛점을 맞춘다. 이 연구의 주된 방법론은 주요 해운선사를 서베이하는 것이다. 수집된 설문지로부터 요인분석, 군집분석, t-검정 등을 통하여 수집결과의 통계적 신뢰성과 타당성을 검증하게 된다. 연구의 주요결과로는 여섯가지 요인들이 선사의 항만결정요인으로서 통계적 유의성을 보여주었다. 또한 주원양항로와 근해항로간에도 결정요인이 다르다는 것을 발견하였다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "The major objective of this research is to find out what factors affect liners' port selection by trade route. This study focuses on two distinct routes: one on trunk routes covering trans-Pacific trade and trans-European trade between Far-east Asia, and North America and Europe, respectively; the other on short sea routes in intra-Asia trade. The major methodology of this research is to survey the major liners. The survey form is to be distributed to the lines operating both on mainhaul services and on intra-Asia services. Applied methods include factor analysis, cluster analysis and t-test to check how questions and sampled companies reacted to the given survey form. It is found that there are six variables showing statistical significance from the sampled data. In addition, there is distinction between the factors, based on which shipping lines on trunk route and short sea routes choose ports for their routing decision, respectively. Some caveats are discussed in interpreting the results."
-                    }
-                ]
-            },
-            "fpage": "27",
-            "lpage": "46",
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2005..46.003",
-            "citation-count": "16",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000971249",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2005",
-            "pub-mon": "09",
-            "volume": null,
-            "issue": "46"
-        },
-        "articleInfo": {
             "@article-id": "ART000971248",
             "article-categories": "해상운송학",
             "article-regularity": "Y",
@@ -33426,6 +33913,61 @@
             "uci": "G704-000463.2005..46.009",
             "citation-count": "3",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000971248",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2005",
+            "pub-mon": "09",
+            "volume": null,
+            "issue": "46"
+        },
+        "articleInfo": {
+            "@article-id": "ART000971249",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "컨테이너 선사의 항만결정요인 분석"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "Factors Affecting Liners' Port Selection by Trade Route"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Factors Affecting Liners' Port Selection by Trade Route"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": "장영태(인하대학교)"
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "이 연구의 목적은 선사들이 항만을 선택하는데 있어서 어떤 요인들을 중요시하는가를 분석하는 것이다. 이 연구는 두 가지 종류의 항로에 그 촛점을 맞춘다. 첫째, 원양항로로서 극동아시아로부터 구주로 가는 항로, 태평양횡단항로, 대서양횡단항로를 각각 포함하게 된다. 둘째, 아시아 역내의 근해항로에 촛점을 맞춘다. 이 연구의 주된 방법론은 주요 해운선사를 서베이하는 것이다. 수집된 설문지로부터 요인분석, 군집분석, t-검정 등을 통하여 수집결과의 통계적 신뢰성과 타당성을 검증하게 된다. 연구의 주요결과로는 여섯가지 요인들이 선사의 항만결정요인으로서 통계적 유의성을 보여주었다. 또한 주원양항로와 근해항로간에도 결정요인이 다르다는 것을 발견하였다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The major objective of this research is to find out what factors affect liners' port selection by trade route. This study focuses on two distinct routes: one on trunk routes covering trans-Pacific trade and trans-European trade between Far-east Asia, and North America and Europe, respectively; the other on short sea routes in intra-Asia trade. The major methodology of this research is to survey the major liners. The survey form is to be distributed to the lines operating both on mainhaul services and on intra-Asia services. Applied methods include factor analysis, cluster analysis and t-test to check how questions and sampled companies reacted to the given survey form. It is found that there are six variables showing statistical significance from the sampled data. In addition, there is distinction between the factors, based on which shipping lines on trunk route and short sea routes choose ports for their routing decision, respectively. Some caveats are discussed in interpreting the results."
+                    }
+                ]
+            },
+            "fpage": "27",
+            "lpage": "46",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2005..46.003",
+            "citation-count": "16",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000971249",
             "verified": "N"
         }
     },
@@ -33495,6 +34037,60 @@
             "issue": "45"
         },
         "articleInfo": {
+            "@article-id": "ART000963223",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "Prospects of E-Trade development in Taiwan"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "Prospects of E-Trade development in Taiwan"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Prospects of E-Trade development in Taiwan"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": "양옥지(카오슝해양대학교)"
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "As Paperless Trading Individual Action Plan of APEC is to take into account diverse legal and regulatory frameworks in the region, APEC member economies should endeavor to reduce or eliminate the requirement for paper documents needed for customs and other cross-border trade administration and other documents and messages relevant to international sea, air and land transport, where possible, by 2005 for developed and 2010 for developing economies, as soon as possible thereafter. To accomplish the objective of paperless trading environment, Taiwanese government is confronted with a lot of problems waiting for best solution. The aim of this paper is to explore issues of current trading formality, introduction of paperless trading policy, and figure out alternative and suggestion to resolve exiting issues."
+                    }
+                ]
+            },
+            "fpage": "184",
+            "lpage": "204",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2005..45.002",
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000963223",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2005",
+            "pub-mon": "06",
+            "volume": null,
+            "issue": "45"
+        },
+        "articleInfo": {
             "@article-id": "ART000963224",
             "article-categories": "해상운송학",
             "article-regularity": "Y",
@@ -33536,60 +34132,6 @@
             "uci": "G704-000463.2005..45.003",
             "citation-count": "0",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000963224",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2005",
-            "pub-mon": "06",
-            "volume": null,
-            "issue": "45"
-        },
-        "articleInfo": {
-            "@article-id": "ART000963223",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "Prospects of E-Trade development in Taiwan"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "Prospects of E-Trade development in Taiwan"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "Prospects of E-Trade development in Taiwan"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": "양옥지(카오슝해양대학교)"
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "As Paperless Trading Individual Action Plan of APEC is to take into account diverse legal and regulatory frameworks in the region, APEC member economies should endeavor to reduce or eliminate the requirement for paper documents needed for customs and other cross-border trade administration and other documents and messages relevant to international sea, air and land transport, where possible, by 2005 for developed and 2010 for developing economies, as soon as possible thereafter. To accomplish the objective of paperless trading environment, Taiwanese government is confronted with a lot of problems waiting for best solution. The aim of this paper is to explore issues of current trading formality, introduction of paperless trading policy, and figure out alternative and suggestion to resolve exiting issues."
-                    }
-                ]
-            },
-            "fpage": "184",
-            "lpage": "204",
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2005..45.002",
-            "citation-count": "0",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000963223",
             "verified": "N"
         }
     },
@@ -34723,6 +35265,350 @@
             "issue": "43"
         },
         "articleInfo": {
+            "@article-id": "ART000944739",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "고속 컨테이너선 운항의 경제성 분석에 관한 연구"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "A Study on the Economic Viability of Operating a Fast Containership with Reference to Short Sea Services in Northeast Asia"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A Study on the Economic Viability of Operating a Fast Containership with Reference to Short Sea Services in Northeast Asia"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "장영준(해양수산부)",
+                    "류동근(한국해양대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본 연구의 목적은 한중일 항로에서 고속 컨테이너선과 일반 컨테이너선과의 선박 운항 경제성을 비교 분석하고, 운임 및 선박 연료비 민감도 분석을 통하여 고속선의 경제성 운임 수준을 도출하는데 있다. 연구결과에 따르면 평균 시장운임 수준에서 고속 컨테이너선은 TEU당 92달러의 손실이 발생하며 항차당 손익분기점 컨테이너 수송개수는 648TEU이다. 연료비 민감도 분석결과 고속선의 일일당 연료비가 기존선박의 7배일 경우 고속 컨테이너선은 연간 8537달러의 순이익이 발생하고, 이때 항차당 손익분기점 컨테이너 수송개수는 511TEU로 나타났다. 고속선의 적정 운임수준을 조사한 결과, 기준모델에서 고속선은 TEU당 530달러 운임수준에서 이익을 창출할 수 있는 것으로 밝혀졌다. 이러한 연구결과는 향후 경제성 있는 고속선의 개발 및 운항계획 수립에 도움이 될 것으로 판단된다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The objective of this research is to examine the economic viability of operating a fast containership in short sea services in North-East Asia in comparison with 700TEU and 340TEU containerships. \nThe results of the research present that at the average market freight rates of $438 per TEU, the fast containership is not economical and has a loss of $92 per TEU. The results of the sensitivity analysis in terms of freight levels indicate that the fast ship will gain $20 per TEU as earnings of before interest and tax at the freight rate of $550 per TEU and its break-even TEU is 490TEU per voyage. The results of the sensitivity analysis in terms of fuel costs show that when daily fuel costs of the fast containership is sevenfold comparing to that of the 340TEU ship, the fast ship will earn a net profit of $8,537 annually and its break-even container number is 511TEU."
+                    }
+                ]
+            },
+            "fpage": null,
+            "lpage": null,
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2004..43.011",
+            "citation-count": "3",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944739",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2004",
+            "pub-mon": "06",
+            "volume": null,
+            "issue": "43"
+        },
+        "articleInfo": {
+            "@article-id": "ART000944772",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "Efficiency measurement of selected international ports using aggregated performance index"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "Efficiency measurement of selected international ports using aggregated performance index"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Efficiency measurement of selected international ports using aggregated performance index"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "CHOU Ming-tao(National Taiwan Ocean University)",
+                    "LEE Hsuan-shih(National Taiwan Ocean University)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "In this paper, we propose the Aggregated Performance Index method. This study applies Aggregated Performance Index to provide an efficiency measurement for international ports. The Aggregated Performance Index technique is powerful in resolving the measurement of port efficiency and ranking of port, because Aggregated Performance Index has been applied to analyze the relative efficiency of decision-making units (DMUs) in a set of multiple inputs and multiple outputs, and don't require an explicit a priori determination of relationships between outputs and inputs. Using multidimensional scaling (MDS) process, we adjustment and present an alternative that is theoretically and practically superior to the most common methods proposed in the past papers, especially in the DMUs measure field. This method overcomes the problem of Data Envelopment Analysis method which can neither rank efficiency of ports nor show the real efficiency distance of DMUs. Thus, the Aggregated Performance Index method is useful in wide array of Australian and other international ports' ranking.Finally this Aggregated Performance Index method is applied to the ranking of 16 international ports. As a result, five ports, the port of Melbourne, the port of Osaka, the port of Zeebrugge, the port of Brisbane, and the port of Fremantle are found to be the most inefficient ports. Six other international ports, the port of Tanjung Priok, the port of Hamburg, the port of Sydney, the port of Tilbury, the port of Yokohama, and the port of La Spezia, which are found to be efficient ports. The port of Singapore, the port of Hong Kong, the port of Felixstowe, the port of Rotterdam, and the port of Keelung are found to be the most efficient ports."
+                    }
+                ]
+            },
+            "fpage": null,
+            "lpage": null,
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2004..43.015",
+            "citation-count": "0",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944772",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2004",
+            "pub-mon": "06",
+            "volume": null,
+            "issue": "43"
+        },
+        "articleInfo": {
+            "@article-id": "ART001120473",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "부산항 컨테이너운송하역업의 노사관계 실태와 개선과제 : ODCY업체들의 경우"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "A Study on the Improvement Scheme of Industrial Relations of the Container Transport and Cargo Industry in Busan"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A Study on the Improvement Scheme of Industrial Relations of the Container Transport and Cargo Industry in Busan"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": "윤영삼(부경대학교)"
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "물류입국 건설에서 핵심적인 산업이 컨테이너운송하역업인데 이 산업의 노사관계에 대해서는 최근에 체계적인 연구가 별로 이루어지지 않았다.본 연구는 부산항을 중심으로 운영하는 ODCY업체들을 연구대상으로 삼고 문헌연구, 면접조사 및 설문조사를 병행하여 실태를 파악하고 이를 토대로 노사관계 안정을 위한 개선과제를 모색하고자 하였다.연구결과로서, 부산항 ODCY업체를 비롯한 컨테이너운송하역업에서 노사관계를 합리화하기 위해서는 첫째, 노동시간의 적정화, 둘째, 비정규직화의 재고, 셋째, 인적자원관리의 타당성의 제고, 넷째, 승진관리의 합리화, 다섯째, 재해예방의 합리화, 여섯째, 사측의 협력적 노사관계 구축노력 강화, 일곱째, 산별노사관계체제의 구축 등을 추진해야 할 것으로 제안하였다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The objective of this study is to investigate the reality of industrial relations of the Container Transport and Cargo Industry in Busan and suggest its improvement scheme.\nIn order to achieve this objective, this study put in practice research methods such as literature review, interview and questionnaire. \nAs a result of research, this study suggested that for rationalization of industrial relations of the Container Transport and Cargo Industry in Busan there is need to carry out improvement scheme such as strengthening the adequacy of hours of work and safety management, decreasing contingent workers, strengthening the formality and validity of Human Resource Management, establishing promotion system, strengthening employer's effort to structure cooperative industrial relations and structuring industry-level industrial relations system."
+                    }
+                ]
+            },
+            "fpage": null,
+            "lpage": null,
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2004..43.018",
+            "citation-count": "1",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001120473",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2004",
+            "pub-mon": "06",
+            "volume": null,
+            "issue": "43"
+        },
+        "articleInfo": {
+            "@article-id": "ART001120416",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "MDMG-HFP법과 퍼지역평가법을 이용한 상하이 및 북중국과 우리 나라 컨테이너항만의 경쟁력분석에 관한 연구"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "A Study on the Analysis of Competitiveness in Container Ports of Shanghai and North China & Korea Using MDMG-HFP Process & Inverse Relation of Fuzzy Evaluation"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A Study on the Analysis of Competitiveness in Container Ports of Shanghai and North China & Korea Using MDMG-HFP Process & Inverse Relation of Fuzzy Evaluation"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "여기태(인천대학교)",
+                    "박창호( 인천발전연구원)",
+                    "전일수(인천대학교)",
+                    "이홍걸(경남대학교)",
+                    "류형근(한국해양대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본 연구는 상하이항을 비롯한 직기항이 이루어지고 있는 북중국 항만의 발전과 현황을 조사 분석하고 이를 통해 우리 나라 항만의 경쟁력 향상방안을 모색하는 것을 연구의 목적으로 한다. 연구 대상항만은 한국과 북중국의 7개 주요항만(Busan, Gwangyang, Sanghai, Qingdao, Tienjin, Dalian, Kaoshuing)을 연구범위로 하였다. 본 연구에서는 우선 기존의 선행연구를 통하여 항만의 경쟁력과 관련한 요소를 추출하고, 대상항만과 관련된 실무자와 연구자의 의견을 반영하여 파일럿 테스트와 요인분석(FA: Factor Analysis)을 실시하였다. 또한 요인분석 결과를 사용하여 항만경쟁력 평가구조를 구축하고, 다음으로 수립된 평가구조를 기반으로 다수의사결정그룹 퍼지평가기법을 이용하여 대상항만의 경쟁력 평가를 실시하여 항만의 경쟁력을 도출하였다. 마지막으로 퍼지 역평가법을 적용하여 주요 항만의 경쟁력 상승요인을 추출하였다. 분석결과, 대상 항만 중에 가장 높은 경쟁력을 보유한 항만은 상하이항으로 나타났으며, 이러한 현 상황에서 부산항은 경쟁력을 제고하기위해 무엇보다 배후지의 규모와 활용수준을 높이고, 물동량 창출기반을 조속히 확충할 필요가 있을 것으로 파악되었다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The competitive environment of Northeast Asia's intra-shipping ports is expected to change greatly due to the remarkable economic growth of China in which rapidly appeared as a production base of the world. The inter-port competition to preoccupy the hub port within the area is also expected to be much more severe. In this aspect, the main purpose of this study lies in surveying and analysing the development and status of North China's ports including Shanghai where direct calling is taking place, considering the spreading effects on Korea's ports, and drawing up a plan for improving Korea's port competitiveness. \nThe research scope is to cover the subjective ports of Korea and China's 7 major ports (Busan, Gwangyang, Sanghai, Qingdao, Tienjin, Dalian and Kaoshuing). The substance of this study contains the extraction of port competitiveness components through the previous existing studies and the pilot test and factor analysis which reflect the opinions of working-level personnel and researchers related to the subjective ports. The evaluation structure of port competitiveness is established by utilizing the results of factor analysis. Then, we extract the relevant port competitiveness using MDMG-HFP (Multi Decision Multi Group-Hierarchical Fuzzy Process) to execute the competitiveness evaluation of the subjective ports on the basis of the established evaluation structure. Finally, we draw the factors that increase the competitiveness of major ports by applying the IRFE(Inverse Relation of Fuzzy Evaluation), and present Korea's strategic planning and implications through the scenario analysis of the extracted components."
+                    }
+                ]
+            },
+            "fpage": null,
+            "lpage": null,
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2004..43.008",
+            "citation-count": "21",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001120416",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2004",
+            "pub-mon": "06",
+            "volume": null,
+            "issue": "43"
+        },
+        "articleInfo": {
+            "@article-id": "ART000944736",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "해운기업의 환위험관리에 관한 실무적 접근"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "A Practical Study on the Exchange Risk Management of Shipping Companies"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "A Practical Study on the Exchange Risk Management of Shipping Companies"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": "오문석(성결대학교)"
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본고에서는 해운기업의 환위험 상황을 개괄적으로 분석하였다. 다만, 환율변동의 예측방법은 본고의 주제가 아니기 때문에 논외로 하였다. 또한 연구의 목적을 충분히 달성하기 위해서는 환위험관리의 전체 과정과 경영활동이나 통화별 수준의 산정과 예측, 환율의 예측, 여러 가지 환위험에 대한 헤지수단의 평가와 선택 등 일련의 요소를 서로 조합할 필요가 있지만, 본고에서는 단지 해운기업에서의 환위험관리를 실무적으로 이해시키기 위하여 종합적이며 전반적인 분석모델의 전개에 중점을 두었다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "In this paper, an analytic structure is studied by which shipping companies can manage the foreign exchange risk and get over the difficulties of financial reporting.\nThis paper introduces an analysis model which is summing up analysis factors of individual overseas branches and Prindl's model regarding influence of volatility, foreign exchange gain and loss, and profitability.\nThe focal point of this paper is overall analysis model in order that shipping companies understand exchange risk management for all practical purpose."
+                    }
+                ]
+            },
+            "fpage": null,
+            "lpage": null,
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2004..43.022",
+            "citation-count": "4",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944736",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2004",
+            "pub-mon": "06",
+            "volume": null,
+            "issue": "43"
+        },
+        "articleInfo": {
+            "@article-id": "ART001120477",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "해운선사의 효율성 및 생산함수 특성 분석"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "Analysis of Allocative Efficiency and Characteristics of Production Function: \nThe Case of Shipping Companies"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Analysis of Allocative Efficiency and Characteristics of Production Function: \nThe Case of Shipping Companies"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "하영석(계명대학교)",
+                    "이명헌(계명대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "비용최소화를 전제하지 않은 暗비용함수를 추정하여 국내 28개 외항 해운업체를 대상으로 분배 효율성 분석을 실시하였다. 투입요소간 한계기술대체율과 시장가격의 비율이 일치하여 최소의 비용으로 생산이 이루어지고 있음을 뜻하는 상대가격 효율성은 기각되었다. 세부적으로 두 요소간 효율적 분배 여부를 검증한 결과 가변재-노동만 채택되고 자본-노동, 자본-가변재는 기각되었다. 요소간 비효율적 분배로 인하여 생산비용이 평균 2% 증가한 것으로 나타났는데, 자본과 가변재는 각각 적정 수준보다 평균 9.4%와 9.2% 만큼 적게 투입된 반면 노동은 13.3% 만큼 필요 이상으로 사용되었다. 결국 2%의 생산비 상승이 초래된 이유는 자본과 가변재의 과소 투입으로 발생한 생산비 감소분을 능가하는 노동의 과잉 투입이 있었기 때문이다. 생산함수의 동조성, 동차성 모두 기각되었다. 규모의 경제는 평균 42.5%로 추정되었으며 산출량 규모와 규모의 경제는 비례하지 않음을 발견하였다. 자본-노동은 보완적 관계로, 자본-가변재, 노동-가변재는 대체 관계로 나타났다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "We test for allocative efficiency of inputs with data for 28 firms in the Korean shipping industry utilizing the 'shadow' cost function. The hypothesis that firms do minimize costs subject to market prices is rejected. The attainment of allocative efficiency between variable input and labor is accepted, while capital-labor and capital-variable input are rejected. Allocative inefficiency causes an increase in total cost by 2 percent, on average. Allocative distortion, on average, reduces the demand for capital and variable input by 9.4 percent and 9.2 percent; while the demand for labor is increased by 13.3 percent. Homotheticity of the production function is rejected. The average estimate of scale economies is 42.5 percent. The estimates of the elasticites of substitution indicate that capital and labor are complements; while capital and labor are both substitutable with variable input."
+                    }
+                ]
+            },
+            "fpage": null,
+            "lpage": null,
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2004..43.002",
+            "citation-count": "8",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001120477",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2004",
+            "pub-mon": "06",
+            "volume": null,
+            "issue": "43"
+        },
+        "articleInfo": {
             "@article-id": "ART001120475",
             "article-categories": "해상운송학",
             "article-regularity": "Y",
@@ -35722,350 +36608,6 @@
             "issue": "43"
         },
         "articleInfo": {
-            "@article-id": "ART000944739",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "고속 컨테이너선 운항의 경제성 분석에 관한 연구"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "A Study on the Economic Viability of Operating a Fast Containership with Reference to Short Sea Services in Northeast Asia"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "A Study on the Economic Viability of Operating a Fast Containership with Reference to Short Sea Services in Northeast Asia"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": [
-                    "장영준(해양수산부)",
-                    "류동근(한국해양대학교)"
-                ]
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "본 연구의 목적은 한중일 항로에서 고속 컨테이너선과 일반 컨테이너선과의 선박 운항 경제성을 비교 분석하고, 운임 및 선박 연료비 민감도 분석을 통하여 고속선의 경제성 운임 수준을 도출하는데 있다. 연구결과에 따르면 평균 시장운임 수준에서 고속 컨테이너선은 TEU당 92달러의 손실이 발생하며 항차당 손익분기점 컨테이너 수송개수는 648TEU이다. 연료비 민감도 분석결과 고속선의 일일당 연료비가 기존선박의 7배일 경우 고속 컨테이너선은 연간 8537달러의 순이익이 발생하고, 이때 항차당 손익분기점 컨테이너 수송개수는 511TEU로 나타났다. 고속선의 적정 운임수준을 조사한 결과, 기준모델에서 고속선은 TEU당 530달러 운임수준에서 이익을 창출할 수 있는 것으로 밝혀졌다. 이러한 연구결과는 향후 경제성 있는 고속선의 개발 및 운항계획 수립에 도움이 될 것으로 판단된다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "The objective of this research is to examine the economic viability of operating a fast containership in short sea services in North-East Asia in comparison with 700TEU and 340TEU containerships. \nThe results of the research present that at the average market freight rates of $438 per TEU, the fast containership is not economical and has a loss of $92 per TEU. The results of the sensitivity analysis in terms of freight levels indicate that the fast ship will gain $20 per TEU as earnings of before interest and tax at the freight rate of $550 per TEU and its break-even TEU is 490TEU per voyage. The results of the sensitivity analysis in terms of fuel costs show that when daily fuel costs of the fast containership is sevenfold comparing to that of the 340TEU ship, the fast ship will earn a net profit of $8,537 annually and its break-even container number is 511TEU."
-                    }
-                ]
-            },
-            "fpage": null,
-            "lpage": null,
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2004..43.011",
-            "citation-count": "3",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944739",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2004",
-            "pub-mon": "06",
-            "volume": null,
-            "issue": "43"
-        },
-        "articleInfo": {
-            "@article-id": "ART000944772",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "Efficiency measurement of selected international ports using aggregated performance index"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "Efficiency measurement of selected international ports using aggregated performance index"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "Efficiency measurement of selected international ports using aggregated performance index"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": [
-                    "CHOU Ming-tao(National Taiwan Ocean University)",
-                    "LEE Hsuan-shih(National Taiwan Ocean University)"
-                ]
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "In this paper, we propose the Aggregated Performance Index method. This study applies Aggregated Performance Index to provide an efficiency measurement for international ports. The Aggregated Performance Index technique is powerful in resolving the measurement of port efficiency and ranking of port, because Aggregated Performance Index has been applied to analyze the relative efficiency of decision-making units (DMUs) in a set of multiple inputs and multiple outputs, and don't require an explicit a priori determination of relationships between outputs and inputs. Using multidimensional scaling (MDS) process, we adjustment and present an alternative that is theoretically and practically superior to the most common methods proposed in the past papers, especially in the DMUs measure field. This method overcomes the problem of Data Envelopment Analysis method which can neither rank efficiency of ports nor show the real efficiency distance of DMUs. Thus, the Aggregated Performance Index method is useful in wide array of Australian and other international ports' ranking.Finally this Aggregated Performance Index method is applied to the ranking of 16 international ports. As a result, five ports, the port of Melbourne, the port of Osaka, the port of Zeebrugge, the port of Brisbane, and the port of Fremantle are found to be the most inefficient ports. Six other international ports, the port of Tanjung Priok, the port of Hamburg, the port of Sydney, the port of Tilbury, the port of Yokohama, and the port of La Spezia, which are found to be efficient ports. The port of Singapore, the port of Hong Kong, the port of Felixstowe, the port of Rotterdam, and the port of Keelung are found to be the most efficient ports."
-                    }
-                ]
-            },
-            "fpage": null,
-            "lpage": null,
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2004..43.015",
-            "citation-count": "0",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944772",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2004",
-            "pub-mon": "06",
-            "volume": null,
-            "issue": "43"
-        },
-        "articleInfo": {
-            "@article-id": "ART001120473",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "부산항 컨테이너운송하역업의 노사관계 실태와 개선과제 : ODCY업체들의 경우"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "A Study on the Improvement Scheme of Industrial Relations of the Container Transport and Cargo Industry in Busan"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "A Study on the Improvement Scheme of Industrial Relations of the Container Transport and Cargo Industry in Busan"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": "윤영삼(부경대학교)"
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "물류입국 건설에서 핵심적인 산업이 컨테이너운송하역업인데 이 산업의 노사관계에 대해서는 최근에 체계적인 연구가 별로 이루어지지 않았다.본 연구는 부산항을 중심으로 운영하는 ODCY업체들을 연구대상으로 삼고 문헌연구, 면접조사 및 설문조사를 병행하여 실태를 파악하고 이를 토대로 노사관계 안정을 위한 개선과제를 모색하고자 하였다.연구결과로서, 부산항 ODCY업체를 비롯한 컨테이너운송하역업에서 노사관계를 합리화하기 위해서는 첫째, 노동시간의 적정화, 둘째, 비정규직화의 재고, 셋째, 인적자원관리의 타당성의 제고, 넷째, 승진관리의 합리화, 다섯째, 재해예방의 합리화, 여섯째, 사측의 협력적 노사관계 구축노력 강화, 일곱째, 산별노사관계체제의 구축 등을 추진해야 할 것으로 제안하였다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "The objective of this study is to investigate the reality of industrial relations of the Container Transport and Cargo Industry in Busan and suggest its improvement scheme.\nIn order to achieve this objective, this study put in practice research methods such as literature review, interview and questionnaire. \nAs a result of research, this study suggested that for rationalization of industrial relations of the Container Transport and Cargo Industry in Busan there is need to carry out improvement scheme such as strengthening the adequacy of hours of work and safety management, decreasing contingent workers, strengthening the formality and validity of Human Resource Management, establishing promotion system, strengthening employer's effort to structure cooperative industrial relations and structuring industry-level industrial relations system."
-                    }
-                ]
-            },
-            "fpage": null,
-            "lpage": null,
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2004..43.018",
-            "citation-count": "1",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001120473",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2004",
-            "pub-mon": "06",
-            "volume": null,
-            "issue": "43"
-        },
-        "articleInfo": {
-            "@article-id": "ART001120416",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "MDMG-HFP법과 퍼지역평가법을 이용한 상하이 및 북중국과 우리 나라 컨테이너항만의 경쟁력분석에 관한 연구"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "A Study on the Analysis of Competitiveness in Container Ports of Shanghai and North China & Korea Using MDMG-HFP Process & Inverse Relation of Fuzzy Evaluation"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "A Study on the Analysis of Competitiveness in Container Ports of Shanghai and North China & Korea Using MDMG-HFP Process & Inverse Relation of Fuzzy Evaluation"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": [
-                    "여기태(인천대학교)",
-                    "박창호( 인천발전연구원)",
-                    "전일수(인천대학교)",
-                    "이홍걸(경남대학교)",
-                    "류형근(한국해양대학교)"
-                ]
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "본 연구는 상하이항을 비롯한 직기항이 이루어지고 있는 북중국 항만의 발전과 현황을 조사 분석하고 이를 통해 우리 나라 항만의 경쟁력 향상방안을 모색하는 것을 연구의 목적으로 한다. 연구 대상항만은 한국과 북중국의 7개 주요항만(Busan, Gwangyang, Sanghai, Qingdao, Tienjin, Dalian, Kaoshuing)을 연구범위로 하였다. 본 연구에서는 우선 기존의 선행연구를 통하여 항만의 경쟁력과 관련한 요소를 추출하고, 대상항만과 관련된 실무자와 연구자의 의견을 반영하여 파일럿 테스트와 요인분석(FA: Factor Analysis)을 실시하였다. 또한 요인분석 결과를 사용하여 항만경쟁력 평가구조를 구축하고, 다음으로 수립된 평가구조를 기반으로 다수의사결정그룹 퍼지평가기법을 이용하여 대상항만의 경쟁력 평가를 실시하여 항만의 경쟁력을 도출하였다. 마지막으로 퍼지 역평가법을 적용하여 주요 항만의 경쟁력 상승요인을 추출하였다. 분석결과, 대상 항만 중에 가장 높은 경쟁력을 보유한 항만은 상하이항으로 나타났으며, 이러한 현 상황에서 부산항은 경쟁력을 제고하기위해 무엇보다 배후지의 규모와 활용수준을 높이고, 물동량 창출기반을 조속히 확충할 필요가 있을 것으로 파악되었다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "The competitive environment of Northeast Asia's intra-shipping ports is expected to change greatly due to the remarkable economic growth of China in which rapidly appeared as a production base of the world. The inter-port competition to preoccupy the hub port within the area is also expected to be much more severe. In this aspect, the main purpose of this study lies in surveying and analysing the development and status of North China's ports including Shanghai where direct calling is taking place, considering the spreading effects on Korea's ports, and drawing up a plan for improving Korea's port competitiveness. \nThe research scope is to cover the subjective ports of Korea and China's 7 major ports (Busan, Gwangyang, Sanghai, Qingdao, Tienjin, Dalian and Kaoshuing). The substance of this study contains the extraction of port competitiveness components through the previous existing studies and the pilot test and factor analysis which reflect the opinions of working-level personnel and researchers related to the subjective ports. The evaluation structure of port competitiveness is established by utilizing the results of factor analysis. Then, we extract the relevant port competitiveness using MDMG-HFP (Multi Decision Multi Group-Hierarchical Fuzzy Process) to execute the competitiveness evaluation of the subjective ports on the basis of the established evaluation structure. Finally, we draw the factors that increase the competitiveness of major ports by applying the IRFE(Inverse Relation of Fuzzy Evaluation), and present Korea's strategic planning and implications through the scenario analysis of the extracted components."
-                    }
-                ]
-            },
-            "fpage": null,
-            "lpage": null,
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2004..43.008",
-            "citation-count": "21",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001120416",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2004",
-            "pub-mon": "06",
-            "volume": null,
-            "issue": "43"
-        },
-        "articleInfo": {
-            "@article-id": "ART000944736",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "해운기업의 환위험관리에 관한 실무적 접근"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "A Practical Study on the Exchange Risk Management of Shipping Companies"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "A Practical Study on the Exchange Risk Management of Shipping Companies"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": "오문석(성결대학교)"
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "본고에서는 해운기업의 환위험 상황을 개괄적으로 분석하였다. 다만, 환율변동의 예측방법은 본고의 주제가 아니기 때문에 논외로 하였다. 또한 연구의 목적을 충분히 달성하기 위해서는 환위험관리의 전체 과정과 경영활동이나 통화별 수준의 산정과 예측, 환율의 예측, 여러 가지 환위험에 대한 헤지수단의 평가와 선택 등 일련의 요소를 서로 조합할 필요가 있지만, 본고에서는 단지 해운기업에서의 환위험관리를 실무적으로 이해시키기 위하여 종합적이며 전반적인 분석모델의 전개에 중점을 두었다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "In this paper, an analytic structure is studied by which shipping companies can manage the foreign exchange risk and get over the difficulties of financial reporting.\nThis paper introduces an analysis model which is summing up analysis factors of individual overseas branches and Prindl's model regarding influence of volatility, foreign exchange gain and loss, and profitability.\nThe focal point of this paper is overall analysis model in order that shipping companies understand exchange risk management for all practical purpose."
-                    }
-                ]
-            },
-            "fpage": null,
-            "lpage": null,
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2004..43.022",
-            "citation-count": "4",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944736",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2004",
-            "pub-mon": "06",
-            "volume": null,
-            "issue": "43"
-        },
-        "articleInfo": {
-            "@article-id": "ART001120477",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "해운선사의 효율성 및 생산함수 특성 분석"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "Analysis of Allocative Efficiency and Characteristics of Production Function: \nThe Case of Shipping Companies"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "Analysis of Allocative Efficiency and Characteristics of Production Function: \nThe Case of Shipping Companies"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": [
-                    "하영석(계명대학교)",
-                    "이명헌(계명대학교)"
-                ]
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "비용최소화를 전제하지 않은 暗비용함수를 추정하여 국내 28개 외항 해운업체를 대상으로 분배 효율성 분석을 실시하였다. 투입요소간 한계기술대체율과 시장가격의 비율이 일치하여 최소의 비용으로 생산이 이루어지고 있음을 뜻하는 상대가격 효율성은 기각되었다. 세부적으로 두 요소간 효율적 분배 여부를 검증한 결과 가변재-노동만 채택되고 자본-노동, 자본-가변재는 기각되었다. 요소간 비효율적 분배로 인하여 생산비용이 평균 2% 증가한 것으로 나타났는데, 자본과 가변재는 각각 적정 수준보다 평균 9.4%와 9.2% 만큼 적게 투입된 반면 노동은 13.3% 만큼 필요 이상으로 사용되었다. 결국 2%의 생산비 상승이 초래된 이유는 자본과 가변재의 과소 투입으로 발생한 생산비 감소분을 능가하는 노동의 과잉 투입이 있었기 때문이다. 생산함수의 동조성, 동차성 모두 기각되었다. 규모의 경제는 평균 42.5%로 추정되었으며 산출량 규모와 규모의 경제는 비례하지 않음을 발견하였다. 자본-노동은 보완적 관계로, 자본-가변재, 노동-가변재는 대체 관계로 나타났다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "We test for allocative efficiency of inputs with data for 28 firms in the Korean shipping industry utilizing the 'shadow' cost function. The hypothesis that firms do minimize costs subject to market prices is rejected. The attainment of allocative efficiency between variable input and labor is accepted, while capital-labor and capital-variable input are rejected. Allocative inefficiency causes an increase in total cost by 2 percent, on average. Allocative distortion, on average, reduces the demand for capital and variable input by 9.4 percent and 9.2 percent; while the demand for labor is increased by 13.3 percent. Homotheticity of the production function is rejected. The average estimate of scale economies is 42.5 percent. The estimates of the elasticites of substitution indicate that capital and labor are complements; while capital and labor are both substitutable with variable input."
-                    }
-                ]
-            },
-            "fpage": null,
-            "lpage": null,
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2004..43.002",
-            "citation-count": "8",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001120477",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2004",
-            "pub-mon": "06",
-            "volume": null,
-            "issue": "43"
-        },
-        "articleInfo": {
             "@article-id": "ART001120363",
             "article-categories": "해상운송학",
             "article-regularity": "Y",
@@ -36234,40 +36776,50 @@
             "issue": "40"
         },
         "articleInfo": {
-            "@article-id": "ART000944590",
+            "@article-id": "ART000943633",
             "article-categories": "해상운송학",
             "article-regularity": "Y",
             "title-group": {
                 "article-title": [
                     {
                         "@lang": "original",
-                        "#text": "1945∼1952년까지 우리 나라 외항선의 현황"
+                        "#text": "해운산업의 생산함수 추정"
                     },
                     {
                         "@lang": "foreign",
-                        "#text": "Circumstances of Ocean-going Vessels in Korea during 1945-1952"
+                        "#text": "Estimating the Production Functions of Shipping Industry"
                     },
                     {
                         "@lang": "english",
-                        "#text": "Circumstances of Ocean-going Vessels in Korea during 1945-1952"
+                        "#text": "Estimating the Production Functions of Shipping Industry"
                     }
                 ]
             },
             "author-group": {
-                "author": "김재승(한국해양대학교)"
+                "author": [
+                    "모수원(목포대학교)",
+                    "김창범(조선대학교)"
+                ]
             },
             "abstract-group": {
-                "abstract": {
-                    "@lang": "original"
-                }
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "삼면이 바다로 둘러싸이고 남과 북이 단절되어 섬 아닌 섬이 되어버린 우리나라의 경우 해운산업의 발전은 국가경제의 존립과 맥을 같이 한다. 이에 따라 본고는 대외의존도가 높은 한국경제에서 특별한 위치를 차지하고 있는 해운산업의 매출과 부가가치가 노동과 자본과 같은 생산요소와 갖는 관계를 추정한다. 한국의 해운산업은 내항해운과 외항해운 모두 자본집약화하고 있으나 실질적인 성장은 명목적인 규모확대만큼 이루어지지 못하고 있음을 보인다. 해운산업은 노동탄력성보다 자본탄력성이 크며 두 계수의 합이 1보다 커 규모의 경제가 존재함을 증명한다. 또한 분산분해를 통해 매출과 부가가치가 생산요소의 내생변수이라는 것과, 충격반응을 이용하여 자본충격효과가 노동충격효과보다 더 크나, 내항해운의 경우 노동충격은 즉시 사라지는데 비해 외항해운에 있어서 노동충격은 서서히 쇠퇴한다는 것을 보인다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The purpose of this study is to estimate and analyse the structure of shipping industry. We employ Johansen's multivariate cointegration methodology to find cointegrating vector. The cointegration results suggest that our models are stationary. We also show that the capital intensity of shipping industry increased, but the real revenues and value added did not grow as the nominal ones expanded. This paper applies variance decompositions and impulse-response functions to get additional information regarding the responses of the revenue and value added to the shocks in labor and capital. The empirical results indicate that while both revenue and value added respond positively to the shocks and then decay quickly, the capital shocks last longer and greater than the labor shocks do."
+                    }
+                ]
             },
             "fpage": null,
             "lpage": null,
             "orte-open-yn": "Y",
             "doi": null,
-            "uci": "G704-000463.2004..40.004",
-            "citation-count": "2",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944590",
+            "uci": "G704-000463.2004..40.002",
+            "citation-count": "6",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000943633",
             "verified": "N"
         }
     },
@@ -36337,6 +36889,54 @@
             "issue": "40"
         },
         "articleInfo": {
+            "@article-id": "ART000944590",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "1945∼1952년까지 우리 나라 외항선의 현황"
+                    },
+                    {
+                        "@lang": "foreign",
+                        "#text": "Circumstances of Ocean-going Vessels in Korea during 1945-1952"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Circumstances of Ocean-going Vessels in Korea during 1945-1952"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": "김재승(한국해양대학교)"
+            },
+            "abstract-group": {
+                "abstract": {
+                    "@lang": "original"
+                }
+            },
+            "fpage": null,
+            "lpage": null,
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2004..40.004",
+            "citation-count": "2",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944590",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2004",
+            "pub-mon": "03",
+            "volume": null,
+            "issue": "40"
+        },
+        "articleInfo": {
             "@article-id": "ART000944550",
             "article-categories": "해상운송학",
             "article-regularity": "Y",
@@ -36378,64 +36978,6 @@
             "uci": "G704-000463.2004..40.005",
             "citation-count": "7",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000944550",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2004",
-            "pub-mon": "03",
-            "volume": null,
-            "issue": "40"
-        },
-        "articleInfo": {
-            "@article-id": "ART000943633",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "해운산업의 생산함수 추정"
-                    },
-                    {
-                        "@lang": "foreign",
-                        "#text": "Estimating the Production Functions of Shipping Industry"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "Estimating the Production Functions of Shipping Industry"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": [
-                    "모수원(목포대학교)",
-                    "김창범(조선대학교)"
-                ]
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "삼면이 바다로 둘러싸이고 남과 북이 단절되어 섬 아닌 섬이 되어버린 우리나라의 경우 해운산업의 발전은 국가경제의 존립과 맥을 같이 한다. 이에 따라 본고는 대외의존도가 높은 한국경제에서 특별한 위치를 차지하고 있는 해운산업의 매출과 부가가치가 노동과 자본과 같은 생산요소와 갖는 관계를 추정한다. 한국의 해운산업은 내항해운과 외항해운 모두 자본집약화하고 있으나 실질적인 성장은 명목적인 규모확대만큼 이루어지지 못하고 있음을 보인다. 해운산업은 노동탄력성보다 자본탄력성이 크며 두 계수의 합이 1보다 커 규모의 경제가 존재함을 증명한다. 또한 분산분해를 통해 매출과 부가가치가 생산요소의 내생변수이라는 것과, 충격반응을 이용하여 자본충격효과가 노동충격효과보다 더 크나, 내항해운의 경우 노동충격은 즉시 사라지는데 비해 외항해운에 있어서 노동충격은 서서히 쇠퇴한다는 것을 보인다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "The purpose of this study is to estimate and analyse the structure of shipping industry. We employ Johansen's multivariate cointegration methodology to find cointegrating vector. The cointegration results suggest that our models are stationary. We also show that the capital intensity of shipping industry increased, but the real revenues and value added did not grow as the nominal ones expanded. This paper applies variance decompositions and impulse-response functions to get additional information regarding the responses of the revenue and value added to the shocks in labor and capital. The empirical results indicate that while both revenue and value added respond positively to the shocks and then decay quickly, the capital shocks last longer and greater than the labor shocks do."
-                    }
-                ]
-            },
-            "fpage": null,
-            "lpage": null,
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2004..40.002",
-            "citation-count": "6",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000943633",
             "verified": "N"
         }
     },
@@ -37109,54 +37651,6 @@
             "issue": null
         },
         "articleInfo": {
-            "@article-id": "ART000996946",
-            "article-categories": "해상운송학",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": {
-                    "@lang": "original",
-                    "#text": "물류정보기술이 기업의 경영성과에 미치는상호작용 효과"
-                }
-            },
-            "author-group": {
-                "author": [
-                    "김석수(부산대학교)",
-                    "김상열(동의대학교)"
-                ]
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "본 연구는 물류 내부자원이 기업의 성과에 미치는 효과를 분석함을 주된 목적으로 한다. 물류 내부자원은 고객중심 내부자원과 공급중심 내부자원으로 구분하였는데, 공급중심 내부자원의 대표적인 유형을 정보기술로 보았다. 이를 근거로 고객중심 내부자원은 성과에 직접적인 영향을 미치는 것으로 보았고, 정보기술은 이 둘의 관계를 조절하는 상호작용역할을 하는 것으로 가정하고 가설을 검증하였다. 분석의 결과, 정보기술의 조절효과는 나타나지 않았고, 고객중심 내부자원의 주효과만 존재하는 것으로 나타났다."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "The Interaction Effects of Logistics Internal Assets on Firm Performance"
-                    }
-                ]
-            },
-            "fpage": "51",
-            "lpage": "79",
-            "orte-open-yn": "Y",
-            "doi": null,
-            "uci": "G704-000463.2003.39..001",
-            "citation-count": "3",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000996946",
-            "verified": "N"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "해운물류연구",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2003",
-            "pub-mon": "12",
-            "volume": "39",
-            "issue": null
-        },
-        "articleInfo": {
             "@article-id": "ART000916324",
             "article-categories": "해상운송학",
             "article-regularity": "Y",
@@ -37194,6 +37688,54 @@
             "uci": "G704-000463.2003.39..007",
             "citation-count": "9",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000916324",
+            "verified": "N"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "해운물류연구",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2003",
+            "pub-mon": "12",
+            "volume": "39",
+            "issue": null
+        },
+        "articleInfo": {
+            "@article-id": "ART000996946",
+            "article-categories": "해상운송학",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": {
+                    "@lang": "original",
+                    "#text": "물류정보기술이 기업의 경영성과에 미치는상호작용 효과"
+                }
+            },
+            "author-group": {
+                "author": [
+                    "김석수(부산대학교)",
+                    "김상열(동의대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "본 연구는 물류 내부자원이 기업의 성과에 미치는 효과를 분석함을 주된 목적으로 한다. 물류 내부자원은 고객중심 내부자원과 공급중심 내부자원으로 구분하였는데, 공급중심 내부자원의 대표적인 유형을 정보기술로 보았다. 이를 근거로 고객중심 내부자원은 성과에 직접적인 영향을 미치는 것으로 보았고, 정보기술은 이 둘의 관계를 조절하는 상호작용역할을 하는 것으로 가정하고 가설을 검증하였다. 분석의 결과, 정보기술의 조절효과는 나타나지 않았고, 고객중심 내부자원의 주효과만 존재하는 것으로 나타났다."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "The Interaction Effects of Logistics Internal Assets on Firm Performance"
+                    }
+                ]
+            },
+            "fpage": "51",
+            "lpage": "79",
+            "orte-open-yn": "Y",
+            "doi": null,
+            "uci": "G704-000463.2003.39..001",
+            "citation-count": "3",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART000996946",
             "verified": "N"
         }
     },

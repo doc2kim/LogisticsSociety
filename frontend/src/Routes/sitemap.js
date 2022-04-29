@@ -113,11 +113,18 @@ const SiteMap = function () {
                     <MapNavLists>{navigate.map(function (i) {
                         return <MapLists key={i.index} selected={pathname === ` ${i.path}`}>
                             <MapList key={i.index} style={{ borderTop: '3px solid #16498b', backgroundColor: 'rgba(0, 0, 0, .05)' }}>{i.title}</MapList>
-                            {i.subNav.map(function (j) {
-                                return j.subPath ?
-                                    <MapList key={j.id} style={{ opacity: '0.6' }}><Link to={`${i.path + j.subPath}`}>{j.subTitle}</Link></MapList> :
-                                    <MapList key={j.id} style={{ opacity: '0.6' }}><Alink target="_blank" href={j.url}>{j.subTitle}</Alink></MapList>
-                            })}
+                            {i.subNav
+                                .filter((element) => {
+                                    if (element.id !== 17 && element.id !== 18) {
+                                        return true;
+                                    }
+                                    return false;
+                                })
+                                .map(function (j) {
+                                    return j.subPath ?
+                                        <MapList key={j.id} style={{ opacity: '0.6' }}><Link to={`${i.path + j.subPath}`}>{j.subTitle}</Link></MapList> :
+                                        <MapList key={j.id} style={{ opacity: '0.6' }}><Alink target="_blank" href={j.url}>{j.subTitle}</Alink></MapList>
+                                })}
                         </MapLists>;
                     })}</MapNavLists>
                 </Maps>

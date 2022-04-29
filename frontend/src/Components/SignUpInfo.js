@@ -89,7 +89,7 @@ const SignUpInfo = function () {
             <Chapter>가입방법</Chapter>
             <ContentBox>
                 <span>
-                    (1) 입회원서를 내려받아 작성한 뒤 e-메일(master@shipping.or.kr)로 학회 사무국으로 송부
+                    (1) 입회원서를 내려받아 작성한 뒤 e-메일(<span style={{ color: '#165fa3' }}>master@shipping.or.kr</span>)로 학회 사무국으로 송부
                 </span>
             </ContentBox>
             <div style={{ display: 'flex', paddingTop: '1%' }}>

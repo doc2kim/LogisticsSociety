@@ -78,48 +78,48 @@ const Committee = function () {
                 <Tuple>
                     <Tuple style={{ width: '50%' }}>
                         <Value style={{ width: '50%' }}>위원장</Value>
-                        <Value style={{ width: '50%' }}>최용석</Value>
-                    </Tuple>
-                    <Value style={{ width: '50%' }}>순천대학교 교수</Value>
-                </Tuple>
-                <Tuple>
-                    <Tuple style={{ width: '50%' }}>
-                        <Value style={{ width: '50%' }}>부위원장</Value>
                         <Value style={{ width: '50%' }}>안우철</Value>
                     </Tuple>
                     <Value style={{ width: '50%' }}>강릉원주대학교 교수</Value>
                 </Tuple>
                 <Tuple>
                     <Tuple style={{ width: '50%' }}>
+                        <Value style={{ width: '50%' }}>부위원장</Value>
+                        <Value style={{ width: '50%' }}>문상영</Value>
+                    </Tuple>
+                    <Value style={{ width: '50%' }}>한경대학교 교수</Value>
+                </Tuple>
+                <Tuple>
+                    <Tuple style={{ width: '50%' }}>
                         <Value style={{ width: '50%' }}>위원</Value>
                         <div style={{ width: '50%' }}>
                             <Value>하병천</Value>
-                            <Value>문상영</Value>
+                            <Value>추봉성</Value>
                             <Value>배희성</Value>
                             <Value>허윤석</Value>
                             <Value>박두진</Value>
-                            <Value>이성운</Value>
-                            <Value>김창범</Value>
+                            <Value>이성우</Value>
+                            <Value>송민근</Value>
                             <Value>Vihn V. THAI</Value>
                         </div>
                     </Tuple>
                     <div style={{ width: '50%' }}>
                         <Value>서강대학교 교수</Value>
-                        <Value>한경대학교 교수</Value>
+                        <Value>순천향대학교 교수</Value>
                         <Value>경기대학교 교수</Value>
                         <Value>제주대학교 교수</Value>
                         <Value>동명대학교 교수</Value>
                         <Value>한국해양수산개발원 연구위원</Value>
-                        <Value>조선대학교 연구교수</Value>
+                        <Value>전주대학교 교수</Value>
                         <Value>RMIT Uni.Australia</Value>
                     </div>
                 </Tuple>
                 <Tuple>
                     <Tuple style={{ width: '50%' }}>
                         <Value style={{ width: '50%' }}>편집국장</Value>
-                        <Value style={{ width: '50%' }}>김선구</Value>
+                        <Value style={{ width: '50%' }}>정현재</Value>
                     </Tuple>
-                    <Value style={{ width: '50%' }}>순천대학교 강사</Value>
+                    <Value style={{ width: '50%' }}>평택대학교 교수</Value>
                 </Tuple>
             </Table>
         </Box>

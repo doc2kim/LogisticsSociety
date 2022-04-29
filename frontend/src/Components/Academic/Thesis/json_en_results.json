@@ -758,7 +758,7 @@
             "orte-open-yn": "N",
             "doi": "http://dx.doi.org/10.1016/j.ajsl.2021.06.002",
             "uci": null,
-            "citation-count": "0",
+            "citation-count": "1",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002782562",
             "verified": "N"
         }
@@ -1993,7 +1993,7 @@
             "orte-open-yn": "N",
             "doi": "http://dx.doi.org/10.1016/j.ajsl.2020.05.001",
             "uci": null,
-            "citation-count": "0",
+            "citation-count": "1",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002709779",
             "verified": "N"
         }
@@ -2048,7 +2048,7 @@
             "orte-open-yn": "N",
             "doi": "http://dx.doi.org/10.1016/j.ajsl.2020.04.004",
             "uci": null,
-            "citation-count": "0",
+            "citation-count": "1",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002709789",
             "verified": "N"
         }
@@ -2227,60 +2227,6 @@
             "issue": "4"
         },
         "articleInfo": {
-            "@article-id": "ART002709707",
-            "article-categories": "국제운송및물류",
-            "article-regularity": "Y",
-            "title-group": {
-                "article-title": [
-                    {
-                        "@lang": "original",
-                        "#text": "Does transportation size matter for competitiveness in the logistics industry? The cases of maritime and air transportation"
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "Does transportation size matter for competitiveness in the logistics industry? The cases of maritime and air transportation"
-                    }
-                ]
-            },
-            "author-group": {
-                "author": [
-                    "조혁수(충남대학교)",
-                    "이정선(경남과학기술대학교)"
-                ]
-            },
-            "abstract-group": {
-                "abstract": [
-                    {
-                        "@lang": "original",
-                        "#text": "This study has been designed to investigate the determinants of competitiveness in the logistics indus try. In particular, we focus on the expansion of transportation as a central theme. Size and economy of scale are important issues in many industries. Previous studies have typically highlighted the positive aspects of large scale in terms of competitiveness. However, this study acknowledges that the large scale of transportation means, such as container ships and cargo planes, may not necessarily be positive for the competitiveness of the logistics industry. We believe that expansion is a double-edged sword. Econ omy of scale can have negative aspects associated with it. This study analyzes how transportation size affects competitiveness in the logistics industry. Additionally, we discuss other determinants of logistics performance such as ICT capability and green transportation.\nAccording to empirical findings, we could not identify a specific relationship between the large scale of marine transportation and logistics performance. Moreover, a negative influence behind the increase in air transportation is discussed. Additionally, this study attempts to establish theoretical foundations for logistics performance. This study has been designed to investigate the impact of transportation expansion on logistics performance based on the RBV, transaction cost analysis (TCA), and institutional theory."
-                    },
-                    {
-                        "@lang": "english",
-                        "#text": "This study has been designed to investigate the determinants of competitiveness in the logistics indus try. In particular, we focus on the expansion of transportation as a central theme. Size and economy of scale are important issues in many industries. Previous studies have typically highlighted the positive aspects of large scale in terms of competitiveness. However, this study acknowledges that the large scale of transportation means, such as container ships and cargo planes, may not necessarily be positive for the competitiveness of the logistics industry. We believe that expansion is a double-edged sword. Econ omy of scale can have negative aspects associated with it. This study analyzes how transportation size affects competitiveness in the logistics industry. Additionally, we discuss other determinants of logistics performance such as ICT capability and green transportation.\nAccording to empirical findings, we could not identify a specific relationship between the large scale of marine transportation and logistics performance. Moreover, a negative influence behind the increase in air transportation is discussed. Additionally, this study attempts to establish theoretical foundations for logistics performance. This study has been designed to investigate the impact of transportation expansion on logistics performance based on the RBV, transaction cost analysis (TCA), and institutional theory."
-                    }
-                ]
-            },
-            "fpage": "202",
-            "lpage": "211",
-            "orte-open-yn": "Y",
-            "doi": "http://dx.doi.org/10.1016/j.ajsl.2020.04.002",
-            "uci": null,
-            "citation-count": "2",
-            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002709707",
-            "verified": "Y"
-        }
-    },
-    {
-        "journalInfo": {
-            "journal-name": "The Asian Journal of Shipping and Logistics",
-            "publisher-name": "한국해운물류학회",
-            "foreign-listed": null,
-            "pub-year": "2020",
-            "pub-mon": "12",
-            "volume": "36",
-            "issue": "4"
-        },
-        "articleInfo": {
             "@article-id": "ART002709774",
             "article-categories": "국제운송및물류",
             "article-regularity": "Y",
@@ -2321,6 +2267,60 @@
             "uci": null,
             "citation-count": "0",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002709774",
+            "verified": "Y"
+        }
+    },
+    {
+        "journalInfo": {
+            "journal-name": "The Asian Journal of Shipping and Logistics",
+            "publisher-name": "한국해운물류학회",
+            "foreign-listed": null,
+            "pub-year": "2020",
+            "pub-mon": "12",
+            "volume": "36",
+            "issue": "4"
+        },
+        "articleInfo": {
+            "@article-id": "ART002709707",
+            "article-categories": "국제운송및물류",
+            "article-regularity": "Y",
+            "title-group": {
+                "article-title": [
+                    {
+                        "@lang": "original",
+                        "#text": "Does transportation size matter for competitiveness in the logistics industry? The cases of maritime and air transportation"
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "Does transportation size matter for competitiveness in the logistics industry? The cases of maritime and air transportation"
+                    }
+                ]
+            },
+            "author-group": {
+                "author": [
+                    "조혁수(충남대학교)",
+                    "이정선(경남과학기술대학교)"
+                ]
+            },
+            "abstract-group": {
+                "abstract": [
+                    {
+                        "@lang": "original",
+                        "#text": "This study has been designed to investigate the determinants of competitiveness in the logistics indus try. In particular, we focus on the expansion of transportation as a central theme. Size and economy of scale are important issues in many industries. Previous studies have typically highlighted the positive aspects of large scale in terms of competitiveness. However, this study acknowledges that the large scale of transportation means, such as container ships and cargo planes, may not necessarily be positive for the competitiveness of the logistics industry. We believe that expansion is a double-edged sword. Econ omy of scale can have negative aspects associated with it. This study analyzes how transportation size affects competitiveness in the logistics industry. Additionally, we discuss other determinants of logistics performance such as ICT capability and green transportation.\nAccording to empirical findings, we could not identify a specific relationship between the large scale of marine transportation and logistics performance. Moreover, a negative influence behind the increase in air transportation is discussed. Additionally, this study attempts to establish theoretical foundations for logistics performance. This study has been designed to investigate the impact of transportation expansion on logistics performance based on the RBV, transaction cost analysis (TCA), and institutional theory."
+                    },
+                    {
+                        "@lang": "english",
+                        "#text": "This study has been designed to investigate the determinants of competitiveness in the logistics indus try. In particular, we focus on the expansion of transportation as a central theme. Size and economy of scale are important issues in many industries. Previous studies have typically highlighted the positive aspects of large scale in terms of competitiveness. However, this study acknowledges that the large scale of transportation means, such as container ships and cargo planes, may not necessarily be positive for the competitiveness of the logistics industry. We believe that expansion is a double-edged sword. Econ omy of scale can have negative aspects associated with it. This study analyzes how transportation size affects competitiveness in the logistics industry. Additionally, we discuss other determinants of logistics performance such as ICT capability and green transportation.\nAccording to empirical findings, we could not identify a specific relationship between the large scale of marine transportation and logistics performance. Moreover, a negative influence behind the increase in air transportation is discussed. Additionally, this study attempts to establish theoretical foundations for logistics performance. This study has been designed to investigate the impact of transportation expansion on logistics performance based on the RBV, transaction cost analysis (TCA), and institutional theory."
+                    }
+                ]
+            },
+            "fpage": "202",
+            "lpage": "211",
+            "orte-open-yn": "Y",
+            "doi": "http://dx.doi.org/10.1016/j.ajsl.2020.04.002",
+            "uci": null,
+            "citation-count": "2",
+            "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002709707",
             "verified": "Y"
         }
     },
@@ -2753,7 +2753,7 @@
             "orte-open-yn": "N",
             "doi": "http://dx.doi.org/10.1016/j.ajsl.2019.11.003",
             "uci": null,
-            "citation-count": "0",
+            "citation-count": "1",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002709836",
             "verified": "Y"
         }
@@ -4989,7 +4989,7 @@
             "orte-open-yn": "N",
             "doi": null,
             "uci": null,
-            "citation-count": "0",
+            "citation-count": "1",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002430016",
             "verified": "Y"
         }
@@ -5429,7 +5429,7 @@
             "orte-open-yn": "Y",
             "doi": null,
             "uci": null,
-            "citation-count": "4",
+            "citation-count": "5",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002388037",
             "verified": "Y"
         }
@@ -8344,7 +8344,7 @@
             "orte-open-yn": "N",
             "doi": null,
             "uci": "G704-SER000001565.2017.33.1.001",
-            "citation-count": "6",
+            "citation-count": "7",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002207191",
             "verified": "Y"
         }
@@ -11188,7 +11188,7 @@
             "orte-open-yn": "N",
             "doi": null,
             "uci": "G704-SER000001565.2015.31.1.005",
-            "citation-count": "2",
+            "citation-count": "3",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001973528",
             "verified": "Y"
         }
@@ -11985,7 +11985,7 @@
             "orte-open-yn": "N",
             "doi": null,
             "uci": "G704-SER000001565.2014.30.2.003",
-            "citation-count": "3",
+            "citation-count": "4",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001903903",
             "verified": "Y"
         }
@@ -12973,7 +12973,7 @@
             "orte-open-yn": "N",
             "doi": null,
             "uci": "G704-SER000001565.2013.29.2.007",
-            "citation-count": "1",
+            "citation-count": "2",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001793889",
             "verified": "Y"
         }
@@ -16456,7 +16456,7 @@
             "orte-open-yn": "N",
             "doi": null,
             "uci": "G704-SER000001565.2010.26.1.008",
-            "citation-count": "0",
+            "citation-count": "1",
             "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001456842",
             "verified": "Y"
         }
