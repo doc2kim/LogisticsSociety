@@ -75,6 +75,8 @@ def kci_en_api():
                 json.dump(results, outfile, indent=4, ensure_ascii=False)
             break
 
+kci_ko_api()
+kci_en_api()
 
 # def start_timer():
 #     print("data refresh")
