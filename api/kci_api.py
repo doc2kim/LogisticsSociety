@@ -1,7 +1,7 @@
 import requests
 import xmltodict
 import json
-import threading
+# import threading
 
 
 
@@ -26,7 +26,10 @@ def kci_ko_api():
         xmlData = xmltodict.parse(response.text)
         json_data = json.dumps(xmlData)
         json_results = json.loads(json_data)
-        json_get = json_results.get("MetaData").get("outputData")
+        if json_results.get("MetaData") != None:
+            json_get = json_results.get("MetaData").get("outputData")
+        else:
+            continue
         record_get = json_get.get("record")
         if json_get.get("record") != None:
             results.extend(record_get)
@@ -73,8 +76,8 @@ def kci_en_api():
             break
 
 
-def start_timer():
-    print("data refresh")
-    kci_ko_api()
-    kci_en_api()
-    threading.Timer(604800, start_timer).start()
+# def start_timer():
+#     print("data refresh")
+#     kci_ko_api()
+#     kci_en_api()
+#     threading.Timer(604800, start_timer).start()
