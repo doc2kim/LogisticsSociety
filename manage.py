@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+import dotenv
 # from api.kci_api import start_timer
 
 
@@ -21,5 +21,6 @@ def main():
 
 
 if __name__ == '__main__':
+    dotenv.read_dotenv()
     # start_timer()
     main()
