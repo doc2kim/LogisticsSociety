@@ -3,7 +3,7 @@
 import os
 import sys
 
-from api.kci_api import start_timer
+# from api.kci_api import start_timer
 
 
 def main():
