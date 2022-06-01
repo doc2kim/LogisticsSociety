@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Icasl, Session3, Session2, Session1, Keynote, Paper, Author, Commissioner
+from .models import Icasl, Session4,Session3, Session2, Session1, Keynote, Paper, Author, Commissioner
 
 
 @admin.register(Commissioner)
@@ -138,18 +138,40 @@ class Session3Admin(admin.ModelAdmin):
     )
 
     search_fields = ('session_title','chair',)
+    
+    
+@admin.register(Session4)
+class Session3Admin(admin.ModelAdmin):
+    fieldsets = (
+        ("Info", {
+            "fields": ("session_title", "chair")
+            }),
+        ("Paper", {
+            "fields": ("paper", )
+            }),
+    )
+    
+    list_filter = (
+        'session_title',
+        )
+
+    list_display = (
+        'session_title',
+    )
+
+    search_fields = ('session_title','chair',)
 
 @admin.register(Icasl)
 class IcaslAdmin(admin.ModelAdmin):
     fieldsets = (
         ("Info", {
-            "fields": ("ordinal","schedule", "country","city","place")
+            "fields": ("ordinal","schedule","country","city","place", "post_image")
             }),
         ("Commissioner", {
             "fields": ("chairman", "convenor", "advisory","coordinators","secretarles","staff")
             }),
         ("Program", {
-            "fields": ("keynote", "session1","session2","session3")
+            "fields": ("keynote", "session1","session2","session3","session4")
             }),
         )
     

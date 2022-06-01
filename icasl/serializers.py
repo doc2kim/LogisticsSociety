@@ -1,4 +1,4 @@
-from .models import Icasl, Session3, Session2, Session1, Keynote, Paper, Author, Commissioner
+from .models import Icasl, Session4, Session3, Session2, Session1, Keynote, Paper, Author, Commissioner
 from rest_framework import serializers
 
 
@@ -57,6 +57,13 @@ class Session3Serializer(serializers.ModelSerializer):
         model = Session3
         fields = '__all__'
 
+class Session4Serializer(serializers.ModelSerializer):
+    chair = CommissionerSerializer(read_only=True)
+    paper = PaperSerializer(read_only=True, many=True)
+    
+    class Meta:
+        model = Session4
+        fields = '__all__'
         
         
 class IcaslSerializer(serializers.ModelSerializer):
@@ -73,5 +80,6 @@ class IcaslSerializer(serializers.ModelSerializer):
     staff= CommissionerSerializer(read_only=True, many=True)
     keynote = KeynoteSerializer(read_only=True)
     session1 = Session1Serializer(read_only=True)
-    session2 = Session1Serializer(read_only=True)
-    session3 = Session1Serializer(read_only=True)
+    session2 = Session2Serializer(read_only=True)
+    session3 = Session3Serializer(read_only=True)
+    session4 = Session4Serializer(read_only=True)

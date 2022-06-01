@@ -40,6 +40,18 @@ const Title = styled.div`
         font-size: 1.2em;
     }
 `;
+
+const Poster = styled.div`
+
+`;
+
+const PosterImage = styled.img`
+    width: 600px;
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+`;
+
 const InfoBox = styled.div`
     display: flex;
     justify-content: space-between;
@@ -69,12 +81,12 @@ const Place = styled.div`
 `;
 
 const ContentBox = styled.div`
-padding-bottom: 5% ;
+    padding-bottom: 5% ;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 `;
 
 const Section = styled.div`
-    width: 32.3333%;
+    width: ${props => { return props.property ? '24.3333%' : '32.3333%' }};
     @media only screen and (max-width: 768px) {
         width: 100%;
     }
@@ -98,7 +110,6 @@ const SessionTitle = styled.div`
     padding: 0.8em 0;
     border-bottom: 3px solid rgba(0, 0, 0, .1);
 `;
-
 
 const Topic = styled.div`
     font-size: 0.7em;
@@ -166,15 +177,17 @@ const IcaslDetail = function () {
     const property = useLocation();
     const navigate = useNavigate()
     const data = property.state.data;
-    console.log(data)
     return data && <Container>
         <SubTitle title={`${data.ordinal} - ${data.schedule.substr(0, 4)} ${data.city} / ${data.country}`} />
         <Container2>
             <Box>
                 <TitleBox>
-                    <Title>
+                    {/* <Title>
                         {data.ordinal} - {data.schedule.substr(0, 4)} {data.city} / {data.country}
-                    </Title>
+                    </Title> */}
+                    <Poster>
+                        <PosterImage src={data.post_image} />
+                    </Poster>
                 </TitleBox>
                 <InfoBox>
                     <Info>
@@ -187,7 +200,7 @@ const IcaslDetail = function () {
                     </Info>
                 </InfoBox>
                 <ContentBox>
-                    <SessionBox>
+                    {data.keynote ? <SessionBox>
                         <SessionTitle>Keynote Speech</SessionTitle>
                         <Keynote>
                             <PaperTitle>{data.keynote.keynote_title}</PaperTitle>
@@ -197,9 +210,10 @@ const IcaslDetail = function () {
                                 </Author>
                             </PaperInfo>
                         </Keynote>
-                    </SessionBox>
+                    </SessionBox> : null}
                     <FlexBox>
-                        <Section>
+                        {console.log(data.session4)}
+                        <Section property={data.session4}>
                             <SessionBox>
                                 <SessionTitle>Session1
                                     <Topic>{data.session1.session_title}</Topic>
@@ -219,7 +233,7 @@ const IcaslDetail = function () {
                                 })}
                             </SessionBox>
                         </Section>
-                        <Section>
+                        <Section property={data.session4} >
                             <SessionBox>
                                 <SessionTitle>Session2
                                     <Topic>{data.session2.session_title}</Topic>
@@ -239,7 +253,7 @@ const IcaslDetail = function () {
                                 })}
                             </SessionBox>
                         </Section>
-                        <Section>
+                        <Section property={data.session4}>
                             <SessionBox>
                                 <SessionTitle>Session3
                                     <Topic>{data.session3.session_title}</Topic>
@@ -259,6 +273,26 @@ const IcaslDetail = function () {
                                 })}
                             </SessionBox>
                         </Section>
+                        {data.session4 ? <Section property={data.session4}>
+                            <SessionBox>
+                                <SessionTitle>Session4
+                                    <Topic>{data.session4.session_title}</Topic>
+                                    <Chair>{data.session4.chair.name}</Chair>
+                                </SessionTitle>
+                                {data.session3.paper.map(function (i, index) {
+                                    return <PaperLists borderControl={data.session4.paper.length === index + 1 ? 1 : undefined} key={i.id}>
+                                        <PaperTitle>{i.title}</PaperTitle>
+                                        <PaperInfo>
+                                            {i.author.map(function (j) {
+                                                return <Author key={j.id}>
+                                                    <Name>{j.name}</Name>
+                                                </Author>
+                                            })}
+                                        </PaperInfo>
+                                    </PaperLists>
+                                })}
+                            </SessionBox>
+                        </Section> : null}
                     </FlexBox>
                     <BackToConference>
                         <Back onClick={() => navigate("/active/icasl/")}>목록으로</Back>

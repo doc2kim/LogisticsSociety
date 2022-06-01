@@ -1,4 +1,3 @@
-
 from django.db import models
 
 # Create your models here.
@@ -83,10 +82,23 @@ class Session3(models.Model):
     
     class Meta:
         	verbose_name_plural = '세션3'
+         
+class Session4(models.Model):
+    session_title = models.CharField(max_length=200, verbose_name='세션 주제')
+    chair = models.ForeignKey(Commissioner, blank=True, related_name='forth_chair_session4', on_delete=models.SET_NULL, null=True, verbose_name = '의장')
+    paper = models.ManyToManyField(
+        Paper, blank=True, related_name='forth_paper_session4', verbose_name='논문')
+  
+    def __str__(self):
+        return self.session_title
+    
+    class Meta:
+        	verbose_name_plural = '세션4'
     
 
 class Icasl(models.Model):
     ordinal = models.CharField(max_length=200, verbose_name='회차')
+    post_image = models.ImageField( upload_to="icasl/post_image/%Y/%m/%d", null=True, blank=True, verbose_name='포스트이미지')
     schedule = models.DateField(verbose_name='일시')
     country = models.CharField(max_length=200, blank=True, null=True, verbose_name='개최국')
     city = models.CharField(max_length=200, blank=True, null=True, verbose_name='개최도시')
@@ -106,7 +118,8 @@ class Icasl(models.Model):
     keynote = models.ForeignKey(Keynote, blank=True,on_delete=models.SET_NULL, null=True, verbose_name = '키노트')
     session1 = models.ForeignKey(Session1, blank=True,on_delete=models.SET_NULL, null=True, verbose_name = '세션1')
     session2 = models.ForeignKey(Session2, blank=True,on_delete=models.SET_NULL, null=True, verbose_name = '세션2')
-    session3 = models.ForeignKey(Session3, blank=True,on_delete=models.SET_NULL, null=True, verbose_name = '세션2')
+    session3 = models.ForeignKey(Session3, blank=True,on_delete=models.SET_NULL, null=True, verbose_name = '세션3')
+    session4 = models.ForeignKey(Session4, blank=True,on_delete=models.SET_NULL, null=True, verbose_name = '세션4')
     
     def __str__(self):
             return self.ordinal
