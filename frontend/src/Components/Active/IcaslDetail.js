@@ -279,7 +279,7 @@ const IcaslDetail = function () {
                                     <Topic>{data.session4.session_title}</Topic>
                                     <Chair>{data.session4.chair.name}</Chair>
                                 </SessionTitle>
-                                {data.session3.paper.map(function (i, index) {
+                                {data.session4.paper.map(function (i, index) {
                                     return <PaperLists borderControl={data.session4.paper.length === index + 1 ? 1 : undefined} key={i.id}>
                                         <PaperTitle>{i.title}</PaperTitle>
                                         <PaperInfo>
