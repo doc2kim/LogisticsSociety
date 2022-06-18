@@ -22,7 +22,7 @@ const Container = styled.div`
     padding-top:6.2em;
     @media only screen and (max-width: 768px) {
         padding-top:3em;
-        height:450vw;
+        height:500vw;
     }
 `;
 
@@ -107,7 +107,7 @@ const NoticeBox = styled.ul`
     z-index: 1;
     @media only screen and (max-width: 768px) {
         display: block;
-        margin-top: 12em;
+        margin-top: 13em;
     }
 `;
 
