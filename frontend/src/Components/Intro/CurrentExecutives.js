@@ -140,7 +140,7 @@ const CurrentExecutives = function () {
                     <Attributes><span>이사</span></Attributes>
                     <Value>
                         <span>
-                            &emsp;강달원&lt;한남대학교 교수&gt;<br />
+                            &emsp;강달원&lt;가톨릭관동대학교 교수&gt;<br />
                             &emsp;강승우&lt;인천테크노 팀장&gt;<br />
                             &emsp;강승호&lt;강릉원주대학교 교수&gt;<br />
                             &emsp;강인규&lt;당진시청 팀장&gt;<br />
@@ -190,7 +190,8 @@ const CurrentExecutives = function () {
                             &emsp;송민근&lt;인천대학 교수&gt;<br />
                             &emsp;신광섭&lt;인천대학 교수&gt;<br />
                             &emsp;신학승&lt;동의대 무역유통학부 교수&gt;<br />
-                            &emsp;최동호&lt;(주) 한국항만기술단 전무&gt;
+                            &emsp;최동호&lt;(주) 한국항만기술단 전무&gt;<br />
+                            &emsp;남형식&lt;한국해양대학교 교수&gt;
                         </span>
                     </Value>
                     <Value>
@@ -245,7 +246,9 @@ const CurrentExecutives = function () {
                             &emsp;허윤석&lt;제주대학 교수&gt;<br />
                             &emsp;허정석&lt;여수광야항만공사 부장&gt;<br />
                             &emsp;황경연&lt;충남대학교 교수&gt;<br />
-                            &emsp;서정수&lt;계명대학교 교수&gt;
+                            &emsp;서정수&lt;계명대학교 교수&gt;<br />
+                            &emsp;권승면&lt;대한무역투자진흥공사 과장&gt;
+
                         </span>
                     </Value>
                 </Tuple>

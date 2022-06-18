@@ -107,6 +107,7 @@ const NoticeBox = styled.ul`
     z-index: 1;
     @media only screen and (max-width: 768px) {
         display: block;
+        margin-top: 12em;
     }
 `;
 
@@ -497,6 +498,11 @@ const Conference = styled.div`
     height: 14%;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        display: block;
+    }
+
 `;
 
 const PaperBlock = styled.div`
@@ -507,6 +513,12 @@ const PaperBlock = styled.div`
     width: 49.5%;
     color: white;
     cursor: pointer;
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+        width: 100%;
+        height: 4em;
+        margin: 1% 0;
+    }
 `;
 
 const Academic = styled(Link)`
@@ -516,6 +528,13 @@ const Academic = styled(Link)`
     align-items: center;
     width: 49.5%;
     color: white;
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+        width: 100%;
+        height: 4em;
+        margin-bottom: 1%;
+        
+    }
 `;
 
 const Alink = styled.a`
@@ -525,6 +544,12 @@ background-color: #31a4d1;
     align-items: center;
     width: 49.5%;
     color: white;
+    @media only screen and (max-width: 768px) {
+        justify-content: center;
+        width: 100%;
+        height: 4em;
+        margin-bottom: 1%;
+    }
 `;
 
 const AcademicInfo = styled.div`
@@ -542,8 +567,7 @@ const AcademicImage = styled.img`
     width: 1.6em; 
     height: 1.6em;
     @media only screen and (max-width: 768px) {
-        width: 5vw;
-        height: 5vw;
+        display: none;
     }
 `;
 
@@ -551,23 +575,20 @@ const IcaslImage = styled.img`
     width: 1.8em; 
     height: 1.8em;
  @media only screen and (max-width: 768px) {
-        width: 6vw;
-        height: 6vw;
+      display: none;
     }
 `;
 
 const AcademicTitle = styled.h1`
     font-size: 1em;
     @media only screen and (max-width: 768px) {
-        font-size: 3vw;
+        font-size: 1.3em;
+        margin: 0.5em 0;
     }
 `;
 
 const AcademicText = styled.span`
     font-size: 0.6em;
-    @media only screen and (max-width: 768px) {
-        font-size: 2vw;
-    }
 `;
 
 
