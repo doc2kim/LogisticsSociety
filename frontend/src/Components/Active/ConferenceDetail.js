@@ -171,7 +171,8 @@ ${({ normalAward }) => {
 ${({ competeAward }) => {
         return competeAward === 1 ? '::after {content: "최우수상"; color:red;}' :
             competeAward === 2 ? '::after {content: "우수상";  color:blue;}' :
-                competeAward === 3 && '::after {content: "장려상"}'
+                competeAward === 3 ? '::after {content: "장려상"}' :
+                    competeAward === 4 && '::after {content: ""}'
     }}
 `;
 
@@ -215,7 +216,6 @@ const ConferenceDetail = function () {
     const property = useLocation();
     const navigate = useNavigate()
     const data = property.state.data;
-    console.log(data.compete)
     return data && <Container>
         <SubTitle title={`${data.schedule.substr(0, 4)}년도 
             ${data.season === "spring" ? "춘계" :
@@ -283,43 +283,50 @@ const ConferenceDetail = function () {
                                 </PaperLists>
                             })}
                             <SessionTitle>일반 세션</SessionTitle>
-                            {data.normal.sort((a, b) => (a.award === "outstand") - (b.award === "outstand") || a - b).sort((a, b) => (a.award === null) - (b.award === null) || a - b).map(function (i, index) {
-                                return <PaperLists borderControl={data.normal.length === index + 1 ? 1 : undefined} key={i.id}>
-                                    <PaperBox>
-                                        <PaperTitle>{i.title}</PaperTitle>
-                                        {i.award && <Award normalAward={i.award === "best" ? 1 : i.award === "outstand" && 2}></Award>}
-                                    </PaperBox>
-                                    <PaperInfo>
-                                        <div>
-                                            <Author>
-                                                <Name>{i.presenter.name}</Name>
-                                                <Affiliated>{i.presenter.affiliated}</Affiliated>
-                                            </Author>
-                                            {i.co_author.map(function (j) {
-                                                return <Author key={j.id}>
-                                                    <Name>{j.name}</Name>
-                                                    <Affiliated>{j.affiliated}</Affiliated>
+                            {data.normal
+                                .sort((a, b) => (a.award === "outstand") - (b.award === "outstand") || a - b)
+                                .sort((a, b) => (a.award === null) - (b.award === null) || a - b)
+                                .map(function (i, index) {
+                                    return <PaperLists borderControl={data.normal.length === index + 1 ? 1 : undefined} key={i.id}>
+                                        <PaperBox>
+                                            <PaperTitle>{i.title}</PaperTitle>
+                                            {i.award && <Award normalAward={i.award === "best" ? 1 : i.award === "outstand" && 2}></Award>}
+                                        </PaperBox>
+                                        <PaperInfo>
+                                            <div>
+                                                <Author>
+                                                    <Name>{i.presenter.name}</Name>
+                                                    <Affiliated>{i.presenter.affiliated}</Affiliated>
                                                 </Author>
-                                            })}
-                                            {i.advisor && <Author>
-                                                <Name>{i.advisor.name}</Name>
-                                                <Affiliated>{i.advisor.affiliated}</Affiliated>
-                                            </Author>
-                                            }
-                                        </div>
-                                        <Download href={i.presentation} target="_blank"><DownloadIcon src={download} /></Download>
-                                    </PaperInfo>
-                                </PaperLists>
-                            })}
+                                                {i.co_author.map(function (j) {
+                                                    return <Author key={j.id}>
+                                                        <Name>{j.name}</Name>
+                                                        <Affiliated>{j.affiliated}</Affiliated>
+                                                    </Author>
+                                                })}
+                                                {i.advisor && <Author>
+                                                    <Name>{i.advisor.name}</Name>
+                                                    <Affiliated>{i.advisor.affiliated}</Affiliated>
+                                                </Author>
+                                                }
+                                            </div>
+                                            <Download href={i.presentation} target="_blank"><DownloadIcon src={download} /></Download>
+                                        </PaperInfo>
+                                    </PaperLists>
+                                })}
                         </SessionBox>
                         <SessionBox>
                             <SessionTitle>대학(원)생 세션</SessionTitle>
-                            {data.compete.sort((a, b) => (a.award === "outstand") - (b.award === "outstand") || a - b).sort((a, b) => (a.award === "Encourage") - (b.award === "Encourage") || a - b)
+                            {data.compete
+                                .sort((a, b) => (a.award === "outstand") - (b.award === "outstand") || a - b)
+                                .sort((a, b) => (a.award === "Encourage") - (b.award === "Encourage") || a - b)
+                                .sort((a, b) => (a.award === null) - (b.award === null) || a - b)
                                 .map(function (i, index) {
                                     return <PaperLists borderControl={data.compete.length === index + 1 ? 1 : undefined} key={i.id}>
                                         <PaperBox>
                                             <PaperTitle>{i.title}</PaperTitle>
-                                            {i.award && <Award competeAward={i.award === "best" ? 1 : i.award === "outstand" ? 2 : i.award === "Encourage" && 3}></Award>}
+                                            {console.log(i.award)}
+                                            {i.award && <Award competeAward={i.award === "best" ? 1 : i.award === "outstand" ? 2 : i.award === "Encourage" ? 3 : i.award === null && 4}></Award>}
                                         </PaperBox>
                                         <PaperInfo>
                                             <ul>
