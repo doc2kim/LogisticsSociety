@@ -107,13 +107,13 @@ const Footer = () => {
           </TextBox>
           <TextBox>
             <ContentText>사무국 : </ContentText>
-            <ContentText>간사 황용희</ContentText>
-            <ContentText>010-3911-8747</ContentText>
+            <ContentText>간사 유미영</ContentText>
+            <ContentText>010-6733-7629</ContentText>
           </TextBox>
           <TextBox>
             <CopyRight>
               Copyright © The Korean Association of Shipping and Logistics, Inc.
-              All rights reserved.{" "}
+              All rights reserved.
             </CopyRight>
           </TextBox>
           <TextBox>
