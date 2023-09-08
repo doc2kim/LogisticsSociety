@@ -116,7 +116,7 @@ const CurrentExecutives = function () {
             <Attributes>
               <span>회장</span>
             </Attributes>
-            <Value>&emsp;최용석&lt;순천대 교수&gt;</Value>
+            <Value>&emsp;안우철&lt;강릉원주대학교 교수&gt;</Value>
             <Value></Value>
           </Tuple>
           <Tuple>
@@ -398,7 +398,7 @@ const CurrentExecutives = function () {
             </Attributes>
             <Value>
               <span>
-                &emsp;안우철&lt;강릉원주대 교수&gt;
+                &emsp;이정선&lt;경상국립대학교 교수&gt;
                 <br />
               </span>
             </Value>
