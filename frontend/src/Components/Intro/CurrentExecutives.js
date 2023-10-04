@@ -135,7 +135,7 @@ const CurrentExecutives = function () {
                 <br />
                 &emsp;이광배&lt;순천대 교수&gt;
                 <br />
-                &emsp;이원근&lt;대구대 교수&gt;
+                &emsp;김근섭&lt;한국해양수산개발원 선임연구위원&gt;
                 <br />
                 &emsp;조동현&lt;두양상선 사장&gt;
               </span>
@@ -153,8 +153,6 @@ const CurrentExecutives = function () {
                 &emsp;이경재&lt;창명해운 회장&gt;
                 <br />
                 &emsp;이상복&lt;범주해운 회장&gt;
-                <br />
-                &emsp;안우철&lt;강릉원주대 교수&gt;
                 <br />
                 &emsp;이현우&lt;농협물류 사장&gt;
               </span>
@@ -230,8 +228,6 @@ const CurrentExecutives = function () {
                 <br />
                 &emsp;류인철&lt;스마트비즈 이사&gt;
                 <br />
-                &emsp;마문식&lt;세한대학교&gt;
-                <br />
                 &emsp;박근식&lt;중앙대학교 교수&gt;
                 <br />
                 &emsp;박두진&lt;동명대학교/KMI교수&gt;
@@ -244,8 +240,6 @@ const CurrentExecutives = function () {
                 <br />
                 &emsp;박용안&lt;KMI 연구위원&gt;
                 <br />
-                &emsp;박종룡&lt;KMI 연구위원&gt;
-                <br />
                 &emsp;박주동&lt;경상대학교 조교&gt;
                 <br />
                 &emsp;박호&lt;군산대학교 교수&gt;
@@ -255,10 +249,6 @@ const CurrentExecutives = function () {
                 &emsp;배희성&lt;경기대학교 교수&gt;
                 <br />
                 &emsp;서수완&lt;동서대학교 교수&gt;
-                <br />
-                &emsp;성기덕&lt;경인여자대학교 교수&gt;
-                <br />
-                &emsp;성낙서&lt;금호렌터카 이사&gt;
                 <br />
                 &emsp;송민근&lt;인천대학 교수&gt;
                 <br />
@@ -286,8 +276,6 @@ const CurrentExecutives = function () {
                 &emsp;원동환&lt;덕성여자대학교 교수&gt;
                 <br />
                 &emsp;유성재&lt;우련통운 이사&gt;
-                <br />
-                &emsp;우승렬&lt;현대글로비즈&gt;
                 <br />
                 &emsp;윤경준&lt;서산항만 팀장&gt;
                 <br />
@@ -331,13 +319,9 @@ const CurrentExecutives = function () {
                 <br />
                 &emsp;정동훈&lt;북방물류연구지원센터&gt;
                 <br />
-                &emsp;정석재&lt;광운대학교 교수&gt;
-                <br />
                 &emsp;정연봉&lt;제이엔텔솔루션 대표 변호사&gt;
                 <br />
                 &emsp;정재훈&lt;현대자동차 팀장&gt;
-                <br />
-                &emsp;정현대&lt;평택대학교 교수&gt;
                 <br />
                 &emsp;조국연&lt;벤텍스 전무&gt;
                 <br />
@@ -346,8 +330,6 @@ const CurrentExecutives = function () {
                 &emsp;조용현&lt;서원대학교 교수&gt;
                 <br />
                 &emsp;조찬혁&lt;부경대학교 교수&gt;
-                <br />
-                &emsp;최도원&lt;서해대학교 교수&gt;
                 <br />
                 &emsp;최석범&lt;제주한라대학교 교수&gt;
                 <br />
@@ -399,6 +381,30 @@ const CurrentExecutives = function () {
             <Value>
               <span>
                 &emsp;이정선&lt;경상국립대학교 교수&gt;
+                <br />
+              </span>
+            </Value>
+            <Value></Value>
+          </Tuple>
+          <Tuple>
+            <Attributes>
+              <span>편집국장</span>
+            </Attributes>
+            <Value>
+              <span>
+                &emsp;이경한&lt;한남대학교 교수&gt;
+                <br />
+              </span>
+            </Value>
+            <Value></Value>
+          </Tuple>
+          <Tuple>
+            <Attributes>
+              <span>편집차장</span>
+            </Attributes>
+            <Value>
+              <span>
+                &emsp;김준홍&lt;한국해양수산개발원 위촉연구원&gt;
                 <br />
               </span>
             </Value>
