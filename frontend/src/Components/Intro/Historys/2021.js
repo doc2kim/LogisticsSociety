@@ -12,14 +12,14 @@ const DivideRight = styled.div`
   }
 `;
 
-// const DivideLeft = styled.div`
-//     padding-right:50%;
-//     text-align:end;
-//     @media only screen and (max-width: 768px) {
-//         padding:0;
-//         text-align: start;
-//     }
-// `;
+const DivideLeft = styled.div`
+  padding-right: 50%;
+  text-align: end;
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+    text-align: start;
+  }
+`;
 
 const Circle = styled.div`
   border: 0.3em solid rgb(18, 95, 163);
@@ -75,12 +75,12 @@ const Content = styled.div`
   }
 `;
 
-// const ContentLeft = styled(Content)`
-//     justify-content: end;
-//     @media only screen and (max-width: 768px) {
-//         justify-content: start;
-//     }
-// `;
+const ContentLeft = styled(Content)`
+  justify-content: end;
+  @media only screen and (max-width: 768px) {
+    justify-content: start;
+  }
+`;
 
 const ContentSubYear = styled.span`
   opacity: 0.8;
@@ -91,12 +91,12 @@ const ContentSubYear = styled.span`
   }
 `;
 
-// const ConstSubYearLeft = styled(ContentSubYear)`
-//   order:1;
-//   @media only screen and (max-width: 768px) {
-//       order:0;
-//   }
-// `;
+const ConstSubYearLeft = styled(ContentSubYear)`
+  order: 1;
+  @media only screen and (max-width: 768px) {
+    order: 0;
+  }
+`;
 
 const ContentText = styled.span`
   opacity: 0.7;
@@ -133,6 +133,43 @@ const History2021 = function () {
         <Content>
           <ContentSubYear>5.28</ContentSubYear>
           <ContentText>제77회 한국해운물류학회 춘계 정기학술대회</ContentText>
+        </Content>
+      </DivideRight>
+
+      <Circle />
+
+      <DivideLeft>
+        <ContentYear>2022</ContentYear>
+        <ContentLeft>
+          <ConstSubYearLeft>12.02</ConstSubYearLeft>
+          <ContentText>제79회 한국해운물류학회 추계 정기 학술대회</ContentText>
+        </ContentLeft>
+
+        <ContentLeft>
+          <ConstSubYearLeft>12.02</ConstSubYearLeft>
+          <ContentText>한국해운항만학술단체협의회 공동학술대회</ContentText>
+        </ContentLeft>
+
+        <ContentLeft>
+          <ConstSubYearLeft>05.20</ConstSubYearLeft>
+          <ContentText>제78회 한국해운물류학회 춘계 정기 학술대회</ContentText>
+        </ContentLeft>
+      </DivideLeft>
+
+      <Circle />
+
+      <DivideRight>
+        <ContentYear>2023</ContentYear>
+        <Content>
+          <ContentSubYear>11.03</ContentSubYear>
+          <ContentText>제80회 한국해운물류학회 추계 정기학술대회</ContentText>
+        </Content>
+        <Content>
+          <ContentSubYear>06.02</ContentSubYear>
+          <ContentText>
+            한국해운항만학술다체협의회 공동학술대회 및 제79회 한국해운물류학회
+            춘계 정기학술대회
+          </ContentText>
         </Content>
       </DivideRight>
     </HistoryBox>

@@ -88,6 +88,11 @@ const ContentText = styled.span`
   }
 `;
 
+const Button = styled.button`
+  width: 10rem;
+  font-size: 0.8rem;
+`;
+
 const Footer = () => {
   return (
     <Container>
@@ -122,6 +127,18 @@ const Footer = () => {
             </CopyRight>
           </TextBox>
         </ContentInfo>
+        <div>
+          <a
+            href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=13386&cntntsId=109155"
+            target="_blank"
+          >
+            <Button>
+              국세청
+              <br />
+              홈페이지
+            </Button>
+          </a>
+        </div>
       </Box>
     </Container>
   );
