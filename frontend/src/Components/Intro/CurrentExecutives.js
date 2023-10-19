@@ -90,6 +90,8 @@ const CurrentExecutives = function () {
                 &emsp;박현규&lt;한국해사문제연구소 이사장&gt;
                 <br />
                 &emsp;박홍균&lt;순천대 교수&gt;
+                <br />
+                &emsp;최용석&lt;순천대 교수&gt;
               </span>
             </Value>
             <Value>
@@ -360,6 +362,8 @@ const CurrentExecutives = function () {
                 &emsp;서정수&lt;계명대학교 교수&gt;
                 <br />
                 &emsp;권승면&lt;대한무역투자진흥공사 과장&gt;
+                <br />
+                &emsp;김선구&lt;순천대학교 박사&gt;
               </span>
             </Value>
           </Tuple>
