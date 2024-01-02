@@ -52,9 +52,10 @@ const TextContent = styled.span`
     }
 `;
 
-
 const OverView = function () {
+
     return (<Container>
+
         <Box>
             <SubTitleImg style={{ background: `url(${subTitleImg})` }} >
                 <SubTitleText>

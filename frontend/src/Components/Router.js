@@ -24,6 +24,7 @@ import ThesisDetail from "../Components/Academic/Thesis/ThesisDetail"
 import ConferenceDetail from "../Components/Active/ConferenceDetail"
 import IcaslDetail from "../Components/Active/IcaslDetail"
 
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
     return (

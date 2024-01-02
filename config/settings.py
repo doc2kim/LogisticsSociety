@@ -152,10 +152,10 @@ TEMPLATES = [
 # DEBUG = True
 DEBUG = bool(os.environ.get("DEBUG"))
 
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfile")
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = [
-        os.path.join(REACT_APP_DIR,"build","static"),
+        os.path.join(REACT_APP_DIR, "build", "static"),
         ]
 
 MEDIA_URL = '/media/'
