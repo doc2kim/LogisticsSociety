@@ -177,6 +177,8 @@ const PastExecutives = function () {
                 안우철
                 <br />
                 이정선
+                <br />
+                문상영
               </span>
             </Value>
             <Value style={{ width: "40%" }}>
@@ -207,7 +209,9 @@ const PastExecutives = function () {
                 <br />
                 2021.2-2023.3
                 <br />
-                2023.3-현재
+                2023.3-2024.2
+                <br />
+                2024.2-현재
               </span>
             </Value>
           </Tuple>

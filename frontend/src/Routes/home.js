@@ -9,7 +9,7 @@ import icasl_icon from "../assets/icasl_icon.png";
 import academic_icon from "../assets/academic_icon.png";
 import presentation from "../assets/presentation.png";
 import research from "../assets/research.png";
-import Modal from "../Components/Modal.js"
+// import Modal from "../Components/Modal.js"
 
 // import AuthContext from "../ApiContext/AuthContext"
 import { noticeAxios } from "../ApiContext/RestApi";
@@ -761,33 +761,33 @@ const Home = function () {
     newsData &&
     slide && (
       <Container >
-         {popup.open && <Modal onClose={() => setPopup({ ...popup, open: false })} isOpen={true} content={
-                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '30rem', boxSizing: 'border-box', padding: '4rem 1rem 3rem 1rem' }}>
-                    <div style={{ marginBottom: '1rem' }}>
-                        <span>
-                            갑진년 새해를 맞아, 학회 회원님들께 인사를 드립니다.
-                        </span>
-                    </div>
-                    <div style={{ margin: '1rem' }}>
-                        <span style={{lineHeight:"2rem"}}>
-                            올 한해 저희 학회에 많은 관심과 참여를 주신 회원님들의 노고에 감사드리며, 새해에도 학회가 성공적으로 운영될 수 있도록 많은 도움과 참여 부탁드립니다. 회원님들의 가내에 항상 건강과 행복이 가득차시길 기원합니다.<br/> 새해 복 많이 받으세요!”
-                        </span>
-                    </div>
-                    <span style={{paddingTop:"1rem"}}>
-                        2024년 1월 1일
-                    </span>
-                    <span style={{padding:"1rem 0"}}>
-                        한국해운물류학회
-                    </span>
-                    <span style={{paddingBottom:"1rem "}}>
-                        회장 안우철
-                    </span>
-                    <div style={{ width: '100px', display:"flex", justifyContent:"center" }}>
-                        <button onClick={() => { setPopup({ open: false, detail: true }) }} text={{ children: '닫기', color: 'white', fontWeight: 'bold' }} height='40px'>닫 기</button>
-                    </div>
-                </div >
-            } />
-            }
+         {/*{popup.open && <Modal onClose={() => setPopup({ ...popup, open: false })} isOpen={true} content={*/}
+         {/*       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '30rem', boxSizing: 'border-box', padding: '4rem 1rem 3rem 1rem' }}>*/}
+         {/*           <div style={{ marginBottom: '1rem' }}>*/}
+         {/*               <span>*/}
+         {/*                   갑진년 새해를 맞아, 학회 회원님들께 인사를 드립니다.*/}
+         {/*               </span>*/}
+         {/*           </div>*/}
+         {/*           <div style={{ margin: '1rem' }}>*/}
+         {/*               <span style={{lineHeight:"2rem"}}>*/}
+         {/*                   올 한해 저희 학회에 많은 관심과 참여를 주신 회원님들의 노고에 감사드리며, 새해에도 학회가 성공적으로 운영될 수 있도록 많은 도움과 참여 부탁드립니다. 회원님들의 가내에 항상 건강과 행복이 가득차시길 기원합니다.<br/> 새해 복 많이 받으세요!”*/}
+         {/*               </span>*/}
+         {/*           </div>*/}
+         {/*           <span style={{paddingTop:"1rem"}}>*/}
+         {/*               2024년 1월 1일*/}
+         {/*           </span>*/}
+         {/*           <span style={{padding:"1rem 0"}}>*/}
+         {/*               한국해운물류학회*/}
+         {/*           </span>*/}
+         {/*           <span style={{paddingBottom:"1rem "}}>*/}
+         {/*               회장 안우철*/}
+         {/*           </span>*/}
+         {/*           <div style={{ width: '100px', display:"flex", justifyContent:"center" }}>*/}
+         {/*               <button onClick={() => { setPopup({ open: false, detail: true }) }} text={{ children: '닫기', color: 'white', fontWeight: 'bold' }} height='40px'>닫 기</button>*/}
+         {/*           </div>*/}
+         {/*       </div >*/}
+         {/*   } />*/}
+         {/*   }*/}
         <TitleImage
           style={{ background: `url(${home_img})`, backgroundSize: "cover" }}
         >

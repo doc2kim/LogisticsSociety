@@ -78,16 +78,16 @@ const Committee = function () {
                 <Tuple>
                     <Tuple style={{ width: '50%' }}>
                         <Value style={{ width: '50%' }}>위원장</Value>
-                        <Value style={{ width: '50%' }}>안우철</Value>
+                        <Value style={{ width: '50%' }}>문상영</Value>
                     </Tuple>
-                    <Value style={{ width: '50%' }}>강릉원주대학교 교수</Value>
+                    <Value style={{ width: '50%' }}>한경대학교 교수</Value>
                 </Tuple>
                 <Tuple>
                     <Tuple style={{ width: '50%' }}>
                         <Value style={{ width: '50%' }}>부위원장</Value>
-                        <Value style={{ width: '50%' }}>문상영</Value>
+                        <Value style={{ width: '50%' }}>이정선</Value>
                     </Tuple>
-                    <Value style={{ width: '50%' }}>한경대학교 교수</Value>
+                    <Value style={{ width: '50%' }}>경상대학교 교수</Value>
                 </Tuple>
                 <Tuple>
                     <Tuple style={{ width: '50%' }}>
@@ -117,9 +117,16 @@ const Committee = function () {
                 <Tuple>
                     <Tuple style={{ width: '50%' }}>
                         <Value style={{ width: '50%' }}>편집국장</Value>
-                        <Value style={{ width: '50%' }}>정현재</Value>
+                        <Value style={{ width: '50%' }}>이경한</Value>
                     </Tuple>
-                    <Value style={{ width: '50%' }}>평택대학교 교수</Value>
+                    <Value style={{ width: '50%' }}>한남대학교 교수</Value>
+                </Tuple>
+                <Tuple>
+                    <Tuple style={{ width: '50%' }}>
+                        <Value style={{ width: '50%' }}>편집차장</Value>
+                        <Value style={{ width: '50%' }}>김준홍</Value>
+                    </Tuple>
+                    <Value style={{ width: '50%' }}>한국해양수산개발원 연구원</Value>
                 </Tuple>
             </Table>
         </Box>

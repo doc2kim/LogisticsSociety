@@ -263,6 +263,8 @@ const CurrentExecutives = function () {
                 &emsp;남형식&lt;한국해양대학교 교수&gt;
                 <br />
                 &emsp;이수진&lt;성결대학교 교수&gt;
+                <br />
+                &emsp;추봉성&lt;순천향대학교 교수&gt;
               </span>
             </Value>
             <Value>
@@ -363,7 +365,7 @@ const CurrentExecutives = function () {
                 <br />
                 &emsp;권승면&lt;대한무역투자진흥공사 과장&gt;
                 <br />
-                &emsp;김선구&lt;순천대학교 박사&gt;
+                &emsp;김선구&lt;순천대학교 교수&gt;
               </span>
             </Value>
           </Tuple>
@@ -384,7 +386,7 @@ const CurrentExecutives = function () {
             </Attributes>
             <Value>
               <span>
-                &emsp;이정선&lt;경상국립대학교 교수&gt;
+                &emsp;문상영&lt;한경대학교 교수&gt;
                 <br />
               </span>
             </Value>
