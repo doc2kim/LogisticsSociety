@@ -106,7 +106,14 @@ const SignUpInfo = function () {
             </ContentBox>
             <ContentBox>
                 <span>
+
                     (3) 홈페이지 회원가입 및 가입비와 연회비를 납부하신 뒤 사무국으로 통지해 주십시오.
+                </span>
+            </ContentBox>
+
+            <ContentBox>
+                <span>
+                    (4) <a style={{ color: "blue", textDecoration: "underline", cursor:"pointer" }} href="https://jsl.jams.or.kr/co/main/jmMain.kci">온라인 논문투고 심사 시스템(jams)</a> &#8592; 클릭하여 회원가입 진행.
                 </span>
             </ContentBox>
             <Chapter>정회원의 권한</Chapter>

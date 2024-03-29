@@ -416,6 +416,30 @@ const CurrentExecutives = function () {
             </Value>
             <Value></Value>
           </Tuple>
+          <Tuple>
+            <Attributes>
+              <span>사무국장</span>
+            </Attributes>
+            <Value>
+              <span>
+                &emsp;강달원&lt;카톨릭관동대학교&gt;
+                <br />
+              </span>
+            </Value>
+            <Value></Value>
+          </Tuple>
+          <Tuple>
+            <Attributes>
+              <span>사무간사</span>
+            </Attributes>
+            <Value>
+              <span>
+                &emsp;유미영
+                <br />
+              </span>
+            </Value>
+            <Value></Value>
+          </Tuple>
         </Table>
       </Box>
     </Container>
