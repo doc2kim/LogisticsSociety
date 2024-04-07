@@ -29,6 +29,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET","fqf_xga@^2fz-@@$x^pq#p_seo0u0^06$vm
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
+LANGUAGE_CODE = 'ko-kr'
 
 ALLOWED_HOSTS = ["*"]
 
