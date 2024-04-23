@@ -426,7 +426,7 @@ const CurrentExecutives = function () {
             </Attributes>
             <Value>
               <span>
-                &emsp;강달원&lt;카톨릭관동대학교 교수&gt;
+                &emsp;강달원&lt;가톨릭관동대학교 교수&gt;
                 <br />
               </span>
             </Value>
