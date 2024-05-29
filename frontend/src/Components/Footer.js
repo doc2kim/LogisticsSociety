@@ -111,7 +111,11 @@ const Footer = () => {
             <ContentText>E-mail : master@shipping.or.kr</ContentText>
           </TextBox>
           <TextBox>
-            <ContentText>사무국 : </ContentText>
+            <ContentText>대표자 :</ContentText>
+            <ContentText>한종길</ContentText>
+          </TextBox>
+          <TextBox>
+            <ContentText>사무국 :</ContentText>
             <ContentText>간사 유미영</ContentText>
             <ContentText>010-6733-7629</ContentText>
           </TextBox>

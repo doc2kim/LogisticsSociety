@@ -267,6 +267,8 @@ const CurrentExecutives = function () {
                 &emsp;이수진&lt;성결대학교 교수&gt;
                 <br />
                 &emsp;추봉성&lt;순천향대학교 교수&gt;
+                <br />
+                &emsp;장하용&lt;부산연구원 연구위원&gt;
               </span>
             </Value>
             <Value>
@@ -369,7 +371,9 @@ const CurrentExecutives = function () {
                 <br />
                 &emsp;김선구&lt;순천대학교 교수&gt;
                 <br />
-                &emsp;박봉철&lt;부산연구원 연구위원&gt;
+                &emsp;박봉철&lt;부산연구원 책임연구위원&gt;
+                <br />
+                &emsp;박승찬&lt;회계법인 리안 회계사&gt;
               </span>
             </Value>
           </Tuple>
